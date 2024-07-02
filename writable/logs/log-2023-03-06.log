@@ -1,0 +1,1752 @@
+INFO - 2023-03-06 04:44:23 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-03-06 04:45:11 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-03-06 04:45:32 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-03-06 04:45:38 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-03-06 04:48:07 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-03-06 04:49:45 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-03-06 04:51:01 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-03-06 04:51:31 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-03-06 04:52:41 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-03-06 04:55:24 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-03-06 04:58:55 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-03-06 05:00:32 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-03-06 05:01:54 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-03-06 05:04:42 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-03-06 05:05:05 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-03-06 05:06:02 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-03-06 05:06:18 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-03-06 05:06:25 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-03-06 05:06:57 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-03-06 05:07:27 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-03-06 05:07:36 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-03-06 05:07:40 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-03-06 05:07:45 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-03-06 05:07:50 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+ERROR - 2023-03-06 05:07:50 --> Error connecting to the database: mysqli_sql_exception: Unknown database 'finance_management' in D:\wamp64\www\attendance_upgrade\system\Database\MySQLi\Connection.php:174
+Stack trace:
+#0 D:\wamp64\www\attendance_upgrade\system\Database\MySQLi\Connection.php(174): mysqli->real_connect('localhost', 'root', '', 'finance_managem...', 3306, '', 0)
+#1 D:\wamp64\www\attendance_upgrade\system\Database\BaseConnection.php(391): CodeIgniter\Database\MySQLi\Connection->connect(false)
+#2 D:\wamp64\www\attendance_upgrade\system\Database\BaseConnection.php(573): CodeIgniter\Database\BaseConnection->initialize()
+#3 D:\wamp64\www\attendance_upgrade\system\Database\BaseBuilder.php(1616): CodeIgniter\Database\BaseConnection->query('SELECT `u`.`use...', Array, false)
+#4 D:\wamp64\www\attendance_upgrade\app\Controllers\Login.php(39): CodeIgniter\Database\BaseBuilder->get()
+#5 D:\wamp64\www\attendance_upgrade\system\CodeIgniter.php(934): App\Controllers\Login->index()
+#6 D:\wamp64\www\attendance_upgrade\system\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Login))
+#7 D:\wamp64\www\attendance_upgrade\system\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#8 D:\wamp64\www\attendance_upgrade\index.php(67): CodeIgniter\CodeIgniter->run()
+#9 {main}
+
+Next CodeIgniter\Database\Exceptions\DatabaseException: Unknown database 'finance_management' in D:\wamp64\www\attendance_upgrade\system\Database\MySQLi\Connection.php:218
+Stack trace:
+#0 D:\wamp64\www\attendance_upgrade\system\Database\BaseConnection.php(391): CodeIgniter\Database\MySQLi\Connection->connect(false)
+#1 D:\wamp64\www\attendance_upgrade\system\Database\BaseConnection.php(573): CodeIgniter\Database\BaseConnection->initialize()
+#2 D:\wamp64\www\attendance_upgrade\system\Database\BaseBuilder.php(1616): CodeIgniter\Database\BaseConnection->query('SELECT `u`.`use...', Array, false)
+#3 D:\wamp64\www\attendance_upgrade\app\Controllers\Login.php(39): CodeIgniter\Database\BaseBuilder->get()
+#4 D:\wamp64\www\attendance_upgrade\system\CodeIgniter.php(934): App\Controllers\Login->index()
+#5 D:\wamp64\www\attendance_upgrade\system\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Login))
+#6 D:\wamp64\www\attendance_upgrade\system\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#7 D:\wamp64\www\attendance_upgrade\index.php(67): CodeIgniter\CodeIgniter->run()
+#8 {main}
+CRITICAL - 2023-03-06 05:07:51 --> Unable to connect to the database.
+Main connection [MySQLi]: Unknown database 'finance_management'
+in SYSTEMPATH\Database\BaseConnection.php on line 427.
+ 1 SYSTEMPATH\Database\BaseConnection.php(573): CodeIgniter\Database\BaseConnection->initialize()
+ 2 SYSTEMPATH\Database\BaseBuilder.php(1616): CodeIgniter\Database\BaseConnection->query('SELECT `u`.`user_id`, `u`.`role_id`, `u`.`username`, `u`.`password`, `r`.`role_name`
+FROM `users` as `u`
+LEFT JOIN `role_details` as `r` ON `r`.`role_id` = `u`.`role_id`
+WHERE `u`.`status` = :u.status:
+AND `u`.`username` = :u.username:', [...], false)
+ 3 APPPATH\Controllers\Login.php(39): CodeIgniter\Database\BaseBuilder->get()
+ 4 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\Login->index()
+ 5 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Login))
+ 6 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+INFO - 2023-03-06 05:08:47 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-03-06 05:08:53 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+ERROR - 2023-03-06 05:08:53 --> mysqli_sql_exception: Table 'attendance_upgrade.role_details' doesn't exist in D:\wamp64\www\attendance_upgrade\system\Database\MySQLi\Connection.php:295
+Stack trace:
+#0 D:\wamp64\www\attendance_upgrade\system\Database\MySQLi\Connection.php(295): mysqli->query('SELECT `u`.`use...', 0)
+#1 D:\wamp64\www\attendance_upgrade\system\Database\BaseConnection.php(691): CodeIgniter\Database\MySQLi\Connection->execute('SELECT `u`.`use...')
+#2 D:\wamp64\www\attendance_upgrade\system\Database\BaseConnection.php(605): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT `u`.`use...')
+#3 D:\wamp64\www\attendance_upgrade\system\Database\BaseBuilder.php(1616): CodeIgniter\Database\BaseConnection->query('SELECT `u`.`use...', Array, false)
+#4 D:\wamp64\www\attendance_upgrade\app\Controllers\Login.php(39): CodeIgniter\Database\BaseBuilder->get()
+#5 D:\wamp64\www\attendance_upgrade\system\CodeIgniter.php(934): App\Controllers\Login->index()
+#6 D:\wamp64\www\attendance_upgrade\system\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Login))
+#7 D:\wamp64\www\attendance_upgrade\system\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#8 D:\wamp64\www\attendance_upgrade\index.php(67): CodeIgniter\CodeIgniter->run()
+#9 {main}
+CRITICAL - 2023-03-06 05:08:53 --> Table 'attendance_upgrade.role_details' doesn't exist
+in SYSTEMPATH\Database\BaseConnection.php on line 645.
+ 1 SYSTEMPATH\Database\BaseBuilder.php(1616): CodeIgniter\Database\BaseConnection->query('SELECT `u`.`user_id`, `u`.`role_id`, `u`.`username`, `u`.`password`, `r`.`role_name`
+FROM `users` as `u`
+LEFT JOIN `role_details` as `r` ON `r`.`role_id` = `u`.`role_id`
+WHERE `u`.`status` = :u.status:
+AND `u`.`username` = :u.username:', [...], false)
+ 2 APPPATH\Controllers\Login.php(39): CodeIgniter\Database\BaseBuilder->get()
+ 3 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\Login->index()
+ 4 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Login))
+ 5 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 6 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+INFO - 2023-03-06 05:13:31 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2023-03-06 05:13:31 --> Use of undefined constant DEPARTMENTS - assumed 'DEPARTMENTS' (this will throw an Error in a future version of PHP)
+in APPPATH\Controllers\Login.php on line 17.
+ 1 APPPATH\Controllers\Login.php(17): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Use of undefined constant DEPARTMENTS - assumed \'DEPARTMENTS\' (this will throw an Error in a future version of PHP)', 'APPPATH\\Controllers\\Login.php', 17, [])
+ 2 SYSTEMPATH\CodeIgniter.php(906): App\Controllers\Login->__construct()
+ 3 SYSTEMPATH\CodeIgniter.php(490): CodeIgniter\CodeIgniter->createController()
+ 4 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+INFO - 2023-03-06 05:17:43 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-03-06 05:17:50 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+ERROR - 2023-03-06 05:17:50 --> mysqli_sql_exception: Table 'attendance_upgrade.role_details' doesn't exist in D:\wamp64\www\attendance_upgrade\system\Database\MySQLi\Connection.php:295
+Stack trace:
+#0 D:\wamp64\www\attendance_upgrade\system\Database\MySQLi\Connection.php(295): mysqli->query('SELECT `u`.`use...', 0)
+#1 D:\wamp64\www\attendance_upgrade\system\Database\BaseConnection.php(691): CodeIgniter\Database\MySQLi\Connection->execute('SELECT `u`.`use...')
+#2 D:\wamp64\www\attendance_upgrade\system\Database\BaseConnection.php(605): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT `u`.`use...')
+#3 D:\wamp64\www\attendance_upgrade\system\Database\BaseBuilder.php(1616): CodeIgniter\Database\BaseConnection->query('SELECT `u`.`use...', Array, false)
+#4 D:\wamp64\www\attendance_upgrade\app\Controllers\Login.php(42): CodeIgniter\Database\BaseBuilder->get()
+#5 D:\wamp64\www\attendance_upgrade\system\CodeIgniter.php(934): App\Controllers\Login->index()
+#6 D:\wamp64\www\attendance_upgrade\system\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Login))
+#7 D:\wamp64\www\attendance_upgrade\system\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#8 D:\wamp64\www\attendance_upgrade\index.php(67): CodeIgniter\CodeIgniter->run()
+#9 {main}
+CRITICAL - 2023-03-06 05:17:50 --> Table 'attendance_upgrade.role_details' doesn't exist
+in SYSTEMPATH\Database\BaseConnection.php on line 645.
+ 1 SYSTEMPATH\Database\BaseBuilder.php(1616): CodeIgniter\Database\BaseConnection->query('SELECT `u`.`user_id`, `u`.`user_type_id`, `u`.`college_id`, `u`.`username`, `u`.`password`, `u`.`user_type`, `u`.`last_update`, `u`.`password_vaildation`, `u`.`menu_preference`, `s`.`department_id`, `d`.`department_name`, `r`.`role`
+FROM `users` as `u`
+LEFT JOIN `staff_details` as `s` ON `s`.`staff_id` = `u`.`user_type_id`
+LEFT JOIN `department` as `d` ON `d`.`department_id` = `s`.`department_id`
+LEFT JOIN `role_details` as `r` ON `r`.`role_id` = `s`.`role_id`
+WHERE `u`.`status` = :u.status:
+AND `u`.`username` = :u.username:', [...], false)
+ 2 APPPATH\Controllers\Login.php(42): CodeIgniter\Database\BaseBuilder->get()
+ 3 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\Login->index()
+ 4 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Login))
+ 5 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 6 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+INFO - 2023-03-06 05:21:23 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-03-06 05:21:37 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+ERROR - 2023-03-06 05:21:37 --> mysqli_sql_exception: Table 'attendance_upgrade.role_details' doesn't exist in D:\wamp64\www\attendance_upgrade\system\Database\MySQLi\Connection.php:295
+Stack trace:
+#0 D:\wamp64\www\attendance_upgrade\system\Database\MySQLi\Connection.php(295): mysqli->query('SELECT `u`.`use...', 0)
+#1 D:\wamp64\www\attendance_upgrade\system\Database\BaseConnection.php(691): CodeIgniter\Database\MySQLi\Connection->execute('SELECT `u`.`use...')
+#2 D:\wamp64\www\attendance_upgrade\system\Database\BaseConnection.php(605): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT `u`.`use...')
+#3 D:\wamp64\www\attendance_upgrade\system\Database\BaseBuilder.php(1616): CodeIgniter\Database\BaseConnection->query('SELECT `u`.`use...', Array, false)
+#4 D:\wamp64\www\attendance_upgrade\app\Controllers\Login.php(40): CodeIgniter\Database\BaseBuilder->get()
+#5 D:\wamp64\www\attendance_upgrade\system\CodeIgniter.php(934): App\Controllers\Login->index()
+#6 D:\wamp64\www\attendance_upgrade\system\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Login))
+#7 D:\wamp64\www\attendance_upgrade\system\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#8 D:\wamp64\www\attendance_upgrade\index.php(67): CodeIgniter\CodeIgniter->run()
+#9 {main}
+CRITICAL - 2023-03-06 05:21:37 --> Table 'attendance_upgrade.role_details' doesn't exist
+in SYSTEMPATH\Database\BaseConnection.php on line 645.
+ 1 SYSTEMPATH\Database\BaseBuilder.php(1616): CodeIgniter\Database\BaseConnection->query('SELECT `u`.`user_id`, `u`.`user_type_id`, `u`.`college_id`, `u`.`username`, `u`.`password`, `u`.`user_type`, `u`.`last_update`, `u`.`password_vaildation`, `u`.`menu_preference`, `s`.`department_id`, `d`.`department_name`, `r`.`role`
+FROM `users` as `u`
+LEFT JOIN `staff_details` as `s` ON `s`.`staff_id` = `u`.`user_type_id`
+LEFT JOIN `department` as `d` ON `d`.`department_id` = `s`.`department_id`
+LEFT JOIN `role_details` as `r` ON `r`.`role_id` = `s`.`role_id`
+WHERE `u`.`status` = :u.status:
+AND `u`.`username` = :u.username:', [...], false)
+ 2 APPPATH\Controllers\Login.php(40): CodeIgniter\Database\BaseBuilder->get()
+ 3 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\Login->index()
+ 4 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Login))
+ 5 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 6 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+INFO - 2023-03-06 05:23:13 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-03-06 05:23:36 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-03-06 05:23:40 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-03-06 05:23:54 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-03-06 05:24:07 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-03-06 05:24:09 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-03-06 05:24:09 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-03-06 05:24:16 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-03-06 05:24:17 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-03-06 05:24:20 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-03-06 05:24:23 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-03-06 05:24:23 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-03-06 05:24:27 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-03-06 05:24:29 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+ERROR - 2023-03-06 05:24:30 --> mysqli_sql_exception: Unknown column 'role_name' in 'field list' in D:\wamp64\www\attendance_upgrade\system\Database\MySQLi\Connection.php:295
+Stack trace:
+#0 D:\wamp64\www\attendance_upgrade\system\Database\MySQLi\Connection.php(295): mysqli->query('SELECT `role_id...', 0)
+#1 D:\wamp64\www\attendance_upgrade\system\Database\BaseConnection.php(691): CodeIgniter\Database\MySQLi\Connection->execute('SELECT `role_id...')
+#2 D:\wamp64\www\attendance_upgrade\system\Database\BaseConnection.php(605): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT `role_id...')
+#3 D:\wamp64\www\attendance_upgrade\system\Database\BaseBuilder.php(1616): CodeIgniter\Database\BaseConnection->query('SELECT `role_id...', Array, false)
+#4 D:\wamp64\www\attendance_upgrade\system\Model.php(840): CodeIgniter\Database\BaseBuilder->get()
+#5 D:\wamp64\www\attendance_upgrade\app\Controllers\Home.php(81): CodeIgniter\Model->__call('get', Array)
+#6 D:\wamp64\www\attendance_upgrade\system\CodeIgniter.php(934): App\Controllers\Home->fetch_role_details()
+#7 D:\wamp64\www\attendance_upgrade\system\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+#8 D:\wamp64\www\attendance_upgrade\system\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#9 D:\wamp64\www\attendance_upgrade\index.php(67): CodeIgniter\CodeIgniter->run()
+#10 {main}
+CRITICAL - 2023-03-06 05:24:30 --> Unknown column 'role_name' in 'field list'
+in SYSTEMPATH\Database\BaseConnection.php on line 645.
+ 1 SYSTEMPATH\Database\BaseBuilder.php(1616): CodeIgniter\Database\BaseConnection->query('SELECT `role_id`, `role_name`, `status`
+FROM `roles`
+ LIMIT 10', [], false)
+ 2 SYSTEMPATH\Model.php(840): CodeIgniter\Database\BaseBuilder->get()
+ 3 APPPATH\Controllers\Home.php(81): CodeIgniter\Model->__call('get', [])
+ 4 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\Home->fetch_role_details()
+ 5 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+ 6 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+INFO - 2023-03-06 05:24:32 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+ERROR - 2023-03-06 05:24:32 --> mysqli_sql_exception: Table 'attendance_upgrade.menu_details' doesn't exist in D:\wamp64\www\attendance_upgrade\system\Database\MySQLi\Connection.php:295
+Stack trace:
+#0 D:\wamp64\www\attendance_upgrade\system\Database\MySQLi\Connection.php(295): mysqli->query('SELECT `menu_id...', 0)
+#1 D:\wamp64\www\attendance_upgrade\system\Database\BaseConnection.php(691): CodeIgniter\Database\MySQLi\Connection->execute('SELECT `menu_id...')
+#2 D:\wamp64\www\attendance_upgrade\system\Database\BaseConnection.php(605): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT `menu_id...')
+#3 D:\wamp64\www\attendance_upgrade\system\Database\BaseBuilder.php(1616): CodeIgniter\Database\BaseConnection->query('SELECT `menu_id...', Array, false)
+#4 D:\wamp64\www\attendance_upgrade\system\Model.php(840): CodeIgniter\Database\BaseBuilder->get()
+#5 D:\wamp64\www\attendance_upgrade\app\Controllers\Home.php(140): CodeIgniter\Model->__call('get', Array)
+#6 D:\wamp64\www\attendance_upgrade\system\CodeIgniter.php(934): App\Controllers\Home->fetch_menu_details()
+#7 D:\wamp64\www\attendance_upgrade\system\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+#8 D:\wamp64\www\attendance_upgrade\system\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#9 D:\wamp64\www\attendance_upgrade\index.php(67): CodeIgniter\CodeIgniter->run()
+#10 {main}
+CRITICAL - 2023-03-06 05:24:32 --> Table 'attendance_upgrade.menu_details' doesn't exist
+in SYSTEMPATH\Database\BaseConnection.php on line 645.
+ 1 SYSTEMPATH\Database\BaseBuilder.php(1616): CodeIgniter\Database\BaseConnection->query('SELECT `menu_id`, `menu_name`, `icon`, `url`, `status`
+FROM `menu_details`
+ LIMIT 10', [], false)
+ 2 SYSTEMPATH\Model.php(840): CodeIgniter\Database\BaseBuilder->get()
+ 3 APPPATH\Controllers\Home.php(140): CodeIgniter\Model->__call('get', [])
+ 4 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\Home->fetch_menu_details()
+ 5 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+ 6 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+INFO - 2023-03-06 05:24:34 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+ERROR - 2023-03-06 05:24:34 --> mysqli_sql_exception: Unknown column 'role_name' in 'field list' in D:\wamp64\www\attendance_upgrade\system\Database\MySQLi\Connection.php:295
+Stack trace:
+#0 D:\wamp64\www\attendance_upgrade\system\Database\MySQLi\Connection.php(295): mysqli->query('SELECT `role_id...', 0)
+#1 D:\wamp64\www\attendance_upgrade\system\Database\BaseConnection.php(691): CodeIgniter\Database\MySQLi\Connection->execute('SELECT `role_id...')
+#2 D:\wamp64\www\attendance_upgrade\system\Database\BaseConnection.php(605): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT `role_id...')
+#3 D:\wamp64\www\attendance_upgrade\system\Database\BaseBuilder.php(1616): CodeIgniter\Database\BaseConnection->query('SELECT `role_id...', Array, false)
+#4 D:\wamp64\www\attendance_upgrade\app\Controllers\Home.php(415): CodeIgniter\Database\BaseBuilder->get()
+#5 D:\wamp64\www\attendance_upgrade\system\CodeIgniter.php(934): App\Controllers\Home->fetch_role_list()
+#6 D:\wamp64\www\attendance_upgrade\system\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+#7 D:\wamp64\www\attendance_upgrade\system\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#8 D:\wamp64\www\attendance_upgrade\index.php(67): CodeIgniter\CodeIgniter->run()
+#9 {main}
+CRITICAL - 2023-03-06 05:24:34 --> Unknown column 'role_name' in 'field list'
+in SYSTEMPATH\Database\BaseConnection.php on line 645.
+ 1 SYSTEMPATH\Database\BaseBuilder.php(1616): CodeIgniter\Database\BaseConnection->query('SELECT `role_id`, `role_name`
+FROM `roles` as `r`
+WHERE `status` = :status:', [...], false)
+ 2 APPPATH\Controllers\Home.php(415): CodeIgniter\Database\BaseBuilder->get()
+ 3 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\Home->fetch_role_list()
+ 4 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+ 5 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 6 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+INFO - 2023-03-06 05:24:36 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+ERROR - 2023-03-06 05:24:36 --> mysqli_sql_exception: Table 'attendance_upgrade.menu_details' doesn't exist in D:\wamp64\www\attendance_upgrade\system\Database\MySQLi\Connection.php:295
+Stack trace:
+#0 D:\wamp64\www\attendance_upgrade\system\Database\MySQLi\Connection.php(295): mysqli->query('SELECT `menu_id...', 0)
+#1 D:\wamp64\www\attendance_upgrade\system\Database\BaseConnection.php(691): CodeIgniter\Database\MySQLi\Connection->execute('SELECT `menu_id...')
+#2 D:\wamp64\www\attendance_upgrade\system\Database\BaseConnection.php(605): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT `menu_id...')
+#3 D:\wamp64\www\attendance_upgrade\system\Database\BaseBuilder.php(1616): CodeIgniter\Database\BaseConnection->query('SELECT `menu_id...', Array, false)
+#4 D:\wamp64\www\attendance_upgrade\system\Model.php(840): CodeIgniter\Database\BaseBuilder->get()
+#5 D:\wamp64\www\attendance_upgrade\app\Controllers\Home.php(140): CodeIgniter\Model->__call('get', Array)
+#6 D:\wamp64\www\attendance_upgrade\system\CodeIgniter.php(934): App\Controllers\Home->fetch_menu_details()
+#7 D:\wamp64\www\attendance_upgrade\system\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+#8 D:\wamp64\www\attendance_upgrade\system\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#9 D:\wamp64\www\attendance_upgrade\index.php(67): CodeIgniter\CodeIgniter->run()
+#10 {main}
+CRITICAL - 2023-03-06 05:24:36 --> Table 'attendance_upgrade.menu_details' doesn't exist
+in SYSTEMPATH\Database\BaseConnection.php on line 645.
+ 1 SYSTEMPATH\Database\BaseBuilder.php(1616): CodeIgniter\Database\BaseConnection->query('SELECT `menu_id`, `menu_name`, `icon`, `url`, `status`
+FROM `menu_details`
+ LIMIT 10', [], false)
+ 2 SYSTEMPATH\Model.php(840): CodeIgniter\Database\BaseBuilder->get()
+ 3 APPPATH\Controllers\Home.php(140): CodeIgniter\Model->__call('get', [])
+ 4 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\Home->fetch_menu_details()
+ 5 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+ 6 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+INFO - 2023-03-06 05:24:38 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+ERROR - 2023-03-06 05:24:38 --> mysqli_sql_exception: Unknown column 'role_name' in 'field list' in D:\wamp64\www\attendance_upgrade\system\Database\MySQLi\Connection.php:295
+Stack trace:
+#0 D:\wamp64\www\attendance_upgrade\system\Database\MySQLi\Connection.php(295): mysqli->query('SELECT `role_id...', 0)
+#1 D:\wamp64\www\attendance_upgrade\system\Database\BaseConnection.php(691): CodeIgniter\Database\MySQLi\Connection->execute('SELECT `role_id...')
+#2 D:\wamp64\www\attendance_upgrade\system\Database\BaseConnection.php(605): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT `role_id...')
+#3 D:\wamp64\www\attendance_upgrade\system\Database\BaseBuilder.php(1616): CodeIgniter\Database\BaseConnection->query('SELECT `role_id...', Array, false)
+#4 D:\wamp64\www\attendance_upgrade\system\Model.php(840): CodeIgniter\Database\BaseBuilder->get()
+#5 D:\wamp64\www\attendance_upgrade\app\Controllers\Home.php(81): CodeIgniter\Model->__call('get', Array)
+#6 D:\wamp64\www\attendance_upgrade\system\CodeIgniter.php(934): App\Controllers\Home->fetch_role_details()
+#7 D:\wamp64\www\attendance_upgrade\system\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+#8 D:\wamp64\www\attendance_upgrade\system\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#9 D:\wamp64\www\attendance_upgrade\index.php(67): CodeIgniter\CodeIgniter->run()
+#10 {main}
+CRITICAL - 2023-03-06 05:24:38 --> Unknown column 'role_name' in 'field list'
+in SYSTEMPATH\Database\BaseConnection.php on line 645.
+ 1 SYSTEMPATH\Database\BaseBuilder.php(1616): CodeIgniter\Database\BaseConnection->query('SELECT `role_id`, `role_name`, `status`
+FROM `roles`
+ LIMIT 10', [], false)
+ 2 SYSTEMPATH\Model.php(840): CodeIgniter\Database\BaseBuilder->get()
+ 3 APPPATH\Controllers\Home.php(81): CodeIgniter\Model->__call('get', [])
+ 4 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\Home->fetch_role_details()
+ 5 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+ 6 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+INFO - 2023-03-06 05:30:13 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2023-03-06 05:30:13 --> Use of undefined constant MENU_PREFERENCE - assumed 'MENU_PREFERENCE' (this will throw an Error in a future version of PHP)
+in APPPATH\Controllers\Home.php on line 20.
+ 1 APPPATH\Controllers\Home.php(20): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Use of undefined constant MENU_PREFERENCE - assumed \'MENU_PREFERENCE\' (this will throw an Error in a future version of PHP)', 'APPPATH\\Controllers\\Home.php', 20, [])
+ 2 SYSTEMPATH\CodeIgniter.php(906): App\Controllers\Home->__construct()
+ 3 SYSTEMPATH\CodeIgniter.php(490): CodeIgniter\CodeIgniter->createController()
+ 4 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+INFO - 2023-03-06 05:30:15 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2023-03-06 05:30:15 --> Use of undefined constant MENU_PREFERENCE - assumed 'MENU_PREFERENCE' (this will throw an Error in a future version of PHP)
+in APPPATH\Controllers\Home.php on line 20.
+ 1 APPPATH\Controllers\Home.php(20): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Use of undefined constant MENU_PREFERENCE - assumed \'MENU_PREFERENCE\' (this will throw an Error in a future version of PHP)', 'APPPATH\\Controllers\\Home.php', 20, [])
+ 2 SYSTEMPATH\CodeIgniter.php(906): App\Controllers\Home->__construct()
+ 3 SYSTEMPATH\CodeIgniter.php(490): CodeIgniter\CodeIgniter->createController()
+ 4 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+INFO - 2023-03-06 05:35:16 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2023-03-06 05:35:16 --> Use of undefined constant MENU_PREFERENCE - assumed 'MENU_PREFERENCE' (this will throw an Error in a future version of PHP)
+in APPPATH\Controllers\Home.php on line 20.
+ 1 APPPATH\Controllers\Home.php(20): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Use of undefined constant MENU_PREFERENCE - assumed \'MENU_PREFERENCE\' (this will throw an Error in a future version of PHP)', 'APPPATH\\Controllers\\Home.php', 20, [])
+ 2 SYSTEMPATH\CodeIgniter.php(906): App\Controllers\Home->__construct()
+ 3 SYSTEMPATH\CodeIgniter.php(490): CodeIgniter\CodeIgniter->createController()
+ 4 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+INFO - 2023-03-06 05:35:18 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2023-03-06 05:35:18 --> Use of undefined constant MENU_PREFERENCE - assumed 'MENU_PREFERENCE' (this will throw an Error in a future version of PHP)
+in APPPATH\Controllers\Home.php on line 20.
+ 1 APPPATH\Controllers\Home.php(20): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Use of undefined constant MENU_PREFERENCE - assumed \'MENU_PREFERENCE\' (this will throw an Error in a future version of PHP)', 'APPPATH\\Controllers\\Home.php', 20, [])
+ 2 SYSTEMPATH\CodeIgniter.php(906): App\Controllers\Home->__construct()
+ 3 SYSTEMPATH\CodeIgniter.php(490): CodeIgniter\CodeIgniter->createController()
+ 4 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+INFO - 2023-03-06 05:37:20 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2023-03-06 05:37:20 --> Use of undefined constant MENU_PREFERENCE - assumed 'MENU_PREFERENCE' (this will throw an Error in a future version of PHP)
+in APPPATH\Controllers\Home.php on line 20.
+ 1 APPPATH\Controllers\Home.php(20): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Use of undefined constant MENU_PREFERENCE - assumed \'MENU_PREFERENCE\' (this will throw an Error in a future version of PHP)', 'APPPATH\\Controllers\\Home.php', 20, [])
+ 2 SYSTEMPATH\CodeIgniter.php(906): App\Controllers\Home->__construct()
+ 3 SYSTEMPATH\CodeIgniter.php(490): CodeIgniter\CodeIgniter->createController()
+ 4 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+INFO - 2023-03-06 05:38:34 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-03-06 05:38:37 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-03-06 05:38:44 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-03-06 05:38:45 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-03-06 05:38:49 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-03-06 05:38:52 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-03-06 05:38:54 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-03-06 05:38:55 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-03-06 05:38:56 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-03-06 05:39:29 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-03-06 05:39:31 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-03-06 05:39:37 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-03-06 05:39:40 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-03-06 05:39:47 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-03-06 05:42:50 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-03-06 05:42:50 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-03-06 05:42:55 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-03-06 05:42:59 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-03-06 05:43:05 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-03-06 05:44:31 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-03-06 05:52:27 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+ERROR - 2023-03-06 05:52:27 --> mysqli_sql_exception: Unknown column 'r.role' in 'field list' in D:\wamp64\www\attendance_upgrade\system\Database\MySQLi\Connection.php:295
+Stack trace:
+#0 D:\wamp64\www\attendance_upgrade\system\Database\MySQLi\Connection.php(295): mysqli->query('SELECT `u`.`use...', 0)
+#1 D:\wamp64\www\attendance_upgrade\system\Database\BaseConnection.php(691): CodeIgniter\Database\MySQLi\Connection->execute('SELECT `u`.`use...')
+#2 D:\wamp64\www\attendance_upgrade\system\Database\BaseConnection.php(605): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT `u`.`use...')
+#3 D:\wamp64\www\attendance_upgrade\system\Database\BaseBuilder.php(1616): CodeIgniter\Database\BaseConnection->query('SELECT `u`.`use...', Array, false)
+#4 D:\wamp64\www\attendance_upgrade\app\Controllers\Login.php(40): CodeIgniter\Database\BaseBuilder->get()
+#5 D:\wamp64\www\attendance_upgrade\system\CodeIgniter.php(934): App\Controllers\Login->index()
+#6 D:\wamp64\www\attendance_upgrade\system\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Login))
+#7 D:\wamp64\www\attendance_upgrade\system\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#8 D:\wamp64\www\attendance_upgrade\index.php(67): CodeIgniter\CodeIgniter->run()
+#9 {main}
+CRITICAL - 2023-03-06 05:52:27 --> Unknown column 'r.role' in 'field list'
+in SYSTEMPATH\Database\BaseConnection.php on line 645.
+ 1 SYSTEMPATH\Database\BaseBuilder.php(1616): CodeIgniter\Database\BaseConnection->query('SELECT `u`.`user_id`, `u`.`user_type_id`, `u`.`college_id`, `u`.`username`, `u`.`password`, `u`.`user_type`, `u`.`last_update`, `u`.`password_vaildation`, `u`.`menu_preference`, `s`.`department_id`, `d`.`department_name`, `r`.`role`
+FROM `users` as `u`
+LEFT JOIN `staff_details` as `s` ON `s`.`staff_id` = `u`.`user_type_id`
+LEFT JOIN `department` as `d` ON `d`.`department_id` = `s`.`department_id`
+LEFT JOIN `roles` as `r` ON `r`.`role_id` = `s`.`role_id`
+WHERE `u`.`status` = :u.status:
+AND `u`.`username` = :u.username:', [...], false)
+ 2 APPPATH\Controllers\Login.php(40): CodeIgniter\Database\BaseBuilder->get()
+ 3 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\Login->index()
+ 4 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Login))
+ 5 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 6 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+INFO - 2023-03-06 05:52:31 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-03-06 05:52:35 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+ERROR - 2023-03-06 05:52:35 --> mysqli_sql_exception: Unknown column 'r.role' in 'field list' in D:\wamp64\www\attendance_upgrade\system\Database\MySQLi\Connection.php:295
+Stack trace:
+#0 D:\wamp64\www\attendance_upgrade\system\Database\MySQLi\Connection.php(295): mysqli->query('SELECT `u`.`use...', 0)
+#1 D:\wamp64\www\attendance_upgrade\system\Database\BaseConnection.php(691): CodeIgniter\Database\MySQLi\Connection->execute('SELECT `u`.`use...')
+#2 D:\wamp64\www\attendance_upgrade\system\Database\BaseConnection.php(605): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT `u`.`use...')
+#3 D:\wamp64\www\attendance_upgrade\system\Database\BaseBuilder.php(1616): CodeIgniter\Database\BaseConnection->query('SELECT `u`.`use...', Array, false)
+#4 D:\wamp64\www\attendance_upgrade\app\Controllers\Login.php(40): CodeIgniter\Database\BaseBuilder->get()
+#5 D:\wamp64\www\attendance_upgrade\system\CodeIgniter.php(934): App\Controllers\Login->index()
+#6 D:\wamp64\www\attendance_upgrade\system\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Login))
+#7 D:\wamp64\www\attendance_upgrade\system\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#8 D:\wamp64\www\attendance_upgrade\index.php(67): CodeIgniter\CodeIgniter->run()
+#9 {main}
+CRITICAL - 2023-03-06 05:52:35 --> Unknown column 'r.role' in 'field list'
+in SYSTEMPATH\Database\BaseConnection.php on line 645.
+ 1 SYSTEMPATH\Database\BaseBuilder.php(1616): CodeIgniter\Database\BaseConnection->query('SELECT `u`.`user_id`, `u`.`user_type_id`, `u`.`college_id`, `u`.`username`, `u`.`password`, `u`.`user_type`, `u`.`last_update`, `u`.`password_vaildation`, `u`.`menu_preference`, `s`.`department_id`, `d`.`department_name`, `r`.`role`
+FROM `users` as `u`
+LEFT JOIN `staff_details` as `s` ON `s`.`staff_id` = `u`.`user_type_id`
+LEFT JOIN `department` as `d` ON `d`.`department_id` = `s`.`department_id`
+LEFT JOIN `roles` as `r` ON `r`.`role_id` = `s`.`role_id`
+WHERE `u`.`status` = :u.status:
+AND `u`.`username` = :u.username:', [...], false)
+ 2 APPPATH\Controllers\Login.php(40): CodeIgniter\Database\BaseBuilder->get()
+ 3 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\Login->index()
+ 4 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Login))
+ 5 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 6 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+INFO - 2023-03-06 05:52:43 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+ERROR - 2023-03-06 05:52:43 --> mysqli_sql_exception: Unknown column 'r.role' in 'field list' in D:\wamp64\www\attendance_upgrade\system\Database\MySQLi\Connection.php:295
+Stack trace:
+#0 D:\wamp64\www\attendance_upgrade\system\Database\MySQLi\Connection.php(295): mysqli->query('SELECT `u`.`use...', 0)
+#1 D:\wamp64\www\attendance_upgrade\system\Database\BaseConnection.php(691): CodeIgniter\Database\MySQLi\Connection->execute('SELECT `u`.`use...')
+#2 D:\wamp64\www\attendance_upgrade\system\Database\BaseConnection.php(605): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT `u`.`use...')
+#3 D:\wamp64\www\attendance_upgrade\system\Database\BaseBuilder.php(1616): CodeIgniter\Database\BaseConnection->query('SELECT `u`.`use...', Array, false)
+#4 D:\wamp64\www\attendance_upgrade\app\Controllers\Login.php(40): CodeIgniter\Database\BaseBuilder->get()
+#5 D:\wamp64\www\attendance_upgrade\system\CodeIgniter.php(934): App\Controllers\Login->index()
+#6 D:\wamp64\www\attendance_upgrade\system\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Login))
+#7 D:\wamp64\www\attendance_upgrade\system\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#8 D:\wamp64\www\attendance_upgrade\index.php(67): CodeIgniter\CodeIgniter->run()
+#9 {main}
+CRITICAL - 2023-03-06 05:52:43 --> Unknown column 'r.role' in 'field list'
+in SYSTEMPATH\Database\BaseConnection.php on line 645.
+ 1 SYSTEMPATH\Database\BaseBuilder.php(1616): CodeIgniter\Database\BaseConnection->query('SELECT `u`.`user_id`, `u`.`user_type_id`, `u`.`college_id`, `u`.`username`, `u`.`password`, `u`.`user_type`, `u`.`last_update`, `u`.`password_vaildation`, `u`.`menu_preference`, `s`.`department_id`, `d`.`department_name`, `r`.`role`
+FROM `users` as `u`
+LEFT JOIN `staff_details` as `s` ON `s`.`staff_id` = `u`.`user_type_id`
+LEFT JOIN `department` as `d` ON `d`.`department_id` = `s`.`department_id`
+LEFT JOIN `roles` as `r` ON `r`.`role_id` = `s`.`role_id`
+WHERE `u`.`status` = :u.status:
+AND `u`.`username` = :u.username:', [...], false)
+ 2 APPPATH\Controllers\Login.php(40): CodeIgniter\Database\BaseBuilder->get()
+ 3 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\Login->index()
+ 4 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Login))
+ 5 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 6 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+INFO - 2023-03-06 05:53:41 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-03-06 05:53:44 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-03-06 05:53:44 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-03-06 05:55:35 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-03-06 05:55:39 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-03-06 06:04:47 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-03-06 06:04:49 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+ERROR - 2023-03-06 06:04:49 --> mysqli_sql_exception: Not unique table/alias: 'r' in D:\wamp64\www\attendance_upgrade\system\Database\MySQLi\Connection.php:295
+Stack trace:
+#0 D:\wamp64\www\attendance_upgrade\system\Database\MySQLi\Connection.php(295): mysqli->query('SELECT `r`.`rol...', 0)
+#1 D:\wamp64\www\attendance_upgrade\system\Database\BaseConnection.php(691): CodeIgniter\Database\MySQLi\Connection->execute('SELECT `r`.`rol...')
+#2 D:\wamp64\www\attendance_upgrade\system\Database\BaseConnection.php(605): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT `r`.`rol...')
+#3 D:\wamp64\www\attendance_upgrade\system\Database\BaseBuilder.php(1616): CodeIgniter\Database\BaseConnection->query('SELECT `r`.`rol...', Array, false)
+#4 D:\wamp64\www\attendance_upgrade\app\Controllers\Home.php(83): CodeIgniter\Database\BaseBuilder->get()
+#5 D:\wamp64\www\attendance_upgrade\system\CodeIgniter.php(934): App\Controllers\Home->fetch_role_details()
+#6 D:\wamp64\www\attendance_upgrade\system\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+#7 D:\wamp64\www\attendance_upgrade\system\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#8 D:\wamp64\www\attendance_upgrade\index.php(67): CodeIgniter\CodeIgniter->run()
+#9 {main}
+CRITICAL - 2023-03-06 06:04:49 --> Not unique table/alias: 'r'
+in SYSTEMPATH\Database\BaseConnection.php on line 645.
+ 1 SYSTEMPATH\Database\BaseBuilder.php(1616): CodeIgniter\Database\BaseConnection->query('SELECT `r`.`role_id`, `r`.`college_id`, `r`.`role_name`, `r`.`status`, `c`.`college_short_name` as `college`
+FROM `roles` as `r`
+LEFT JOIN `roles` as `r` ON `c`.`college_id` = `r`.`college_id`
+ LIMIT 10', [], false)
+ 2 APPPATH\Controllers\Home.php(83): CodeIgniter\Database\BaseBuilder->get()
+ 3 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\Home->fetch_role_details()
+ 4 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+ 5 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 6 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+INFO - 2023-03-06 06:05:56 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-03-06 06:05:58 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+ERROR - 2023-03-06 06:05:58 --> mysqli_sql_exception: Not unique table/alias: 'r' in D:\wamp64\www\attendance_upgrade\system\Database\MySQLi\Connection.php:295
+Stack trace:
+#0 D:\wamp64\www\attendance_upgrade\system\Database\MySQLi\Connection.php(295): mysqli->query('SELECT `r`.`rol...', 0)
+#1 D:\wamp64\www\attendance_upgrade\system\Database\BaseConnection.php(691): CodeIgniter\Database\MySQLi\Connection->execute('SELECT `r`.`rol...')
+#2 D:\wamp64\www\attendance_upgrade\system\Database\BaseConnection.php(605): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT `r`.`rol...')
+#3 D:\wamp64\www\attendance_upgrade\system\Database\BaseBuilder.php(1616): CodeIgniter\Database\BaseConnection->query('SELECT `r`.`rol...', Array, false)
+#4 D:\wamp64\www\attendance_upgrade\app\Controllers\Home.php(85): CodeIgniter\Database\BaseBuilder->get()
+#5 D:\wamp64\www\attendance_upgrade\system\CodeIgniter.php(934): App\Controllers\Home->fetch_role_details()
+#6 D:\wamp64\www\attendance_upgrade\system\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+#7 D:\wamp64\www\attendance_upgrade\system\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#8 D:\wamp64\www\attendance_upgrade\index.php(67): CodeIgniter\CodeIgniter->run()
+#9 {main}
+CRITICAL - 2023-03-06 06:05:58 --> Not unique table/alias: 'r'
+in SYSTEMPATH\Database\BaseConnection.php on line 645.
+ 1 SYSTEMPATH\Database\BaseBuilder.php(1616): CodeIgniter\Database\BaseConnection->query('SELECT `r`.`role_id`, `r`.`college_id`, `r`.`role_name`, `r`.`status`, `c`.`college_short_name` as `college`
+FROM `roles` as `r`
+LEFT JOIN `college_details` as `r` ON `c`.`college_id` = `r`.`college_id`
+ LIMIT 10', [], false)
+ 2 APPPATH\Controllers\Home.php(85): CodeIgniter\Database\BaseBuilder->get()
+ 3 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\Home->fetch_role_details()
+ 4 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+ 5 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 6 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+INFO - 2023-03-06 06:06:39 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-03-06 06:08:16 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+ERROR - 2023-03-06 06:08:17 --> mysqli_sql_exception: Not unique table/alias: 'r' in D:\wamp64\www\attendance_upgrade\system\Database\MySQLi\Connection.php:295
+Stack trace:
+#0 D:\wamp64\www\attendance_upgrade\system\Database\MySQLi\Connection.php(295): mysqli->query('SELECT `r`.`rol...', 0)
+#1 D:\wamp64\www\attendance_upgrade\system\Database\BaseConnection.php(691): CodeIgniter\Database\MySQLi\Connection->execute('SELECT `r`.`rol...')
+#2 D:\wamp64\www\attendance_upgrade\system\Database\BaseConnection.php(605): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT `r`.`rol...')
+#3 D:\wamp64\www\attendance_upgrade\system\Database\BaseBuilder.php(1616): CodeIgniter\Database\BaseConnection->query('SELECT `r`.`rol...', Array, false)
+#4 D:\wamp64\www\attendance_upgrade\app\Controllers\Home.php(85): CodeIgniter\Database\BaseBuilder->get()
+#5 D:\wamp64\www\attendance_upgrade\system\CodeIgniter.php(934): App\Controllers\Home->fetch_role_details()
+#6 D:\wamp64\www\attendance_upgrade\system\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+#7 D:\wamp64\www\attendance_upgrade\system\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#8 D:\wamp64\www\attendance_upgrade\index.php(67): CodeIgniter\CodeIgniter->run()
+#9 {main}
+CRITICAL - 2023-03-06 06:08:17 --> Not unique table/alias: 'r'
+in SYSTEMPATH\Database\BaseConnection.php on line 645.
+ 1 SYSTEMPATH\Database\BaseBuilder.php(1616): CodeIgniter\Database\BaseConnection->query('SELECT `r`.`role_id`, `r`.`college_id`, `r`.`role_name`, `r`.`status`, `c`.`college_short_name` as `college`
+FROM `roles` as `r`
+LEFT JOIN `college_details` as `r` ON `c`.`college_id` = `r`.`college_id`
+ LIMIT 10', [], false)
+ 2 APPPATH\Controllers\Home.php(85): CodeIgniter\Database\BaseBuilder->get()
+ 3 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\Home->fetch_role_details()
+ 4 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+ 5 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 6 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+INFO - 2023-03-06 06:11:50 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-03-06 06:11:52 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+ERROR - 2023-03-06 06:11:52 --> mysqli_sql_exception: Not unique table/alias: 'r' in D:\wamp64\www\attendance_upgrade\system\Database\MySQLi\Connection.php:295
+Stack trace:
+#0 D:\wamp64\www\attendance_upgrade\system\Database\MySQLi\Connection.php(295): mysqli->query('SELECT `r`.`rol...', 0)
+#1 D:\wamp64\www\attendance_upgrade\system\Database\BaseConnection.php(691): CodeIgniter\Database\MySQLi\Connection->execute('SELECT `r`.`rol...')
+#2 D:\wamp64\www\attendance_upgrade\system\Database\BaseConnection.php(605): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT `r`.`rol...')
+#3 D:\wamp64\www\attendance_upgrade\system\Database\BaseBuilder.php(1616): CodeIgniter\Database\BaseConnection->query('SELECT `r`.`rol...', Array, false)
+#4 D:\wamp64\www\attendance_upgrade\app\Controllers\Home.php(85): CodeIgniter\Database\BaseBuilder->get()
+#5 D:\wamp64\www\attendance_upgrade\system\CodeIgniter.php(934): App\Controllers\Home->fetch_role_details()
+#6 D:\wamp64\www\attendance_upgrade\system\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+#7 D:\wamp64\www\attendance_upgrade\system\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#8 D:\wamp64\www\attendance_upgrade\index.php(67): CodeIgniter\CodeIgniter->run()
+#9 {main}
+CRITICAL - 2023-03-06 06:11:52 --> Not unique table/alias: 'r'
+in SYSTEMPATH\Database\BaseConnection.php on line 645.
+ 1 SYSTEMPATH\Database\BaseBuilder.php(1616): CodeIgniter\Database\BaseConnection->query('SELECT `r`.`role_id`, `r`.`college_id`, `r`.`role_name`, `r`.`status`, `c`.`college_short_name` as `college`
+FROM `roles` as `r`
+LEFT JOIN `college_details` as `r` ON `c`.`college_id` = `r`.`college_id`
+ LIMIT 10', [], false)
+ 2 APPPATH\Controllers\Home.php(85): CodeIgniter\Database\BaseBuilder->get()
+ 3 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\Home->fetch_role_details()
+ 4 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+ 5 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 6 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+INFO - 2023-03-06 06:12:38 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-03-06 06:12:40 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-03-06 06:12:52 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-03-06 06:12:53 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-03-06 06:12:54 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-03-06 06:12:58 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-03-06 06:13:13 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-03-06 06:14:24 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-03-06 06:14:27 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-03-06 06:14:30 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-03-06 06:14:34 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-03-06 06:14:36 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-03-06 06:15:44 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-03-06 06:15:46 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-03-06 06:15:48 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-03-06 06:15:51 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-03-06 06:15:54 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-03-06 06:16:00 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-03-06 06:16:06 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-03-06 06:16:14 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-03-06 06:16:19 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-03-06 06:17:18 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+ERROR - 2023-03-06 06:17:18 --> mysqli_sql_exception: Table 'attendance_upgrade.menu_details' doesn't exist in D:\wamp64\www\attendance_upgrade\system\Database\MySQLi\Connection.php:295
+Stack trace:
+#0 D:\wamp64\www\attendance_upgrade\system\Database\MySQLi\Connection.php(295): mysqli->query('SELECT `menu_id...', 0)
+#1 D:\wamp64\www\attendance_upgrade\system\Database\BaseConnection.php(691): CodeIgniter\Database\MySQLi\Connection->execute('SELECT `menu_id...')
+#2 D:\wamp64\www\attendance_upgrade\system\Database\BaseConnection.php(605): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT `menu_id...')
+#3 D:\wamp64\www\attendance_upgrade\system\Database\BaseBuilder.php(1616): CodeIgniter\Database\BaseConnection->query('SELECT `menu_id...', Array, false)
+#4 D:\wamp64\www\attendance_upgrade\system\Model.php(840): CodeIgniter\Database\BaseBuilder->get()
+#5 D:\wamp64\www\attendance_upgrade\app\Controllers\Home.php(146): CodeIgniter\Model->__call('get', Array)
+#6 D:\wamp64\www\attendance_upgrade\system\CodeIgniter.php(934): App\Controllers\Home->fetch_menu_details()
+#7 D:\wamp64\www\attendance_upgrade\system\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+#8 D:\wamp64\www\attendance_upgrade\system\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#9 D:\wamp64\www\attendance_upgrade\index.php(67): CodeIgniter\CodeIgniter->run()
+#10 {main}
+CRITICAL - 2023-03-06 06:17:18 --> Table 'attendance_upgrade.menu_details' doesn't exist
+in SYSTEMPATH\Database\BaseConnection.php on line 645.
+ 1 SYSTEMPATH\Database\BaseBuilder.php(1616): CodeIgniter\Database\BaseConnection->query('SELECT `menu_id`, `menu_name`, `icon`, `url`, `status`
+FROM `menu_details`
+ LIMIT 10', [], false)
+ 2 SYSTEMPATH\Model.php(840): CodeIgniter\Database\BaseBuilder->get()
+ 3 APPPATH\Controllers\Home.php(146): CodeIgniter\Model->__call('get', [])
+ 4 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\Home->fetch_menu_details()
+ 5 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+ 6 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+INFO - 2023-03-06 06:17:21 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-03-06 06:17:42 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-03-06 06:17:43 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-03-06 06:18:01 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-03-06 06:42:04 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-03-06 06:42:21 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-03-06 06:44:20 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-03-06 06:44:24 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-03-06 06:44:26 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-03-06 06:44:27 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-03-06 06:44:31 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-03-06 06:44:33 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-03-06 06:44:40 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+ERROR - 2023-03-06 06:44:40 --> mysqli_sql_exception: Table 'attendance_upgrade.menu_details' doesn't exist in D:\wamp64\www\attendance_upgrade\system\Database\MySQLi\Connection.php:295
+Stack trace:
+#0 D:\wamp64\www\attendance_upgrade\system\Database\MySQLi\Connection.php(295): mysqli->query('SELECT `menu_id...', 0)
+#1 D:\wamp64\www\attendance_upgrade\system\Database\BaseConnection.php(691): CodeIgniter\Database\MySQLi\Connection->execute('SELECT `menu_id...')
+#2 D:\wamp64\www\attendance_upgrade\system\Database\BaseConnection.php(605): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT `menu_id...')
+#3 D:\wamp64\www\attendance_upgrade\system\Database\BaseBuilder.php(1616): CodeIgniter\Database\BaseConnection->query('SELECT `menu_id...', Array, false)
+#4 D:\wamp64\www\attendance_upgrade\system\Model.php(840): CodeIgniter\Database\BaseBuilder->get()
+#5 D:\wamp64\www\attendance_upgrade\app\Controllers\Home.php(146): CodeIgniter\Model->__call('get', Array)
+#6 D:\wamp64\www\attendance_upgrade\system\CodeIgniter.php(934): App\Controllers\Home->fetch_menu_details()
+#7 D:\wamp64\www\attendance_upgrade\system\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+#8 D:\wamp64\www\attendance_upgrade\system\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#9 D:\wamp64\www\attendance_upgrade\index.php(67): CodeIgniter\CodeIgniter->run()
+#10 {main}
+CRITICAL - 2023-03-06 06:44:40 --> Table 'attendance_upgrade.menu_details' doesn't exist
+in SYSTEMPATH\Database\BaseConnection.php on line 645.
+ 1 SYSTEMPATH\Database\BaseBuilder.php(1616): CodeIgniter\Database\BaseConnection->query('SELECT `menu_id`, `menu_name`, `icon`, `url`, `status`
+FROM `menu_details`
+ LIMIT 10', [], false)
+ 2 SYSTEMPATH\Model.php(840): CodeIgniter\Database\BaseBuilder->get()
+ 3 APPPATH\Controllers\Home.php(146): CodeIgniter\Model->__call('get', [])
+ 4 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\Home->fetch_menu_details()
+ 5 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+ 6 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+INFO - 2023-03-06 07:00:28 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-03-06 07:00:34 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-03-06 07:00:34 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-03-06 07:00:35 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-03-06 07:00:36 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-03-06 07:00:36 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-03-06 07:10:26 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-03-06 07:10:28 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+ERROR - 2023-03-06 07:10:28 --> mysqli_sql_exception: Unknown column 'icon' in 'field list' in D:\wamp64\www\attendance_upgrade\system\Database\MySQLi\Connection.php:295
+Stack trace:
+#0 D:\wamp64\www\attendance_upgrade\system\Database\MySQLi\Connection.php(295): mysqli->query('SELECT `menu_id...', 0)
+#1 D:\wamp64\www\attendance_upgrade\system\Database\BaseConnection.php(691): CodeIgniter\Database\MySQLi\Connection->execute('SELECT `menu_id...')
+#2 D:\wamp64\www\attendance_upgrade\system\Database\BaseConnection.php(605): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT `menu_id...')
+#3 D:\wamp64\www\attendance_upgrade\system\Database\BaseBuilder.php(1616): CodeIgniter\Database\BaseConnection->query('SELECT `menu_id...', Array, false)
+#4 D:\wamp64\www\attendance_upgrade\system\Model.php(840): CodeIgniter\Database\BaseBuilder->get()
+#5 D:\wamp64\www\attendance_upgrade\app\Controllers\Home.php(146): CodeIgniter\Model->__call('get', Array)
+#6 D:\wamp64\www\attendance_upgrade\system\CodeIgniter.php(934): App\Controllers\Home->fetch_menu_details()
+#7 D:\wamp64\www\attendance_upgrade\system\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+#8 D:\wamp64\www\attendance_upgrade\system\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#9 D:\wamp64\www\attendance_upgrade\index.php(67): CodeIgniter\CodeIgniter->run()
+#10 {main}
+CRITICAL - 2023-03-06 07:10:28 --> Unknown column 'icon' in 'field list'
+in SYSTEMPATH\Database\BaseConnection.php on line 645.
+ 1 SYSTEMPATH\Database\BaseBuilder.php(1616): CodeIgniter\Database\BaseConnection->query('SELECT `menu_id`, `menu_name`, `icon`, `url`, `status`
+FROM `menu_details`
+ LIMIT 10', [], false)
+ 2 SYSTEMPATH\Model.php(840): CodeIgniter\Database\BaseBuilder->get()
+ 3 APPPATH\Controllers\Home.php(146): CodeIgniter\Model->__call('get', [])
+ 4 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\Home->fetch_menu_details()
+ 5 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+ 6 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+INFO - 2023-03-06 07:11:01 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-03-06 07:11:03 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-03-06 07:12:03 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-03-06 07:12:04 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-03-06 07:13:19 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-03-06 07:13:20 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-03-06 07:13:29 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-03-06 07:15:10 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-03-06 07:15:16 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-03-06 07:15:24 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-03-06 07:15:31 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-03-06 07:15:32 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-03-06 07:15:36 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-03-06 07:15:42 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-03-06 07:15:43 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-03-06 07:15:45 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-03-06 07:15:48 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-03-06 07:15:53 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+ERROR - 2023-03-06 07:15:53 --> mysqli_sql_exception: Table 'attendance_upgrade.menu_lists' doesn't exist in D:\wamp64\www\attendance_upgrade\system\Database\MySQLi\Connection.php:295
+Stack trace:
+#0 D:\wamp64\www\attendance_upgrade\system\Database\MySQLi\Connection.php(295): mysqli->query('SELECT `menu_li...', 0)
+#1 D:\wamp64\www\attendance_upgrade\system\Database\BaseConnection.php(691): CodeIgniter\Database\MySQLi\Connection->execute('SELECT `menu_li...')
+#2 D:\wamp64\www\attendance_upgrade\system\Database\BaseConnection.php(605): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT `menu_li...')
+#3 D:\wamp64\www\attendance_upgrade\system\Database\BaseBuilder.php(1616): CodeIgniter\Database\BaseConnection->query('SELECT `menu_li...', Array, false)
+#4 D:\wamp64\www\attendance_upgrade\system\Model.php(840): CodeIgniter\Database\BaseBuilder->get()
+#5 D:\wamp64\www\attendance_upgrade\app\Controllers\Home.php(309): CodeIgniter\Model->__call('get', Array)
+#6 D:\wamp64\www\attendance_upgrade\system\CodeIgniter.php(934): App\Controllers\Home->fetch_menu_list()
+#7 D:\wamp64\www\attendance_upgrade\system\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+#8 D:\wamp64\www\attendance_upgrade\system\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#9 D:\wamp64\www\attendance_upgrade\index.php(67): CodeIgniter\CodeIgniter->run()
+#10 {main}
+CRITICAL - 2023-03-06 07:15:53 --> Table 'attendance_upgrade.menu_lists' doesn't exist
+in SYSTEMPATH\Database\BaseConnection.php on line 645.
+ 1 SYSTEMPATH\Database\BaseBuilder.php(1616): CodeIgniter\Database\BaseConnection->query('SELECT `menu_list_id`, `child_name`, `url`, `status`
+FROM `menu_lists`
+WHERE `menu_id` = :menu_id:
+ LIMIT 10', [...], false)
+ 2 SYSTEMPATH\Model.php(840): CodeIgniter\Database\BaseBuilder->get()
+ 3 APPPATH\Controllers\Home.php(309): CodeIgniter\Model->__call('get', [])
+ 4 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\Home->fetch_menu_list()
+ 5 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+ 6 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+INFO - 2023-03-06 07:17:17 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-03-06 07:17:19 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-03-06 07:17:20 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-03-06 07:17:32 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-03-06 07:17:33 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-03-06 07:17:34 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-03-06 07:17:55 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-03-06 07:17:56 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-03-06 07:18:19 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-03-06 07:18:20 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-03-06 07:18:23 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+ERROR - 2023-03-06 07:18:23 --> mysqli_sql_exception: Table 'attendance_upgrade.menu_lists' doesn't exist in D:\wamp64\www\attendance_upgrade\system\Database\MySQLi\Connection.php:295
+Stack trace:
+#0 D:\wamp64\www\attendance_upgrade\system\Database\MySQLi\Connection.php(295): mysqli->query('SELECT `menu_li...', 0)
+#1 D:\wamp64\www\attendance_upgrade\system\Database\BaseConnection.php(691): CodeIgniter\Database\MySQLi\Connection->execute('SELECT `menu_li...')
+#2 D:\wamp64\www\attendance_upgrade\system\Database\BaseConnection.php(605): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT `menu_li...')
+#3 D:\wamp64\www\attendance_upgrade\system\Database\BaseBuilder.php(1616): CodeIgniter\Database\BaseConnection->query('SELECT `menu_li...', Array, false)
+#4 D:\wamp64\www\attendance_upgrade\system\Model.php(840): CodeIgniter\Database\BaseBuilder->get()
+#5 D:\wamp64\www\attendance_upgrade\app\Controllers\Home.php(309): CodeIgniter\Model->__call('get', Array)
+#6 D:\wamp64\www\attendance_upgrade\system\CodeIgniter.php(934): App\Controllers\Home->fetch_menu_list()
+#7 D:\wamp64\www\attendance_upgrade\system\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+#8 D:\wamp64\www\attendance_upgrade\system\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#9 D:\wamp64\www\attendance_upgrade\index.php(67): CodeIgniter\CodeIgniter->run()
+#10 {main}
+CRITICAL - 2023-03-06 07:18:23 --> Table 'attendance_upgrade.menu_lists' doesn't exist
+in SYSTEMPATH\Database\BaseConnection.php on line 645.
+ 1 SYSTEMPATH\Database\BaseBuilder.php(1616): CodeIgniter\Database\BaseConnection->query('SELECT `menu_list_id`, `child_name`, `url`, `status`
+FROM `menu_lists`
+WHERE `menu_id` = :menu_id:
+ LIMIT 10', [...], false)
+ 2 SYSTEMPATH\Model.php(840): CodeIgniter\Database\BaseBuilder->get()
+ 3 APPPATH\Controllers\Home.php(309): CodeIgniter\Model->__call('get', [])
+ 4 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\Home->fetch_menu_list()
+ 5 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+ 6 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+INFO - 2023-03-06 07:25:08 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+ERROR - 2023-03-06 07:25:08 --> mysqli_sql_exception: Unknown column 'icon' in 'field list' in D:\wamp64\www\attendance_upgrade\system\Database\MySQLi\Connection.php:295
+Stack trace:
+#0 D:\wamp64\www\attendance_upgrade\system\Database\MySQLi\Connection.php(295): mysqli->query('SELECT `menu_id...', 0)
+#1 D:\wamp64\www\attendance_upgrade\system\Database\BaseConnection.php(691): CodeIgniter\Database\MySQLi\Connection->execute('SELECT `menu_id...')
+#2 D:\wamp64\www\attendance_upgrade\system\Database\BaseConnection.php(605): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT `menu_id...')
+#3 D:\wamp64\www\attendance_upgrade\system\Database\BaseBuilder.php(1616): CodeIgniter\Database\BaseConnection->query('SELECT `menu_id...', Array, false)
+#4 D:\wamp64\www\attendance_upgrade\system\Model.php(840): CodeIgniter\Database\BaseBuilder->get()
+#5 D:\wamp64\www\attendance_upgrade\app\Controllers\Home.php(249): CodeIgniter\Model->__call('get', Array)
+#6 D:\wamp64\www\attendance_upgrade\system\CodeIgniter.php(934): App\Controllers\Home->update_menu()
+#7 D:\wamp64\www\attendance_upgrade\system\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+#8 D:\wamp64\www\attendance_upgrade\system\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#9 D:\wamp64\www\attendance_upgrade\index.php(67): CodeIgniter\CodeIgniter->run()
+#10 {main}
+CRITICAL - 2023-03-06 07:25:08 --> Unknown column 'icon' in 'field list'
+in SYSTEMPATH\Database\BaseConnection.php on line 645.
+ 1 SYSTEMPATH\Database\BaseBuilder.php(1616): CodeIgniter\Database\BaseConnection->query('SELECT `menu_id`, `menu_name`, `icon`, `url`
+FROM `menus`
+WHERE `menu_id` = :menu_id:', [...], false)
+ 2 SYSTEMPATH\Model.php(840): CodeIgniter\Database\BaseBuilder->get()
+ 3 APPPATH\Controllers\Home.php(249): CodeIgniter\Model->__call('get', [])
+ 4 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\Home->update_menu()
+ 5 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+ 6 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+INFO - 2023-03-06 07:25:10 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+ERROR - 2023-03-06 07:25:10 --> mysqli_sql_exception: Unknown column 'icon' in 'field list' in D:\wamp64\www\attendance_upgrade\system\Database\MySQLi\Connection.php:295
+Stack trace:
+#0 D:\wamp64\www\attendance_upgrade\system\Database\MySQLi\Connection.php(295): mysqli->query('SELECT `menu_id...', 0)
+#1 D:\wamp64\www\attendance_upgrade\system\Database\BaseConnection.php(691): CodeIgniter\Database\MySQLi\Connection->execute('SELECT `menu_id...')
+#2 D:\wamp64\www\attendance_upgrade\system\Database\BaseConnection.php(605): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT `menu_id...')
+#3 D:\wamp64\www\attendance_upgrade\system\Database\BaseBuilder.php(1616): CodeIgniter\Database\BaseConnection->query('SELECT `menu_id...', Array, false)
+#4 D:\wamp64\www\attendance_upgrade\system\Model.php(840): CodeIgniter\Database\BaseBuilder->get()
+#5 D:\wamp64\www\attendance_upgrade\app\Controllers\Home.php(249): CodeIgniter\Model->__call('get', Array)
+#6 D:\wamp64\www\attendance_upgrade\system\CodeIgniter.php(934): App\Controllers\Home->update_menu()
+#7 D:\wamp64\www\attendance_upgrade\system\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+#8 D:\wamp64\www\attendance_upgrade\system\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#9 D:\wamp64\www\attendance_upgrade\index.php(67): CodeIgniter\CodeIgniter->run()
+#10 {main}
+CRITICAL - 2023-03-06 07:25:10 --> Unknown column 'icon' in 'field list'
+in SYSTEMPATH\Database\BaseConnection.php on line 645.
+ 1 SYSTEMPATH\Database\BaseBuilder.php(1616): CodeIgniter\Database\BaseConnection->query('SELECT `menu_id`, `menu_name`, `icon`, `url`
+FROM `menus`
+WHERE `menu_id` = :menu_id:', [...], false)
+ 2 SYSTEMPATH\Model.php(840): CodeIgniter\Database\BaseBuilder->get()
+ 3 APPPATH\Controllers\Home.php(249): CodeIgniter\Model->__call('get', [])
+ 4 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\Home->update_menu()
+ 5 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+ 6 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+INFO - 2023-03-06 07:25:10 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+ERROR - 2023-03-06 07:25:10 --> mysqli_sql_exception: Unknown column 'icon' in 'field list' in D:\wamp64\www\attendance_upgrade\system\Database\MySQLi\Connection.php:295
+Stack trace:
+#0 D:\wamp64\www\attendance_upgrade\system\Database\MySQLi\Connection.php(295): mysqli->query('SELECT `menu_id...', 0)
+#1 D:\wamp64\www\attendance_upgrade\system\Database\BaseConnection.php(691): CodeIgniter\Database\MySQLi\Connection->execute('SELECT `menu_id...')
+#2 D:\wamp64\www\attendance_upgrade\system\Database\BaseConnection.php(605): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT `menu_id...')
+#3 D:\wamp64\www\attendance_upgrade\system\Database\BaseBuilder.php(1616): CodeIgniter\Database\BaseConnection->query('SELECT `menu_id...', Array, false)
+#4 D:\wamp64\www\attendance_upgrade\system\Model.php(840): CodeIgniter\Database\BaseBuilder->get()
+#5 D:\wamp64\www\attendance_upgrade\app\Controllers\Home.php(249): CodeIgniter\Model->__call('get', Array)
+#6 D:\wamp64\www\attendance_upgrade\system\CodeIgniter.php(934): App\Controllers\Home->update_menu()
+#7 D:\wamp64\www\attendance_upgrade\system\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+#8 D:\wamp64\www\attendance_upgrade\system\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#9 D:\wamp64\www\attendance_upgrade\index.php(67): CodeIgniter\CodeIgniter->run()
+#10 {main}
+CRITICAL - 2023-03-06 07:25:10 --> Unknown column 'icon' in 'field list'
+in SYSTEMPATH\Database\BaseConnection.php on line 645.
+ 1 SYSTEMPATH\Database\BaseBuilder.php(1616): CodeIgniter\Database\BaseConnection->query('SELECT `menu_id`, `menu_name`, `icon`, `url`
+FROM `menus`
+WHERE `menu_id` = :menu_id:', [...], false)
+ 2 SYSTEMPATH\Model.php(840): CodeIgniter\Database\BaseBuilder->get()
+ 3 APPPATH\Controllers\Home.php(249): CodeIgniter\Model->__call('get', [])
+ 4 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\Home->update_menu()
+ 5 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+ 6 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+INFO - 2023-03-06 07:25:10 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+ERROR - 2023-03-06 07:25:10 --> mysqli_sql_exception: Unknown column 'icon' in 'field list' in D:\wamp64\www\attendance_upgrade\system\Database\MySQLi\Connection.php:295
+Stack trace:
+#0 D:\wamp64\www\attendance_upgrade\system\Database\MySQLi\Connection.php(295): mysqli->query('SELECT `menu_id...', 0)
+#1 D:\wamp64\www\attendance_upgrade\system\Database\BaseConnection.php(691): CodeIgniter\Database\MySQLi\Connection->execute('SELECT `menu_id...')
+#2 D:\wamp64\www\attendance_upgrade\system\Database\BaseConnection.php(605): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT `menu_id...')
+#3 D:\wamp64\www\attendance_upgrade\system\Database\BaseBuilder.php(1616): CodeIgniter\Database\BaseConnection->query('SELECT `menu_id...', Array, false)
+#4 D:\wamp64\www\attendance_upgrade\system\Model.php(840): CodeIgniter\Database\BaseBuilder->get()
+#5 D:\wamp64\www\attendance_upgrade\app\Controllers\Home.php(249): CodeIgniter\Model->__call('get', Array)
+#6 D:\wamp64\www\attendance_upgrade\system\CodeIgniter.php(934): App\Controllers\Home->update_menu()
+#7 D:\wamp64\www\attendance_upgrade\system\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+#8 D:\wamp64\www\attendance_upgrade\system\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#9 D:\wamp64\www\attendance_upgrade\index.php(67): CodeIgniter\CodeIgniter->run()
+#10 {main}
+CRITICAL - 2023-03-06 07:25:10 --> Unknown column 'icon' in 'field list'
+in SYSTEMPATH\Database\BaseConnection.php on line 645.
+ 1 SYSTEMPATH\Database\BaseBuilder.php(1616): CodeIgniter\Database\BaseConnection->query('SELECT `menu_id`, `menu_name`, `icon`, `url`
+FROM `menus`
+WHERE `menu_id` = :menu_id:', [...], false)
+ 2 SYSTEMPATH\Model.php(840): CodeIgniter\Database\BaseBuilder->get()
+ 3 APPPATH\Controllers\Home.php(249): CodeIgniter\Model->__call('get', [])
+ 4 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\Home->update_menu()
+ 5 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+ 6 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+INFO - 2023-03-06 07:25:12 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+ERROR - 2023-03-06 07:25:12 --> mysqli_sql_exception: Unknown column 'child_name' in 'field list' in D:\wamp64\www\attendance_upgrade\system\Database\MySQLi\Connection.php:295
+Stack trace:
+#0 D:\wamp64\www\attendance_upgrade\system\Database\MySQLi\Connection.php(295): mysqli->query('SELECT `menu_li...', 0)
+#1 D:\wamp64\www\attendance_upgrade\system\Database\BaseConnection.php(691): CodeIgniter\Database\MySQLi\Connection->execute('SELECT `menu_li...')
+#2 D:\wamp64\www\attendance_upgrade\system\Database\BaseConnection.php(605): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT `menu_li...')
+#3 D:\wamp64\www\attendance_upgrade\system\Database\BaseBuilder.php(1616): CodeIgniter\Database\BaseConnection->query('SELECT `menu_li...', Array, false)
+#4 D:\wamp64\www\attendance_upgrade\system\Model.php(840): CodeIgniter\Database\BaseBuilder->get()
+#5 D:\wamp64\www\attendance_upgrade\app\Controllers\Home.php(309): CodeIgniter\Model->__call('get', Array)
+#6 D:\wamp64\www\attendance_upgrade\system\CodeIgniter.php(934): App\Controllers\Home->fetch_menu_list()
+#7 D:\wamp64\www\attendance_upgrade\system\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+#8 D:\wamp64\www\attendance_upgrade\system\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#9 D:\wamp64\www\attendance_upgrade\index.php(67): CodeIgniter\CodeIgniter->run()
+#10 {main}
+CRITICAL - 2023-03-06 07:25:12 --> Unknown column 'child_name' in 'field list'
+in SYSTEMPATH\Database\BaseConnection.php on line 645.
+ 1 SYSTEMPATH\Database\BaseBuilder.php(1616): CodeIgniter\Database\BaseConnection->query('SELECT `menu_list_id`, `menu_id`, `child_name`, `child_url`, `status`
+FROM `menu_lists`
+WHERE `menu_id` = :menu_id:
+ LIMIT 10', [...], false)
+ 2 SYSTEMPATH\Model.php(840): CodeIgniter\Database\BaseBuilder->get()
+ 3 APPPATH\Controllers\Home.php(309): CodeIgniter\Model->__call('get', [])
+ 4 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\Home->fetch_menu_list()
+ 5 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+ 6 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+INFO - 2023-03-06 07:25:22 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-03-06 07:25:24 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-03-06 07:25:25 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+ERROR - 2023-03-06 07:25:25 --> mysqli_sql_exception: Unknown column 'icon' in 'field list' in D:\wamp64\www\attendance_upgrade\system\Database\MySQLi\Connection.php:295
+Stack trace:
+#0 D:\wamp64\www\attendance_upgrade\system\Database\MySQLi\Connection.php(295): mysqli->query('SELECT `menu_id...', 0)
+#1 D:\wamp64\www\attendance_upgrade\system\Database\BaseConnection.php(691): CodeIgniter\Database\MySQLi\Connection->execute('SELECT `menu_id...')
+#2 D:\wamp64\www\attendance_upgrade\system\Database\BaseConnection.php(605): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT `menu_id...')
+#3 D:\wamp64\www\attendance_upgrade\system\Database\BaseBuilder.php(1616): CodeIgniter\Database\BaseConnection->query('SELECT `menu_id...', Array, false)
+#4 D:\wamp64\www\attendance_upgrade\system\Model.php(840): CodeIgniter\Database\BaseBuilder->get()
+#5 D:\wamp64\www\attendance_upgrade\app\Controllers\Home.php(249): CodeIgniter\Model->__call('get', Array)
+#6 D:\wamp64\www\attendance_upgrade\system\CodeIgniter.php(934): App\Controllers\Home->update_menu()
+#7 D:\wamp64\www\attendance_upgrade\system\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+#8 D:\wamp64\www\attendance_upgrade\system\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#9 D:\wamp64\www\attendance_upgrade\index.php(67): CodeIgniter\CodeIgniter->run()
+#10 {main}
+CRITICAL - 2023-03-06 07:25:25 --> Unknown column 'icon' in 'field list'
+in SYSTEMPATH\Database\BaseConnection.php on line 645.
+ 1 SYSTEMPATH\Database\BaseBuilder.php(1616): CodeIgniter\Database\BaseConnection->query('SELECT `menu_id`, `menu_name`, `icon`, `url`
+FROM `menus`
+WHERE `menu_id` = :menu_id:', [...], false)
+ 2 SYSTEMPATH\Model.php(840): CodeIgniter\Database\BaseBuilder->get()
+ 3 APPPATH\Controllers\Home.php(249): CodeIgniter\Model->__call('get', [])
+ 4 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\Home->update_menu()
+ 5 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+ 6 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+INFO - 2023-03-06 07:25:26 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+ERROR - 2023-03-06 07:25:26 --> mysqli_sql_exception: Unknown column 'child_name' in 'field list' in D:\wamp64\www\attendance_upgrade\system\Database\MySQLi\Connection.php:295
+Stack trace:
+#0 D:\wamp64\www\attendance_upgrade\system\Database\MySQLi\Connection.php(295): mysqli->query('SELECT `menu_li...', 0)
+#1 D:\wamp64\www\attendance_upgrade\system\Database\BaseConnection.php(691): CodeIgniter\Database\MySQLi\Connection->execute('SELECT `menu_li...')
+#2 D:\wamp64\www\attendance_upgrade\system\Database\BaseConnection.php(605): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT `menu_li...')
+#3 D:\wamp64\www\attendance_upgrade\system\Database\BaseBuilder.php(1616): CodeIgniter\Database\BaseConnection->query('SELECT `menu_li...', Array, false)
+#4 D:\wamp64\www\attendance_upgrade\system\Model.php(840): CodeIgniter\Database\BaseBuilder->get()
+#5 D:\wamp64\www\attendance_upgrade\app\Controllers\Home.php(309): CodeIgniter\Model->__call('get', Array)
+#6 D:\wamp64\www\attendance_upgrade\system\CodeIgniter.php(934): App\Controllers\Home->fetch_menu_list()
+#7 D:\wamp64\www\attendance_upgrade\system\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+#8 D:\wamp64\www\attendance_upgrade\system\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#9 D:\wamp64\www\attendance_upgrade\index.php(67): CodeIgniter\CodeIgniter->run()
+#10 {main}
+CRITICAL - 2023-03-06 07:25:26 --> Unknown column 'child_name' in 'field list'
+in SYSTEMPATH\Database\BaseConnection.php on line 645.
+ 1 SYSTEMPATH\Database\BaseBuilder.php(1616): CodeIgniter\Database\BaseConnection->query('SELECT `menu_list_id`, `menu_id`, `child_name`, `child_url`, `status`
+FROM `menu_lists`
+WHERE `menu_id` = :menu_id:
+ LIMIT 10', [...], false)
+ 2 SYSTEMPATH\Model.php(840): CodeIgniter\Database\BaseBuilder->get()
+ 3 APPPATH\Controllers\Home.php(309): CodeIgniter\Model->__call('get', [])
+ 4 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\Home->fetch_menu_list()
+ 5 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+ 6 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+INFO - 2023-03-06 07:27:53 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+ERROR - 2023-03-06 07:27:53 --> mysqli_sql_exception: Unknown column 'icon' in 'field list' in D:\wamp64\www\attendance_upgrade\system\Database\MySQLi\Connection.php:295
+Stack trace:
+#0 D:\wamp64\www\attendance_upgrade\system\Database\MySQLi\Connection.php(295): mysqli->query('SELECT `menu_id...', 0)
+#1 D:\wamp64\www\attendance_upgrade\system\Database\BaseConnection.php(691): CodeIgniter\Database\MySQLi\Connection->execute('SELECT `menu_id...')
+#2 D:\wamp64\www\attendance_upgrade\system\Database\BaseConnection.php(605): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT `menu_id...')
+#3 D:\wamp64\www\attendance_upgrade\system\Database\BaseBuilder.php(1616): CodeIgniter\Database\BaseConnection->query('SELECT `menu_id...', Array, false)
+#4 D:\wamp64\www\attendance_upgrade\system\Model.php(840): CodeIgniter\Database\BaseBuilder->get()
+#5 D:\wamp64\www\attendance_upgrade\app\Controllers\Home.php(249): CodeIgniter\Model->__call('get', Array)
+#6 D:\wamp64\www\attendance_upgrade\system\CodeIgniter.php(934): App\Controllers\Home->update_menu()
+#7 D:\wamp64\www\attendance_upgrade\system\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+#8 D:\wamp64\www\attendance_upgrade\system\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#9 D:\wamp64\www\attendance_upgrade\index.php(67): CodeIgniter\CodeIgniter->run()
+#10 {main}
+CRITICAL - 2023-03-06 07:27:53 --> Unknown column 'icon' in 'field list'
+in SYSTEMPATH\Database\BaseConnection.php on line 645.
+ 1 SYSTEMPATH\Database\BaseBuilder.php(1616): CodeIgniter\Database\BaseConnection->query('SELECT `menu_id`, `menu_name`, `icon`, `url`
+FROM `menus`
+WHERE `menu_id` = :menu_id:', [...], false)
+ 2 SYSTEMPATH\Model.php(840): CodeIgniter\Database\BaseBuilder->get()
+ 3 APPPATH\Controllers\Home.php(249): CodeIgniter\Model->__call('get', [])
+ 4 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\Home->update_menu()
+ 5 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+ 6 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+INFO - 2023-03-06 07:28:02 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+ERROR - 2023-03-06 07:28:02 --> mysqli_sql_exception: Unknown column 'icon' in 'field list' in D:\wamp64\www\attendance_upgrade\system\Database\MySQLi\Connection.php:295
+Stack trace:
+#0 D:\wamp64\www\attendance_upgrade\system\Database\MySQLi\Connection.php(295): mysqli->query('SELECT `menu_id...', 0)
+#1 D:\wamp64\www\attendance_upgrade\system\Database\BaseConnection.php(691): CodeIgniter\Database\MySQLi\Connection->execute('SELECT `menu_id...')
+#2 D:\wamp64\www\attendance_upgrade\system\Database\BaseConnection.php(605): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT `menu_id...')
+#3 D:\wamp64\www\attendance_upgrade\system\Database\BaseBuilder.php(1616): CodeIgniter\Database\BaseConnection->query('SELECT `menu_id...', Array, false)
+#4 D:\wamp64\www\attendance_upgrade\system\Model.php(840): CodeIgniter\Database\BaseBuilder->get()
+#5 D:\wamp64\www\attendance_upgrade\app\Controllers\Home.php(249): CodeIgniter\Model->__call('get', Array)
+#6 D:\wamp64\www\attendance_upgrade\system\CodeIgniter.php(934): App\Controllers\Home->update_menu()
+#7 D:\wamp64\www\attendance_upgrade\system\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+#8 D:\wamp64\www\attendance_upgrade\system\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#9 D:\wamp64\www\attendance_upgrade\index.php(67): CodeIgniter\CodeIgniter->run()
+#10 {main}
+CRITICAL - 2023-03-06 07:28:02 --> Unknown column 'icon' in 'field list'
+in SYSTEMPATH\Database\BaseConnection.php on line 645.
+ 1 SYSTEMPATH\Database\BaseBuilder.php(1616): CodeIgniter\Database\BaseConnection->query('SELECT `menu_id`, `menu_name`, `icon`, `url`
+FROM `menus`
+WHERE `menu_id` = :menu_id:', [...], false)
+ 2 SYSTEMPATH\Model.php(840): CodeIgniter\Database\BaseBuilder->get()
+ 3 APPPATH\Controllers\Home.php(249): CodeIgniter\Model->__call('get', [])
+ 4 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\Home->update_menu()
+ 5 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+ 6 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+INFO - 2023-03-06 07:29:51 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-03-06 07:30:18 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-03-06 07:30:19 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-03-06 07:32:07 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+ERROR - 2023-03-06 07:32:07 --> mysqli_sql_exception: Unknown column 'child_name' in 'field list' in D:\wamp64\www\attendance_upgrade\system\Database\MySQLi\Connection.php:295
+Stack trace:
+#0 D:\wamp64\www\attendance_upgrade\system\Database\MySQLi\Connection.php(295): mysqli->query('SELECT `menu_li...', 0)
+#1 D:\wamp64\www\attendance_upgrade\system\Database\BaseConnection.php(691): CodeIgniter\Database\MySQLi\Connection->execute('SELECT `menu_li...')
+#2 D:\wamp64\www\attendance_upgrade\system\Database\BaseConnection.php(605): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT `menu_li...')
+#3 D:\wamp64\www\attendance_upgrade\system\Database\BaseBuilder.php(1616): CodeIgniter\Database\BaseConnection->query('SELECT `menu_li...', Array, false)
+#4 D:\wamp64\www\attendance_upgrade\system\Model.php(840): CodeIgniter\Database\BaseBuilder->get()
+#5 D:\wamp64\www\attendance_upgrade\app\Controllers\Home.php(309): CodeIgniter\Model->__call('get', Array)
+#6 D:\wamp64\www\attendance_upgrade\system\CodeIgniter.php(934): App\Controllers\Home->fetch_menu_list()
+#7 D:\wamp64\www\attendance_upgrade\system\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+#8 D:\wamp64\www\attendance_upgrade\system\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#9 D:\wamp64\www\attendance_upgrade\index.php(67): CodeIgniter\CodeIgniter->run()
+#10 {main}
+CRITICAL - 2023-03-06 07:32:07 --> Unknown column 'child_name' in 'field list'
+in SYSTEMPATH\Database\BaseConnection.php on line 645.
+ 1 SYSTEMPATH\Database\BaseBuilder.php(1616): CodeIgniter\Database\BaseConnection->query('SELECT `menu_list_id`, `menu_id`, `child_name`, `child_url`, `status`
+FROM `menu_lists`
+WHERE `menu_id` = :menu_id:
+ LIMIT 10', [...], false)
+ 2 SYSTEMPATH\Model.php(840): CodeIgniter\Database\BaseBuilder->get()
+ 3 APPPATH\Controllers\Home.php(309): CodeIgniter\Model->__call('get', [])
+ 4 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\Home->fetch_menu_list()
+ 5 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+ 6 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+INFO - 2023-03-06 07:32:11 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-03-06 07:32:12 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-03-06 07:32:15 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-03-06 07:32:16 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-03-06 07:32:18 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-03-06 07:32:34 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-03-06 07:32:35 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-03-06 07:32:41 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-03-06 07:35:14 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-03-06 07:35:15 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-03-06 07:35:18 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-03-06 07:37:21 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-03-06 07:37:23 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-03-06 07:37:24 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-03-06 07:37:30 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-03-06 07:37:33 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-03-06 07:37:36 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-03-06 07:39:29 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-03-06 07:39:31 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-03-06 07:39:40 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-03-06 07:39:55 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-03-06 07:42:31 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-03-06 07:42:32 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-03-06 07:43:29 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-03-06 07:43:30 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-03-06 07:43:38 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-03-06 07:43:40 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-03-06 07:43:48 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-03-06 07:43:52 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+ERROR - 2023-03-06 07:43:52 --> mysqli_sql_exception: Unknown column 'p.role_id' in 'field list' in D:\wamp64\www\attendance_upgrade\system\Database\MySQLi\Connection.php:295
+Stack trace:
+#0 D:\wamp64\www\attendance_upgrade\system\Database\MySQLi\Connection.php(295): mysqli->query('SELECT `p`.`rol...', 0)
+#1 D:\wamp64\www\attendance_upgrade\system\Database\BaseConnection.php(691): CodeIgniter\Database\MySQLi\Connection->execute('SELECT `p`.`rol...')
+#2 D:\wamp64\www\attendance_upgrade\system\Database\BaseConnection.php(605): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT `p`.`rol...')
+#3 D:\wamp64\www\attendance_upgrade\system\Database\BaseBuilder.php(1616): CodeIgniter\Database\BaseConnection->query('SELECT `p`.`rol...', Array, false)
+#4 D:\wamp64\www\attendance_upgrade\app\Controllers\Home.php(451): CodeIgniter\Database\BaseBuilder->get()
+#5 D:\wamp64\www\attendance_upgrade\system\CodeIgniter.php(934): App\Controllers\Home->fetch_all_menu()
+#6 D:\wamp64\www\attendance_upgrade\system\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+#7 D:\wamp64\www\attendance_upgrade\system\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#8 D:\wamp64\www\attendance_upgrade\index.php(67): CodeIgniter\CodeIgniter->run()
+#9 {main}
+CRITICAL - 2023-03-06 07:43:52 --> Unknown column 'p.role_id' in 'field list'
+in SYSTEMPATH\Database\BaseConnection.php on line 645.
+ 1 SYSTEMPATH\Database\BaseBuilder.php(1616): CodeIgniter\Database\BaseConnection->query('SELECT `p`.`role_id`, `p`.`menu_access`
+FROM `menu_preferences` as `p`
+WHERE `p`.`status` = :p.status:
+AND `p`.`role_id` = :p.role_id:', [...], false)
+ 2 APPPATH\Controllers\Home.php(451): CodeIgniter\Database\BaseBuilder->get()
+ 3 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\Home->fetch_all_menu()
+ 4 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+ 5 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 6 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+INFO - 2023-03-06 07:43:57 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-03-06 07:44:08 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-03-06 07:44:08 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-03-06 07:44:08 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-03-06 07:44:25 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-03-06 07:44:27 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-03-06 07:46:32 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-03-06 07:46:40 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-03-06 07:46:42 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-03-06 07:46:47 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-03-06 07:46:50 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-03-06 07:46:51 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-03-06 07:46:55 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-03-06 07:48:04 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-03-06 07:48:06 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-03-06 07:48:07 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-03-06 07:48:47 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-03-06 07:48:49 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-03-06 07:48:50 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-03-06 07:48:53 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-03-06 07:49:26 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-03-06 07:49:27 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-03-06 07:49:29 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-03-06 07:49:31 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-03-06 07:49:33 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-03-06 07:49:34 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-03-06 07:51:07 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-03-06 07:51:08 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-03-06 07:51:09 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-03-06 07:51:09 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-03-06 07:53:09 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-03-06 07:53:10 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-03-06 07:53:26 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-03-06 07:53:27 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-03-06 07:54:01 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-03-06 07:54:02 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-03-06 07:54:07 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-03-06 07:54:41 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-03-06 07:54:42 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-03-06 07:54:49 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-03-06 07:54:51 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-03-06 07:54:58 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-03-06 07:55:01 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-03-06 07:55:02 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-03-06 07:55:03 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-03-06 07:55:10 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-03-06 07:55:11 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-03-06 07:55:13 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-03-06 07:55:13 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-03-06 07:55:16 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-03-06 07:55:17 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-03-06 07:56:10 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-03-06 07:56:10 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-03-06 07:56:48 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-03-06 07:56:48 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-03-06 07:56:49 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-03-06 07:56:49 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-03-06 07:57:15 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-03-06 07:57:16 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-03-06 07:57:17 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-03-06 07:57:17 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-03-06 07:57:29 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-03-06 07:57:29 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-03-06 07:57:35 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-03-06 07:57:37 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-03-06 07:59:03 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-03-06 08:04:28 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-03-06 08:04:29 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+ERROR - 2023-03-06 08:04:29 --> mysqli_sql_exception: Unknown column 'r.college_id' in 'field list' in D:\wamp64\www\attendance_upgrade\system\Database\MySQLi\Connection.php:295
+Stack trace:
+#0 D:\wamp64\www\attendance_upgrade\system\Database\MySQLi\Connection.php(295): mysqli->query('SELECT `r`.`rol...', 0)
+#1 D:\wamp64\www\attendance_upgrade\system\Database\BaseConnection.php(691): CodeIgniter\Database\MySQLi\Connection->execute('SELECT `r`.`rol...')
+#2 D:\wamp64\www\attendance_upgrade\system\Database\BaseConnection.php(605): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT `r`.`rol...')
+#3 D:\wamp64\www\attendance_upgrade\system\Database\BaseBuilder.php(1616): CodeIgniter\Database\BaseConnection->query('SELECT `r`.`rol...', Array, false)
+#4 D:\wamp64\www\attendance_upgrade\app\Controllers\Home.php(86): CodeIgniter\Database\BaseBuilder->get()
+#5 D:\wamp64\www\attendance_upgrade\system\CodeIgniter.php(934): App\Controllers\Home->fetch_role_details()
+#6 D:\wamp64\www\attendance_upgrade\system\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+#7 D:\wamp64\www\attendance_upgrade\system\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#8 D:\wamp64\www\attendance_upgrade\index.php(67): CodeIgniter\CodeIgniter->run()
+#9 {main}
+CRITICAL - 2023-03-06 08:04:29 --> Unknown column 'r.college_id' in 'field list'
+in SYSTEMPATH\Database\BaseConnection.php on line 645.
+ 1 SYSTEMPATH\Database\BaseBuilder.php(1616): CodeIgniter\Database\BaseConnection->query('SELECT `r`.`role_id`, `r`.`college_id`, `r`.`role_name`, `r`.`status`, `c`.`college_short_name` as `college`
+FROM `roles` as `r`
+LEFT JOIN `college_details` as `c` ON `c`.`college_id` = `r`.`college_id`
+GROUP BY `r`.`role_name`
+ LIMIT 10', [], false)
+ 2 APPPATH\Controllers\Home.php(86): CodeIgniter\Database\BaseBuilder->get()
+ 3 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\Home->fetch_role_details()
+ 4 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+ 5 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 6 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+INFO - 2023-03-06 08:05:21 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-03-06 08:05:23 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-03-06 08:10:31 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-03-06 08:10:33 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-03-06 08:10:35 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-03-06 08:10:37 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-03-06 08:10:51 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-03-06 08:10:52 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-03-06 08:11:08 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-03-06 08:11:10 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-03-06 08:13:56 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-03-06 08:13:58 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-03-06 08:14:49 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-03-06 08:14:50 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-03-06 08:14:56 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-03-06 08:14:57 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-03-06 08:15:03 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-03-06 08:15:11 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-03-06 08:15:12 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-03-06 08:15:33 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-03-06 08:15:34 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-03-06 08:15:39 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-03-06 08:15:40 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-03-06 08:15:46 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-03-06 08:15:54 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-03-06 08:15:55 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-03-06 08:16:07 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-03-06 08:16:11 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-03-06 08:16:13 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-03-06 08:16:18 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-03-06 08:16:19 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-03-06 08:16:34 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-03-06 08:16:35 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-03-06 08:16:49 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-03-06 08:16:53 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-03-06 08:16:56 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-03-06 08:17:00 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-03-06 08:17:00 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-03-06 08:17:05 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-03-06 08:17:05 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-03-06 08:17:06 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-03-06 08:17:06 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-03-06 08:17:20 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-03-06 08:17:22 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-03-06 08:17:23 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-03-06 08:17:23 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-03-06 08:17:26 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-03-06 08:17:27 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-03-06 08:17:32 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-03-06 08:17:34 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-03-06 08:17:35 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-03-06 08:17:56 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-03-06 08:17:57 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-03-06 08:18:17 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-03-06 08:18:18 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-03-06 08:18:31 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-03-06 08:18:32 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-03-06 08:18:37 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-03-06 08:18:39 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-03-06 08:18:41 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-03-06 08:19:12 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-03-06 08:19:21 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-03-06 08:19:23 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-03-06 08:21:12 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-03-06 08:21:15 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-03-06 08:21:32 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-03-06 08:21:36 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-03-06 08:21:37 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-03-06 08:21:41 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-03-06 08:21:44 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-03-06 08:21:45 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-03-06 08:21:52 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-03-06 08:21:53 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-03-06 08:22:29 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-03-06 08:22:31 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-03-06 08:22:39 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-03-06 08:22:40 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-03-06 08:22:56 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-03-06 08:22:57 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-03-06 08:23:06 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-03-06 08:23:07 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-03-06 08:23:15 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-03-06 08:23:17 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-03-06 08:23:24 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-03-06 08:23:25 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-03-06 08:23:29 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-03-06 08:23:42 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-03-06 08:23:43 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-03-06 08:23:55 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-03-06 08:24:00 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-03-06 08:25:51 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-03-06 08:26:27 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-03-06 08:26:42 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-03-06 08:26:46 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-03-06 08:26:47 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-03-06 08:26:49 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-03-06 08:26:53 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-03-06 08:26:58 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-03-06 08:26:59 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-03-06 09:17:49 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-03-06 09:17:50 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-03-06 09:17:56 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-03-06 09:18:09 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-03-06 09:18:10 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-03-06 09:18:15 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-03-06 09:18:23 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-03-06 09:18:25 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-03-06 09:18:32 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-03-06 09:19:14 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-03-06 09:19:14 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-03-06 09:19:15 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-03-06 09:19:15 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-03-06 09:19:20 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-03-06 09:19:29 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-03-06 09:19:29 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-03-06 09:19:31 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-03-06 09:19:31 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-03-06 09:20:05 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-03-06 09:20:07 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-03-06 09:20:11 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-03-06 09:20:19 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-03-06 09:20:20 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-03-06 09:20:29 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-03-06 09:20:37 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-03-06 09:20:38 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-03-06 09:20:41 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-03-06 09:20:49 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-03-06 09:20:54 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-03-06 09:20:54 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-03-06 09:20:56 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-03-06 09:20:56 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-03-06 09:20:57 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-03-06 09:20:57 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-03-06 09:21:02 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-03-06 09:21:06 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-03-06 09:21:06 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-03-06 09:21:08 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-03-06 09:21:08 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-03-06 09:21:09 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-03-06 09:21:09 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-03-06 09:21:15 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-03-06 09:22:15 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-03-06 09:22:17 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-03-06 09:22:21 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-03-06 09:22:31 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-03-06 09:22:33 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-03-06 09:23:27 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-03-06 09:23:29 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-03-06 09:23:34 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-03-06 09:23:36 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-03-06 09:23:38 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-03-06 09:23:43 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-03-06 09:23:45 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-03-06 09:23:45 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-03-06 09:24:04 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-03-06 09:24:05 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-03-06 09:24:28 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-03-06 09:24:29 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-03-06 09:24:37 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-03-06 09:24:39 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-03-06 09:24:50 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-03-06 09:24:51 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-03-06 09:25:03 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-03-06 09:25:20 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-03-06 09:25:20 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-03-06 09:25:21 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-03-06 09:25:21 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-03-06 09:25:22 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-03-06 09:25:22 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-03-06 09:25:22 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-03-06 09:25:24 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-03-06 09:25:36 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-03-06 09:25:39 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-03-06 09:25:40 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-03-06 09:26:24 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-03-06 09:26:24 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-03-06 09:26:25 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-03-06 09:26:25 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-03-06 09:26:39 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-03-06 09:26:40 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-03-06 09:26:41 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-03-06 09:26:41 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-03-06 09:26:45 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-03-06 09:26:45 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-03-06 09:26:46 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-03-06 09:26:47 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-03-06 09:26:58 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-03-06 09:26:59 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-03-06 09:27:00 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-03-06 09:27:00 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-03-06 09:27:31 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-03-06 09:27:32 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-03-06 09:27:33 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-03-06 09:27:33 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-03-06 09:28:12 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-03-06 09:28:12 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-03-06 09:28:13 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-03-06 09:28:14 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-03-06 09:28:23 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-03-06 09:28:23 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-03-06 09:28:24 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-03-06 09:28:24 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-03-06 09:28:45 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-03-06 09:28:45 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-03-06 09:28:46 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-03-06 09:28:46 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-03-06 09:29:04 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-03-06 09:29:04 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-03-06 09:29:05 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-03-06 09:29:05 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-03-06 09:29:16 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-03-06 09:29:25 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-03-06 09:29:25 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-03-06 09:29:31 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-03-06 09:29:31 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-03-06 09:29:32 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-03-06 09:29:32 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-03-06 09:29:35 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-03-06 09:29:36 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-03-06 09:29:37 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-03-06 09:29:37 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-03-06 09:29:41 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-03-06 09:29:42 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-03-06 09:29:45 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-03-06 09:29:46 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-03-06 09:29:49 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-03-06 09:29:51 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-03-06 09:29:52 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-03-06 09:29:56 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-03-06 09:29:58 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-03-06 09:29:59 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-03-06 09:30:00 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-03-06 09:30:01 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-03-06 09:30:02 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-03-06 09:30:04 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-03-06 09:30:20 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-03-06 09:30:20 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-03-06 09:30:20 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-03-06 09:30:21 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-03-06 09:30:21 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-03-06 09:30:21 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-03-06 09:32:44 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-03-06 09:32:44 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-03-06 09:32:44 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-03-06 09:32:47 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-03-06 09:32:49 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-03-06 09:32:50 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-03-06 09:33:04 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-03-06 09:33:06 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-03-06 09:33:42 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-03-06 09:34:56 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-03-06 09:35:01 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+ERROR - 2023-03-06 09:35:01 --> mysqli_sql_exception: Unknown column 'p.role_id' in 'field list' in D:\wamp64\www\attendance_upgrade\system\Database\MySQLi\Connection.php:295
+Stack trace:
+#0 D:\wamp64\www\attendance_upgrade\system\Database\MySQLi\Connection.php(295): mysqli->query('SELECT `p`.`rol...', 0)
+#1 D:\wamp64\www\attendance_upgrade\system\Database\BaseConnection.php(691): CodeIgniter\Database\MySQLi\Connection->execute('SELECT `p`.`rol...')
+#2 D:\wamp64\www\attendance_upgrade\system\Database\BaseConnection.php(605): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT `p`.`rol...')
+#3 D:\wamp64\www\attendance_upgrade\system\Database\BaseBuilder.php(1616): CodeIgniter\Database\BaseConnection->query('SELECT `p`.`rol...', Array, false)
+#4 D:\wamp64\www\attendance_upgrade\app\Controllers\Home.php(449): CodeIgniter\Database\BaseBuilder->get()
+#5 D:\wamp64\www\attendance_upgrade\system\CodeIgniter.php(934): App\Controllers\Home->fetch_all_menu()
+#6 D:\wamp64\www\attendance_upgrade\system\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+#7 D:\wamp64\www\attendance_upgrade\system\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#8 D:\wamp64\www\attendance_upgrade\index.php(67): CodeIgniter\CodeIgniter->run()
+#9 {main}
+CRITICAL - 2023-03-06 09:35:01 --> Unknown column 'p.role_id' in 'field list'
+in SYSTEMPATH\Database\BaseConnection.php on line 645.
+ 1 SYSTEMPATH\Database\BaseBuilder.php(1616): CodeIgniter\Database\BaseConnection->query('SELECT `p`.`role_id`, `p`.`menu_access`
+FROM `menu_preferences` as `p`
+WHERE `p`.`status` = :p.status:
+AND `p`.`role_id` = :p.role_id:', [...], false)
+ 2 APPPATH\Controllers\Home.php(449): CodeIgniter\Database\BaseBuilder->get()
+ 3 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\Home->fetch_all_menu()
+ 4 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+ 5 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 6 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+INFO - 2023-03-06 09:35:15 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+ERROR - 2023-03-06 09:35:15 --> mysqli_sql_exception: Unknown column 'p.role_id' in 'field list' in D:\wamp64\www\attendance_upgrade\system\Database\MySQLi\Connection.php:295
+Stack trace:
+#0 D:\wamp64\www\attendance_upgrade\system\Database\MySQLi\Connection.php(295): mysqli->query('SELECT `p`.`rol...', 0)
+#1 D:\wamp64\www\attendance_upgrade\system\Database\BaseConnection.php(691): CodeIgniter\Database\MySQLi\Connection->execute('SELECT `p`.`rol...')
+#2 D:\wamp64\www\attendance_upgrade\system\Database\BaseConnection.php(605): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT `p`.`rol...')
+#3 D:\wamp64\www\attendance_upgrade\system\Database\BaseBuilder.php(1616): CodeIgniter\Database\BaseConnection->query('SELECT `p`.`rol...', Array, false)
+#4 D:\wamp64\www\attendance_upgrade\app\Controllers\Home.php(449): CodeIgniter\Database\BaseBuilder->get()
+#5 D:\wamp64\www\attendance_upgrade\system\CodeIgniter.php(934): App\Controllers\Home->fetch_all_menu()
+#6 D:\wamp64\www\attendance_upgrade\system\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+#7 D:\wamp64\www\attendance_upgrade\system\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#8 D:\wamp64\www\attendance_upgrade\index.php(67): CodeIgniter\CodeIgniter->run()
+#9 {main}
+CRITICAL - 2023-03-06 09:35:15 --> Unknown column 'p.role_id' in 'field list'
+in SYSTEMPATH\Database\BaseConnection.php on line 645.
+ 1 SYSTEMPATH\Database\BaseBuilder.php(1616): CodeIgniter\Database\BaseConnection->query('SELECT `p`.`role_id`, `p`.`menu_access`
+FROM `menu_preferences` as `p`
+WHERE `p`.`status` = :p.status:
+AND `p`.`role_id` = :p.role_id:', [...], false)
+ 2 APPPATH\Controllers\Home.php(449): CodeIgniter\Database\BaseBuilder->get()
+ 3 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\Home->fetch_all_menu()
+ 4 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+ 5 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 6 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+INFO - 2023-03-06 09:37:50 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-03-06 09:37:55 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-03-06 09:37:55 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-03-06 09:37:56 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-03-06 09:37:57 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-03-06 09:38:00 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-03-06 09:38:57 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-03-06 09:38:57 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-03-06 09:38:59 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-03-06 09:38:59 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-03-06 09:39:10 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-03-06 09:39:10 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-03-06 09:39:11 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-03-06 09:39:11 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-03-06 09:39:16 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-03-06 09:39:23 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-03-06 09:39:30 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-03-06 09:39:35 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-03-06 09:40:28 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-03-06 09:41:57 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-03-06 09:42:00 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-03-06 09:42:00 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-03-06 09:42:05 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+ERROR - 2023-03-06 09:42:05 --> mysqli_sql_exception: Unknown column 'p.role_id' in 'field list' in D:\wamp64\www\attendance_upgrade\system\Database\MySQLi\Connection.php:295
+Stack trace:
+#0 D:\wamp64\www\attendance_upgrade\system\Database\MySQLi\Connection.php(295): mysqli->query('SELECT `p`.`rol...', 0)
+#1 D:\wamp64\www\attendance_upgrade\system\Database\BaseConnection.php(691): CodeIgniter\Database\MySQLi\Connection->execute('SELECT `p`.`rol...')
+#2 D:\wamp64\www\attendance_upgrade\system\Database\BaseConnection.php(605): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT `p`.`rol...')
+#3 D:\wamp64\www\attendance_upgrade\system\Database\BaseBuilder.php(1616): CodeIgniter\Database\BaseConnection->query('SELECT `p`.`rol...', Array, false)
+#4 D:\wamp64\www\attendance_upgrade\app\Controllers\Home.php(449): CodeIgniter\Database\BaseBuilder->get()
+#5 D:\wamp64\www\attendance_upgrade\system\CodeIgniter.php(934): App\Controllers\Home->fetch_all_menu()
+#6 D:\wamp64\www\attendance_upgrade\system\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+#7 D:\wamp64\www\attendance_upgrade\system\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#8 D:\wamp64\www\attendance_upgrade\index.php(67): CodeIgniter\CodeIgniter->run()
+#9 {main}
+CRITICAL - 2023-03-06 09:42:05 --> Unknown column 'p.role_id' in 'field list'
+in SYSTEMPATH\Database\BaseConnection.php on line 645.
+ 1 SYSTEMPATH\Database\BaseBuilder.php(1616): CodeIgniter\Database\BaseConnection->query('SELECT `p`.`role_id`, `p`.`menu_access`
+FROM `menu_preferences` as `p`
+WHERE `p`.`status` = :p.status:
+AND `p`.`role_id` = :p.role_id:', [...], false)
+ 2 APPPATH\Controllers\Home.php(449): CodeIgniter\Database\BaseBuilder->get()
+ 3 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\Home->fetch_all_menu()
+ 4 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+ 5 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 6 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+INFO - 2023-03-06 09:46:31 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-03-06 09:46:34 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-03-06 09:46:37 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-03-06 09:46:38 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-03-06 09:46:44 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-03-06 09:46:46 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-03-06 09:46:49 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-03-06 09:46:52 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-03-06 09:46:55 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-03-06 09:46:59 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-03-06 09:47:24 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-03-06 09:47:47 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+ERROR - 2023-03-06 09:47:47 --> mysqli_sql_exception: Unknown column 'p.menu_access' in 'field list' in D:\wamp64\www\attendance_upgrade\system\Database\MySQLi\Connection.php:295
+Stack trace:
+#0 D:\wamp64\www\attendance_upgrade\system\Database\MySQLi\Connection.php(295): mysqli->query('SELECT `p`.`rol...', 0)
+#1 D:\wamp64\www\attendance_upgrade\system\Database\BaseConnection.php(691): CodeIgniter\Database\MySQLi\Connection->execute('SELECT `p`.`rol...')
+#2 D:\wamp64\www\attendance_upgrade\system\Database\BaseConnection.php(605): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT `p`.`rol...')
+#3 D:\wamp64\www\attendance_upgrade\system\Database\BaseBuilder.php(1616): CodeIgniter\Database\BaseConnection->query('SELECT `p`.`rol...', Array, false)
+#4 D:\wamp64\www\attendance_upgrade\app\Controllers\Home.php(449): CodeIgniter\Database\BaseBuilder->get()
+#5 D:\wamp64\www\attendance_upgrade\system\CodeIgniter.php(934): App\Controllers\Home->fetch_all_menu()
+#6 D:\wamp64\www\attendance_upgrade\system\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+#7 D:\wamp64\www\attendance_upgrade\system\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#8 D:\wamp64\www\attendance_upgrade\index.php(67): CodeIgniter\CodeIgniter->run()
+#9 {main}
+CRITICAL - 2023-03-06 09:47:47 --> Unknown column 'p.menu_access' in 'field list'
+in SYSTEMPATH\Database\BaseConnection.php on line 645.
+ 1 SYSTEMPATH\Database\BaseBuilder.php(1616): CodeIgniter\Database\BaseConnection->query('SELECT `p`.`role_id`, `p`.`menu_access`
+FROM `menu_preferences` as `p`
+WHERE `p`.`status` = :p.status:
+AND `p`.`role_id` = :p.role_id:', [...], false)
+ 2 APPPATH\Controllers\Home.php(449): CodeIgniter\Database\BaseBuilder->get()
+ 3 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\Home->fetch_all_menu()
+ 4 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+ 5 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 6 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+INFO - 2023-03-06 09:47:55 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+ERROR - 2023-03-06 09:47:55 --> mysqli_sql_exception: Unknown column 'p.menu_access' in 'field list' in D:\wamp64\www\attendance_upgrade\system\Database\MySQLi\Connection.php:295
+Stack trace:
+#0 D:\wamp64\www\attendance_upgrade\system\Database\MySQLi\Connection.php(295): mysqli->query('SELECT `p`.`rol...', 0)
+#1 D:\wamp64\www\attendance_upgrade\system\Database\BaseConnection.php(691): CodeIgniter\Database\MySQLi\Connection->execute('SELECT `p`.`rol...')
+#2 D:\wamp64\www\attendance_upgrade\system\Database\BaseConnection.php(605): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT `p`.`rol...')
+#3 D:\wamp64\www\attendance_upgrade\system\Database\BaseBuilder.php(1616): CodeIgniter\Database\BaseConnection->query('SELECT `p`.`rol...', Array, false)
+#4 D:\wamp64\www\attendance_upgrade\app\Controllers\Home.php(449): CodeIgniter\Database\BaseBuilder->get()
+#5 D:\wamp64\www\attendance_upgrade\system\CodeIgniter.php(934): App\Controllers\Home->fetch_all_menu()
+#6 D:\wamp64\www\attendance_upgrade\system\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+#7 D:\wamp64\www\attendance_upgrade\system\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#8 D:\wamp64\www\attendance_upgrade\index.php(67): CodeIgniter\CodeIgniter->run()
+#9 {main}
+CRITICAL - 2023-03-06 09:47:55 --> Unknown column 'p.menu_access' in 'field list'
+in SYSTEMPATH\Database\BaseConnection.php on line 645.
+ 1 SYSTEMPATH\Database\BaseBuilder.php(1616): CodeIgniter\Database\BaseConnection->query('SELECT `p`.`role_id`, `p`.`menu_access`
+FROM `menu_preferences` as `p`
+WHERE `p`.`status` = :p.status:
+AND `p`.`role_id` = :p.role_id:', [...], false)
+ 2 APPPATH\Controllers\Home.php(449): CodeIgniter\Database\BaseBuilder->get()
+ 3 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\Home->fetch_all_menu()
+ 4 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+ 5 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 6 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+INFO - 2023-03-06 09:47:59 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+ERROR - 2023-03-06 09:47:59 --> mysqli_sql_exception: Unknown column 'p.menu_access' in 'field list' in D:\wamp64\www\attendance_upgrade\system\Database\MySQLi\Connection.php:295
+Stack trace:
+#0 D:\wamp64\www\attendance_upgrade\system\Database\MySQLi\Connection.php(295): mysqli->query('SELECT `p`.`rol...', 0)
+#1 D:\wamp64\www\attendance_upgrade\system\Database\BaseConnection.php(691): CodeIgniter\Database\MySQLi\Connection->execute('SELECT `p`.`rol...')
+#2 D:\wamp64\www\attendance_upgrade\system\Database\BaseConnection.php(605): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT `p`.`rol...')
+#3 D:\wamp64\www\attendance_upgrade\system\Database\BaseBuilder.php(1616): CodeIgniter\Database\BaseConnection->query('SELECT `p`.`rol...', Array, false)
+#4 D:\wamp64\www\attendance_upgrade\app\Controllers\Home.php(449): CodeIgniter\Database\BaseBuilder->get()
+#5 D:\wamp64\www\attendance_upgrade\system\CodeIgniter.php(934): App\Controllers\Home->fetch_all_menu()
+#6 D:\wamp64\www\attendance_upgrade\system\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+#7 D:\wamp64\www\attendance_upgrade\system\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#8 D:\wamp64\www\attendance_upgrade\index.php(67): CodeIgniter\CodeIgniter->run()
+#9 {main}
+CRITICAL - 2023-03-06 09:47:59 --> Unknown column 'p.menu_access' in 'field list'
+in SYSTEMPATH\Database\BaseConnection.php on line 645.
+ 1 SYSTEMPATH\Database\BaseBuilder.php(1616): CodeIgniter\Database\BaseConnection->query('SELECT `p`.`role_id`, `p`.`menu_access`
+FROM `menu_preferences` as `p`
+WHERE `p`.`status` = :p.status:
+AND `p`.`role_id` = :p.role_id:', [...], false)
+ 2 APPPATH\Controllers\Home.php(449): CodeIgniter\Database\BaseBuilder->get()
+ 3 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\Home->fetch_all_menu()
+ 4 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+ 5 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 6 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+INFO - 2023-03-06 09:51:01 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-03-06 09:51:04 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-03-06 09:51:16 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+ERROR - 2023-03-06 09:51:16 --> mysqli_sql_exception: Unknown column 'm.icon' in 'field list' in D:\wamp64\www\attendance_upgrade\system\Database\MySQLi\Connection.php:295
+Stack trace:
+#0 D:\wamp64\www\attendance_upgrade\system\Database\MySQLi\Connection.php(295): mysqli->query('SELECT `m`.`men...', 0)
+#1 D:\wamp64\www\attendance_upgrade\system\Database\BaseConnection.php(691): CodeIgniter\Database\MySQLi\Connection->execute('SELECT `m`.`men...')
+#2 D:\wamp64\www\attendance_upgrade\system\Database\BaseConnection.php(605): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT `m`.`men...')
+#3 D:\wamp64\www\attendance_upgrade\system\Database\BaseBuilder.php(1616): CodeIgniter\Database\BaseConnection->query('SELECT `m`.`men...', Array, false)
+#4 D:\wamp64\www\attendance_upgrade\app\Controllers\Home.php(456): CodeIgniter\Database\BaseBuilder->get()
+#5 D:\wamp64\www\attendance_upgrade\system\CodeIgniter.php(934): App\Controllers\Home->fetch_all_menu()
+#6 D:\wamp64\www\attendance_upgrade\system\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+#7 D:\wamp64\www\attendance_upgrade\system\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#8 D:\wamp64\www\attendance_upgrade\index.php(67): CodeIgniter\CodeIgniter->run()
+#9 {main}
+CRITICAL - 2023-03-06 09:51:16 --> Unknown column 'm.icon' in 'field list'
+in SYSTEMPATH\Database\BaseConnection.php on line 645.
+ 1 SYSTEMPATH\Database\BaseBuilder.php(1616): CodeIgniter\Database\BaseConnection->query('SELECT `m`.`menu_id`, `m`.`menu_name`, `m`.`icon`, `m`.`url`
+FROM `menus` as `m`
+WHERE `m`.`status` = :m.status:', [...], false)
+ 2 APPPATH\Controllers\Home.php(456): CodeIgniter\Database\BaseBuilder->get()
+ 3 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\Home->fetch_all_menu()
+ 4 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+ 5 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 6 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+INFO - 2023-03-06 09:51:53 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-03-06 09:52:01 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-03-06 11:34:11 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-03-06 11:34:12 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-03-06 11:34:18 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-03-06 11:34:21 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-03-06 11:34:21 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-03-06 11:34:25 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-03-06 11:34:28 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-03-06 11:39:06 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-03-06 11:39:11 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-03-06 11:39:22 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-03-06 11:39:38 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-03-06 11:39:45 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-03-06 11:41:12 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-03-06 11:41:23 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-03-06 11:41:37 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-03-06 11:41:54 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-03-06 11:42:00 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-03-06 11:42:50 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-03-06 11:43:31 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-03-06 11:45:01 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-03-06 11:45:05 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-03-06 11:45:12 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-03-06 11:45:15 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-03-06 11:45:24 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-03-06 11:52:42 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-03-06 11:53:10 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-03-06 11:53:17 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-03-06 11:54:03 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-03-06 11:55:23 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-03-06 11:55:49 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-03-06 11:59:04 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-03-06 12:00:15 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2023-03-06 12:00:15 --> Undefined variable: get_all_menus
+in APPPATH\Views\menu_management.php on line 123.
+ 1 APPPATH\Views\menu_management.php(123): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Undefined variable: get_all_menus', 'APPPATH\\Views\\menu_management.php', 123, [...])
+ 2 SYSTEMPATH\View\View.php(213): include('APPPATH\\Views\\menu_management.php')
+ 3 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1184): CodeIgniter\View\View->render('menu_management', [], true)
+ 5 APPPATH\Controllers\Home.php(51): view('menu_management', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\Home->menu_management()
+ 7 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+ 8 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+INFO - 2023-03-06 12:01:46 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2023-03-06 12:01:46 --> Undefined index: menu_id
+in APPPATH\Views\menu_management.php on line 144.
+ 1 APPPATH\Views\menu_management.php(144): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Undefined index: menu_id', 'APPPATH\\Views\\menu_management.php', 144, [...])
+ 2 SYSTEMPATH\View\View.php(213): include('APPPATH\\Views\\menu_management.php')
+ 3 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1184): CodeIgniter\View\View->render('menu_management', [], true)
+ 5 APPPATH\Controllers\Home.php(51): view('menu_management', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\Home->menu_management()
+ 7 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+ 8 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+INFO - 2023-03-06 12:02:47 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2023-03-06 12:02:47 --> Undefined index: j
+in APPPATH\Views\menu_management.php on line 146.
+ 1 APPPATH\Views\menu_management.php(146): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Undefined index: j', 'APPPATH\\Views\\menu_management.php', 146, [...])
+ 2 SYSTEMPATH\View\View.php(213): include('APPPATH\\Views\\menu_management.php')
+ 3 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1184): CodeIgniter\View\View->render('menu_management', [], true)
+ 5 APPPATH\Controllers\Home.php(51): view('menu_management', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\Home->menu_management()
+ 7 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+ 8 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+INFO - 2023-03-06 12:05:08 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-03-06 12:06:41 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-03-06 12:07:22 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-03-06 12:07:34 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-03-06 12:07:57 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-03-06 12:08:17 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-03-06 12:11:31 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-03-06 12:12:45 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-03-06 12:13:19 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-03-06 12:16:31 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2023-03-06 12:16:31 --> Undefined variable: sub_menu
+in APPPATH\Views\menu_management.php on line 145.
+ 1 APPPATH\Views\menu_management.php(145): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Undefined variable: sub_menu', 'APPPATH\\Views\\menu_management.php', 145, [...])
+ 2 SYSTEMPATH\View\View.php(213): include('APPPATH\\Views\\menu_management.php')
+ 3 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1184): CodeIgniter\View\View->render('menu_management', [], true)
+ 5 APPPATH\Controllers\Home.php(51): view('menu_management', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\Home->menu_management()
+ 7 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+ 8 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+INFO - 2023-03-06 12:16:59 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2023-03-06 12:16:59 --> Undefined index: menu_name
+in APPPATH\Views\menu_management.php on line 150.
+ 1 APPPATH\Views\menu_management.php(150): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Undefined index: menu_name', 'APPPATH\\Views\\menu_management.php', 150, [...])
+ 2 SYSTEMPATH\View\View.php(213): include('APPPATH\\Views\\menu_management.php')
+ 3 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1184): CodeIgniter\View\View->render('menu_management', [], true)
+ 5 APPPATH\Controllers\Home.php(51): view('menu_management', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\Home->menu_management()
+ 7 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+ 8 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+INFO - 2023-03-06 12:17:15 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-03-06 12:18:03 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-03-06 12:18:24 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-03-06 12:19:27 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-03-06 12:19:32 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-03-06 12:20:03 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-03-06 12:20:27 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-03-06 12:22:54 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-03-06 12:23:26 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-03-06 12:23:53 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-03-06 12:24:21 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-03-06 12:24:51 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-03-06 12:25:05 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-03-06 12:25:55 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-03-06 12:26:05 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-03-06 12:27:12 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-03-06 12:28:37 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-03-06 12:34:56 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-03-06 12:35:14 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-03-06 12:35:23 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-03-06 12:35:44 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-03-06 12:44:42 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-03-06 12:44:45 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-03-06 12:45:46 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-03-06 12:45:50 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-03-06 12:46:07 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-03-06 12:47:05 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-03-06 12:47:12 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-03-06 12:47:14 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-03-06 12:57:07 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-03-06 12:57:56 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-03-06 12:58:19 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-03-06 12:58:26 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-03-06 13:00:42 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-03-06 13:00:53 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-03-06 13:00:55 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-03-06 13:02:49 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-03-06 13:02:56 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-03-06 13:02:58 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-03-06 13:03:26 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-03-06 13:03:32 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-03-06 13:03:34 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-03-06 13:04:23 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-03-06 13:04:27 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-03-06 13:04:29 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-03-06 13:04:30 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-03-06 13:04:32 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-03-06 13:04:34 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-03-06 13:04:38 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-03-06 13:05:15 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-03-06 13:05:19 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-03-06 13:05:22 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-03-06 13:05:24 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-03-06 13:05:31 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-03-06 13:05:33 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-03-06 13:05:35 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-03-06 13:05:43 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-03-06 13:05:56 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-03-06 13:06:24 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-03-06 13:06:27 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-03-06 13:06:32 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-03-06 13:06:33 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-03-06 13:06:35 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-03-06 13:06:36 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-03-06 13:07:31 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-03-06 13:07:33 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.

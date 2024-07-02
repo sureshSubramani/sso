@@ -1,0 +1,165 @@
+ERROR - 2023-11-08 18:04:17 --> mysqli_sql_exception: You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near ')
+AND `p`.`category_Id` <> 2
+AND `p`.`status` = 1
+ORDER BY `c`.`exp_date` ASC, `' at line 5 in /home/mahentf8/public_html/mahendranextwealth/beingyou/system/Database/MySQLi/Connection.php:295
+Stack trace:
+#0 /home/mahentf8/public_html/mahendranextwealth/beingyou/system/Database/MySQLi/Connection.php(295): mysqli->query('SELECT `p`.`pos...', 0)
+#1 /home/mahentf8/public_html/mahendranextwealth/beingyou/system/Database/BaseConnection.php(691): CodeIgniter\Database\MySQLi\Connection->execute('SELECT `p`.`pos...')
+#2 /home/mahentf8/public_html/mahendranextwealth/beingyou/system/Database/BaseConnection.php(605): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT `p`.`pos...')
+#3 /home/mahentf8/public_html/mahendranextwealth/beingyou/system/Database/BaseBuilder.php(1616): CodeIgniter\Database\BaseConnection->query('SELECT `p`.`pos...', Array, false)
+#4 /home/mahentf8/public_html/mahendranextwealth/beingyou/app/Controllers/Home.php(6140): CodeIgniter\Database\BaseBuilder->get()
+#5 /home/mahentf8/public_html/mahendranextwealth/beingyou/system/CodeIgniter.php(934): App\Controllers\Home->fetch_current_programs()
+#6 /home/mahentf8/public_html/mahendranextwealth/beingyou/system/CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+#7 /home/mahentf8/public_html/mahendranextwealth/beingyou/system/CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#8 /home/mahentf8/public_html/mahendranextwealth/beingyou/index.php(67): CodeIgniter\CodeIgniter->run()
+#9 {main}
+CRITICAL - 2023-11-08 18:04:17 --> You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near ')
+AND `p`.`category_Id` <> 2
+AND `p`.`status` = 1
+ORDER BY `c`.`exp_date` ASC, `' at line 5
+in SYSTEMPATH/Database/BaseConnection.php on line 645.
+ 1 SYSTEMPATH/Database/BaseBuilder.php(1616): CodeIgniter\Database\BaseConnection->query('SELECT `p`.`post_id`, `c`.`id`, `p`.`title`, `c`.`start_date`, `c`.`end_date`, `c`.`venue`
+FROM `posts` as `p`
+LEFT JOIN `course_allocation` as `c` ON `c`.`course_id` = `p`.`post_id`
+WHERE `c`.`exp_date` >= :c.exp_date:
+AND `c`.`id` IN :c.id:
+AND `p`.`category_Id` <> :p.category_Id:
+AND `p`.`status` = :p.status:
+ORDER BY `c`.`exp_date` ASC, `p`.`post_id` ASC', [...], false)
+ 2 APPPATH/Controllers/Home.php(6140): CodeIgniter\Database\BaseBuilder->get()
+ 3 SYSTEMPATH/CodeIgniter.php(934): App\Controllers\Home->fetch_current_programs()
+ 4 SYSTEMPATH/CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+ 5 SYSTEMPATH/CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 6 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()
+ERROR - 2023-11-08 18:04:32 --> mysqli_sql_exception: You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near ')
+AND `p`.`category_Id` <> 2
+AND `p`.`status` = 1
+ORDER BY `c`.`exp_date` ASC, `' at line 5 in /home/mahentf8/public_html/mahendranextwealth/beingyou/system/Database/MySQLi/Connection.php:295
+Stack trace:
+#0 /home/mahentf8/public_html/mahendranextwealth/beingyou/system/Database/MySQLi/Connection.php(295): mysqli->query('SELECT `p`.`pos...', 0)
+#1 /home/mahentf8/public_html/mahendranextwealth/beingyou/system/Database/BaseConnection.php(691): CodeIgniter\Database\MySQLi\Connection->execute('SELECT `p`.`pos...')
+#2 /home/mahentf8/public_html/mahendranextwealth/beingyou/system/Database/BaseConnection.php(605): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT `p`.`pos...')
+#3 /home/mahentf8/public_html/mahendranextwealth/beingyou/system/Database/BaseBuilder.php(1616): CodeIgniter\Database\BaseConnection->query('SELECT `p`.`pos...', Array, false)
+#4 /home/mahentf8/public_html/mahendranextwealth/beingyou/app/Controllers/Home.php(6140): CodeIgniter\Database\BaseBuilder->get()
+#5 /home/mahentf8/public_html/mahendranextwealth/beingyou/system/CodeIgniter.php(934): App\Controllers\Home->fetch_current_programs()
+#6 /home/mahentf8/public_html/mahendranextwealth/beingyou/system/CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+#7 /home/mahentf8/public_html/mahendranextwealth/beingyou/system/CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#8 /home/mahentf8/public_html/mahendranextwealth/beingyou/index.php(67): CodeIgniter\CodeIgniter->run()
+#9 {main}
+CRITICAL - 2023-11-08 18:04:32 --> You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near ')
+AND `p`.`category_Id` <> 2
+AND `p`.`status` = 1
+ORDER BY `c`.`exp_date` ASC, `' at line 5
+in SYSTEMPATH/Database/BaseConnection.php on line 645.
+ 1 SYSTEMPATH/Database/BaseBuilder.php(1616): CodeIgniter\Database\BaseConnection->query('SELECT `p`.`post_id`, `c`.`id`, `p`.`title`, `c`.`start_date`, `c`.`end_date`, `c`.`venue`
+FROM `posts` as `p`
+LEFT JOIN `course_allocation` as `c` ON `c`.`course_id` = `p`.`post_id`
+WHERE `c`.`exp_date` >= :c.exp_date:
+AND `c`.`id` IN :c.id:
+AND `p`.`category_Id` <> :p.category_Id:
+AND `p`.`status` = :p.status:
+ORDER BY `c`.`exp_date` ASC, `p`.`post_id` ASC', [...], false)
+ 2 APPPATH/Controllers/Home.php(6140): CodeIgniter\Database\BaseBuilder->get()
+ 3 SYSTEMPATH/CodeIgniter.php(934): App\Controllers\Home->fetch_current_programs()
+ 4 SYSTEMPATH/CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+ 5 SYSTEMPATH/CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 6 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()
+ERROR - 2023-11-08 19:09:10 --> mysqli_sql_exception: You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near ')
+AND `p`.`category_Id` <> 2
+AND `p`.`status` = 1
+ORDER BY `c`.`exp_date` ASC, `' at line 5 in /home/mahentf8/public_html/mahendranextwealth/beingyou/system/Database/MySQLi/Connection.php:295
+Stack trace:
+#0 /home/mahentf8/public_html/mahendranextwealth/beingyou/system/Database/MySQLi/Connection.php(295): mysqli->query('SELECT `p`.`pos...', 0)
+#1 /home/mahentf8/public_html/mahendranextwealth/beingyou/system/Database/BaseConnection.php(691): CodeIgniter\Database\MySQLi\Connection->execute('SELECT `p`.`pos...')
+#2 /home/mahentf8/public_html/mahendranextwealth/beingyou/system/Database/BaseConnection.php(605): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT `p`.`pos...')
+#3 /home/mahentf8/public_html/mahendranextwealth/beingyou/system/Database/BaseBuilder.php(1616): CodeIgniter\Database\BaseConnection->query('SELECT `p`.`pos...', Array, false)
+#4 /home/mahentf8/public_html/mahendranextwealth/beingyou/app/Controllers/Home.php(6141): CodeIgniter\Database\BaseBuilder->get()
+#5 /home/mahentf8/public_html/mahendranextwealth/beingyou/system/CodeIgniter.php(934): App\Controllers\Home->fetch_current_programs()
+#6 /home/mahentf8/public_html/mahendranextwealth/beingyou/system/CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+#7 /home/mahentf8/public_html/mahendranextwealth/beingyou/system/CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#8 /home/mahentf8/public_html/mahendranextwealth/beingyou/index.php(67): CodeIgniter\CodeIgniter->run()
+#9 {main}
+CRITICAL - 2023-11-08 19:09:10 --> You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near ')
+AND `p`.`category_Id` <> 2
+AND `p`.`status` = 1
+ORDER BY `c`.`exp_date` ASC, `' at line 5
+in SYSTEMPATH/Database/BaseConnection.php on line 645.
+ 1 SYSTEMPATH/Database/BaseBuilder.php(1616): CodeIgniter\Database\BaseConnection->query('SELECT `p`.`post_id`, `c`.`id`, `p`.`title`, `c`.`start_date`, `c`.`end_date`, `c`.`venue`
+FROM `posts` as `p`
+LEFT JOIN `course_allocation` as `c` ON `c`.`course_id` = `p`.`post_id`
+WHERE `c`.`exp_date` >= :c.exp_date:
+AND `c`.`id` IN :c.id:
+AND `p`.`category_Id` <> :p.category_Id:
+AND `p`.`status` = :p.status:
+ORDER BY `c`.`exp_date` ASC, `p`.`post_id` ASC', [...], false)
+ 2 APPPATH/Controllers/Home.php(6141): CodeIgniter\Database\BaseBuilder->get()
+ 3 SYSTEMPATH/CodeIgniter.php(934): App\Controllers\Home->fetch_current_programs()
+ 4 SYSTEMPATH/CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+ 5 SYSTEMPATH/CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 6 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()
+ERROR - 2023-11-08 19:09:13 --> mysqli_sql_exception: You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near ')
+AND `p`.`category_Id` <> 2
+AND `p`.`status` = 1
+ORDER BY `c`.`exp_date` ASC, `' at line 5 in /home/mahentf8/public_html/mahendranextwealth/beingyou/system/Database/MySQLi/Connection.php:295
+Stack trace:
+#0 /home/mahentf8/public_html/mahendranextwealth/beingyou/system/Database/MySQLi/Connection.php(295): mysqli->query('SELECT `p`.`pos...', 0)
+#1 /home/mahentf8/public_html/mahendranextwealth/beingyou/system/Database/BaseConnection.php(691): CodeIgniter\Database\MySQLi\Connection->execute('SELECT `p`.`pos...')
+#2 /home/mahentf8/public_html/mahendranextwealth/beingyou/system/Database/BaseConnection.php(605): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT `p`.`pos...')
+#3 /home/mahentf8/public_html/mahendranextwealth/beingyou/system/Database/BaseBuilder.php(1616): CodeIgniter\Database\BaseConnection->query('SELECT `p`.`pos...', Array, false)
+#4 /home/mahentf8/public_html/mahendranextwealth/beingyou/app/Controllers/Home.php(6141): CodeIgniter\Database\BaseBuilder->get()
+#5 /home/mahentf8/public_html/mahendranextwealth/beingyou/system/CodeIgniter.php(934): App\Controllers\Home->fetch_current_programs()
+#6 /home/mahentf8/public_html/mahendranextwealth/beingyou/system/CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+#7 /home/mahentf8/public_html/mahendranextwealth/beingyou/system/CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#8 /home/mahentf8/public_html/mahendranextwealth/beingyou/index.php(67): CodeIgniter\CodeIgniter->run()
+#9 {main}
+CRITICAL - 2023-11-08 19:09:13 --> You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near ')
+AND `p`.`category_Id` <> 2
+AND `p`.`status` = 1
+ORDER BY `c`.`exp_date` ASC, `' at line 5
+in SYSTEMPATH/Database/BaseConnection.php on line 645.
+ 1 SYSTEMPATH/Database/BaseBuilder.php(1616): CodeIgniter\Database\BaseConnection->query('SELECT `p`.`post_id`, `c`.`id`, `p`.`title`, `c`.`start_date`, `c`.`end_date`, `c`.`venue`
+FROM `posts` as `p`
+LEFT JOIN `course_allocation` as `c` ON `c`.`course_id` = `p`.`post_id`
+WHERE `c`.`exp_date` >= :c.exp_date:
+AND `c`.`id` IN :c.id:
+AND `p`.`category_Id` <> :p.category_Id:
+AND `p`.`status` = :p.status:
+ORDER BY `c`.`exp_date` ASC, `p`.`post_id` ASC', [...], false)
+ 2 APPPATH/Controllers/Home.php(6141): CodeIgniter\Database\BaseBuilder->get()
+ 3 SYSTEMPATH/CodeIgniter.php(934): App\Controllers\Home->fetch_current_programs()
+ 4 SYSTEMPATH/CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+ 5 SYSTEMPATH/CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 6 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()
+ERROR - 2023-11-08 19:09:16 --> mysqli_sql_exception: You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near ')
+AND `p`.`category_Id` <> 2
+AND `p`.`status` = 1
+ORDER BY `c`.`exp_date` ASC, `' at line 5 in /home/mahentf8/public_html/mahendranextwealth/beingyou/system/Database/MySQLi/Connection.php:295
+Stack trace:
+#0 /home/mahentf8/public_html/mahendranextwealth/beingyou/system/Database/MySQLi/Connection.php(295): mysqli->query('SELECT `p`.`pos...', 0)
+#1 /home/mahentf8/public_html/mahendranextwealth/beingyou/system/Database/BaseConnection.php(691): CodeIgniter\Database\MySQLi\Connection->execute('SELECT `p`.`pos...')
+#2 /home/mahentf8/public_html/mahendranextwealth/beingyou/system/Database/BaseConnection.php(605): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT `p`.`pos...')
+#3 /home/mahentf8/public_html/mahendranextwealth/beingyou/system/Database/BaseBuilder.php(1616): CodeIgniter\Database\BaseConnection->query('SELECT `p`.`pos...', Array, false)
+#4 /home/mahentf8/public_html/mahendranextwealth/beingyou/app/Controllers/Home.php(6141): CodeIgniter\Database\BaseBuilder->get()
+#5 /home/mahentf8/public_html/mahendranextwealth/beingyou/system/CodeIgniter.php(934): App\Controllers\Home->fetch_current_programs()
+#6 /home/mahentf8/public_html/mahendranextwealth/beingyou/system/CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+#7 /home/mahentf8/public_html/mahendranextwealth/beingyou/system/CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#8 /home/mahentf8/public_html/mahendranextwealth/beingyou/index.php(67): CodeIgniter\CodeIgniter->run()
+#9 {main}
+CRITICAL - 2023-11-08 19:09:16 --> You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near ')
+AND `p`.`category_Id` <> 2
+AND `p`.`status` = 1
+ORDER BY `c`.`exp_date` ASC, `' at line 5
+in SYSTEMPATH/Database/BaseConnection.php on line 645.
+ 1 SYSTEMPATH/Database/BaseBuilder.php(1616): CodeIgniter\Database\BaseConnection->query('SELECT `p`.`post_id`, `c`.`id`, `p`.`title`, `c`.`start_date`, `c`.`end_date`, `c`.`venue`
+FROM `posts` as `p`
+LEFT JOIN `course_allocation` as `c` ON `c`.`course_id` = `p`.`post_id`
+WHERE `c`.`exp_date` >= :c.exp_date:
+AND `c`.`id` IN :c.id:
+AND `p`.`category_Id` <> :p.category_Id:
+AND `p`.`status` = :p.status:
+ORDER BY `c`.`exp_date` ASC, `p`.`post_id` ASC', [...], false)
+ 2 APPPATH/Controllers/Home.php(6141): CodeIgniter\Database\BaseBuilder->get()
+ 3 SYSTEMPATH/CodeIgniter.php(934): App\Controllers\Home->fetch_current_programs()
+ 4 SYSTEMPATH/CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+ 5 SYSTEMPATH/CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 6 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()

@@ -1,0 +1,712 @@
+CRITICAL - 2024-02-19 11:46:51 --> Session: Configured save path "/opt/lampp/htdocs/writable/session" is not writable by the PHP process.
+in SYSTEMPATH/Session/Handlers/FileHandler.php on line 101.
+ 1 SYSTEMPATH/Session/Handlers/FileHandler.php(101): CodeIgniter\Session\Exceptions\SessionException::forWriteProtectedSavePath('FCPATH/writable/session')
+ 2 [internal function]: CodeIgniter\Session\Handlers\FileHandler->open('FCPATH/writable/session', 'ci_session')
+ 3 SYSTEMPATH/Session/Session.php(928): session_start()
+ 4 SYSTEMPATH/Session/Session.php(250): CodeIgniter\Session\Session->startSession()
+ 5 SYSTEMPATH/Config/Services.php(674): CodeIgniter\Session\Session->start()
+ 6 SYSTEMPATH/Config/BaseService.php(252): CodeIgniter\Config\Services::session(Object(Config\App), false)
+ 7 SYSTEMPATH/Config/BaseService.php(193): CodeIgniter\Config\BaseService::__callStatic('session', [...])
+ 8 SYSTEMPATH/Config/Services.php(641): CodeIgniter\Config\BaseService::getSharedInstance('session', null)
+ 9 SYSTEMPATH/Config/BaseService.php(252): CodeIgniter\Config\Services::session()
+10 SYSTEMPATH/Common.php(988): CodeIgniter\Config\BaseService::__callStatic('session', [])
+11 APPPATH/Filters/NoAuth.php(12): session()
+12 SYSTEMPATH/Filters/Filters.php(173): App\Filters\NoAuth->before(Object(CodeIgniter\HTTP\IncomingRequest), null)
+13 SYSTEMPATH/CodeIgniter.php(473): CodeIgniter\Filters\Filters->run('/', 'before')
+14 SYSTEMPATH/CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+15 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2024-02-19 11:46:53 --> Session: Configured save path "/opt/lampp/htdocs/writable/session" is not writable by the PHP process.
+in SYSTEMPATH/Session/Handlers/FileHandler.php on line 101.
+ 1 SYSTEMPATH/Session/Handlers/FileHandler.php(101): CodeIgniter\Session\Exceptions\SessionException::forWriteProtectedSavePath('FCPATH/writable/session')
+ 2 [internal function]: CodeIgniter\Session\Handlers\FileHandler->open('FCPATH/writable/session', 'ci_session')
+ 3 SYSTEMPATH/Session/Session.php(928): session_start()
+ 4 SYSTEMPATH/Session/Session.php(250): CodeIgniter\Session\Session->startSession()
+ 5 SYSTEMPATH/Config/Services.php(674): CodeIgniter\Session\Session->start()
+ 6 SYSTEMPATH/Config/BaseService.php(252): CodeIgniter\Config\Services::session(Object(Config\App), false)
+ 7 SYSTEMPATH/Config/BaseService.php(193): CodeIgniter\Config\BaseService::__callStatic('session', [...])
+ 8 SYSTEMPATH/Config/Services.php(641): CodeIgniter\Config\BaseService::getSharedInstance('session', null)
+ 9 SYSTEMPATH/Config/BaseService.php(252): CodeIgniter\Config\Services::session()
+10 SYSTEMPATH/Common.php(988): CodeIgniter\Config\BaseService::__callStatic('session', [])
+11 APPPATH/Filters/NoAuth.php(12): session()
+12 SYSTEMPATH/Filters/Filters.php(173): App\Filters\NoAuth->before(Object(CodeIgniter\HTTP\IncomingRequest), null)
+13 SYSTEMPATH/CodeIgniter.php(473): CodeIgniter\Filters\Filters->run('/', 'before')
+14 SYSTEMPATH/CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+15 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2024-02-19 11:46:54 --> Session: Configured save path "/opt/lampp/htdocs/writable/session" is not writable by the PHP process.
+in SYSTEMPATH/Session/Handlers/FileHandler.php on line 101.
+ 1 SYSTEMPATH/Session/Handlers/FileHandler.php(101): CodeIgniter\Session\Exceptions\SessionException::forWriteProtectedSavePath('FCPATH/writable/session')
+ 2 [internal function]: CodeIgniter\Session\Handlers\FileHandler->open('FCPATH/writable/session', 'ci_session')
+ 3 SYSTEMPATH/Session/Session.php(928): session_start()
+ 4 SYSTEMPATH/Session/Session.php(250): CodeIgniter\Session\Session->startSession()
+ 5 SYSTEMPATH/Config/Services.php(674): CodeIgniter\Session\Session->start()
+ 6 SYSTEMPATH/Config/BaseService.php(252): CodeIgniter\Config\Services::session(Object(Config\App), false)
+ 7 SYSTEMPATH/Config/BaseService.php(193): CodeIgniter\Config\BaseService::__callStatic('session', [...])
+ 8 SYSTEMPATH/Config/Services.php(641): CodeIgniter\Config\BaseService::getSharedInstance('session', null)
+ 9 SYSTEMPATH/Config/BaseService.php(252): CodeIgniter\Config\Services::session()
+10 SYSTEMPATH/Common.php(988): CodeIgniter\Config\BaseService::__callStatic('session', [])
+11 APPPATH/Filters/NoAuth.php(12): session()
+12 SYSTEMPATH/Filters/Filters.php(173): App\Filters\NoAuth->before(Object(CodeIgniter\HTTP\IncomingRequest), null)
+13 SYSTEMPATH/CodeIgniter.php(473): CodeIgniter\Filters\Filters->run('/', 'before')
+14 SYSTEMPATH/CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+15 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2024-02-19 11:46:55 --> Session: Configured save path "/opt/lampp/htdocs/writable/session" is not writable by the PHP process.
+in SYSTEMPATH/Session/Handlers/FileHandler.php on line 101.
+ 1 SYSTEMPATH/Session/Handlers/FileHandler.php(101): CodeIgniter\Session\Exceptions\SessionException::forWriteProtectedSavePath('FCPATH/writable/session')
+ 2 [internal function]: CodeIgniter\Session\Handlers\FileHandler->open('FCPATH/writable/session', 'ci_session')
+ 3 SYSTEMPATH/Session/Session.php(928): session_start()
+ 4 SYSTEMPATH/Session/Session.php(250): CodeIgniter\Session\Session->startSession()
+ 5 SYSTEMPATH/Config/Services.php(674): CodeIgniter\Session\Session->start()
+ 6 SYSTEMPATH/Config/BaseService.php(252): CodeIgniter\Config\Services::session(Object(Config\App), false)
+ 7 SYSTEMPATH/Config/BaseService.php(193): CodeIgniter\Config\BaseService::__callStatic('session', [...])
+ 8 SYSTEMPATH/Config/Services.php(641): CodeIgniter\Config\BaseService::getSharedInstance('session', null)
+ 9 SYSTEMPATH/Config/BaseService.php(252): CodeIgniter\Config\Services::session()
+10 SYSTEMPATH/Common.php(988): CodeIgniter\Config\BaseService::__callStatic('session', [])
+11 APPPATH/Filters/NoAuth.php(12): session()
+12 SYSTEMPATH/Filters/Filters.php(173): App\Filters\NoAuth->before(Object(CodeIgniter\HTTP\IncomingRequest), null)
+13 SYSTEMPATH/CodeIgniter.php(473): CodeIgniter\Filters\Filters->run('/', 'before')
+14 SYSTEMPATH/CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+15 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2024-02-19 11:46:56 --> Session: Configured save path "/opt/lampp/htdocs/writable/session" is not writable by the PHP process.
+in SYSTEMPATH/Session/Handlers/FileHandler.php on line 101.
+ 1 SYSTEMPATH/Session/Handlers/FileHandler.php(101): CodeIgniter\Session\Exceptions\SessionException::forWriteProtectedSavePath('FCPATH/writable/session')
+ 2 [internal function]: CodeIgniter\Session\Handlers\FileHandler->open('FCPATH/writable/session', 'ci_session')
+ 3 SYSTEMPATH/Session/Session.php(928): session_start()
+ 4 SYSTEMPATH/Session/Session.php(250): CodeIgniter\Session\Session->startSession()
+ 5 SYSTEMPATH/Config/Services.php(674): CodeIgniter\Session\Session->start()
+ 6 SYSTEMPATH/Config/BaseService.php(252): CodeIgniter\Config\Services::session(Object(Config\App), false)
+ 7 SYSTEMPATH/Config/BaseService.php(193): CodeIgniter\Config\BaseService::__callStatic('session', [...])
+ 8 SYSTEMPATH/Config/Services.php(641): CodeIgniter\Config\BaseService::getSharedInstance('session', null)
+ 9 SYSTEMPATH/Config/BaseService.php(252): CodeIgniter\Config\Services::session()
+10 SYSTEMPATH/Common.php(988): CodeIgniter\Config\BaseService::__callStatic('session', [])
+11 APPPATH/Filters/NoAuth.php(12): session()
+12 SYSTEMPATH/Filters/Filters.php(173): App\Filters\NoAuth->before(Object(CodeIgniter\HTTP\IncomingRequest), null)
+13 SYSTEMPATH/CodeIgniter.php(473): CodeIgniter\Filters\Filters->run('/', 'before')
+14 SYSTEMPATH/CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+15 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2024-02-19 11:46:57 --> Session: Configured save path "/opt/lampp/htdocs/writable/session" is not writable by the PHP process.
+in SYSTEMPATH/Session/Handlers/FileHandler.php on line 101.
+ 1 SYSTEMPATH/Session/Handlers/FileHandler.php(101): CodeIgniter\Session\Exceptions\SessionException::forWriteProtectedSavePath('FCPATH/writable/session')
+ 2 [internal function]: CodeIgniter\Session\Handlers\FileHandler->open('FCPATH/writable/session', 'ci_session')
+ 3 SYSTEMPATH/Session/Session.php(928): session_start()
+ 4 SYSTEMPATH/Session/Session.php(250): CodeIgniter\Session\Session->startSession()
+ 5 SYSTEMPATH/Config/Services.php(674): CodeIgniter\Session\Session->start()
+ 6 SYSTEMPATH/Config/BaseService.php(252): CodeIgniter\Config\Services::session(Object(Config\App), false)
+ 7 SYSTEMPATH/Config/BaseService.php(193): CodeIgniter\Config\BaseService::__callStatic('session', [...])
+ 8 SYSTEMPATH/Config/Services.php(641): CodeIgniter\Config\BaseService::getSharedInstance('session', null)
+ 9 SYSTEMPATH/Config/BaseService.php(252): CodeIgniter\Config\Services::session()
+10 SYSTEMPATH/Common.php(988): CodeIgniter\Config\BaseService::__callStatic('session', [])
+11 APPPATH/Filters/NoAuth.php(12): session()
+12 SYSTEMPATH/Filters/Filters.php(173): App\Filters\NoAuth->before(Object(CodeIgniter\HTTP\IncomingRequest), null)
+13 SYSTEMPATH/CodeIgniter.php(473): CodeIgniter\Filters\Filters->run('/', 'before')
+14 SYSTEMPATH/CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+15 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2024-02-19 11:47:00 --> Session: Configured save path "/opt/lampp/htdocs/writable/session" is not writable by the PHP process.
+in SYSTEMPATH/Session/Handlers/FileHandler.php on line 101.
+ 1 SYSTEMPATH/Session/Handlers/FileHandler.php(101): CodeIgniter\Session\Exceptions\SessionException::forWriteProtectedSavePath('FCPATH/writable/session')
+ 2 [internal function]: CodeIgniter\Session\Handlers\FileHandler->open('FCPATH/writable/session', 'ci_session')
+ 3 SYSTEMPATH/Session/Session.php(928): session_start()
+ 4 SYSTEMPATH/Session/Session.php(250): CodeIgniter\Session\Session->startSession()
+ 5 SYSTEMPATH/Config/Services.php(674): CodeIgniter\Session\Session->start()
+ 6 SYSTEMPATH/Config/BaseService.php(252): CodeIgniter\Config\Services::session(Object(Config\App), false)
+ 7 SYSTEMPATH/Config/BaseService.php(193): CodeIgniter\Config\BaseService::__callStatic('session', [...])
+ 8 SYSTEMPATH/Config/Services.php(641): CodeIgniter\Config\BaseService::getSharedInstance('session', null)
+ 9 SYSTEMPATH/Config/BaseService.php(252): CodeIgniter\Config\Services::session()
+10 SYSTEMPATH/Common.php(988): CodeIgniter\Config\BaseService::__callStatic('session', [])
+11 APPPATH/Filters/NoAuth.php(12): session()
+12 SYSTEMPATH/Filters/Filters.php(173): App\Filters\NoAuth->before(Object(CodeIgniter\HTTP\IncomingRequest), null)
+13 SYSTEMPATH/CodeIgniter.php(473): CodeIgniter\Filters\Filters->run('/', 'before')
+14 SYSTEMPATH/CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+15 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2024-02-19 11:47:01 --> Session: Configured save path "/opt/lampp/htdocs/writable/session" is not writable by the PHP process.
+in SYSTEMPATH/Session/Handlers/FileHandler.php on line 101.
+ 1 SYSTEMPATH/Session/Handlers/FileHandler.php(101): CodeIgniter\Session\Exceptions\SessionException::forWriteProtectedSavePath('FCPATH/writable/session')
+ 2 [internal function]: CodeIgniter\Session\Handlers\FileHandler->open('FCPATH/writable/session', 'ci_session')
+ 3 SYSTEMPATH/Session/Session.php(928): session_start()
+ 4 SYSTEMPATH/Session/Session.php(250): CodeIgniter\Session\Session->startSession()
+ 5 SYSTEMPATH/Config/Services.php(674): CodeIgniter\Session\Session->start()
+ 6 SYSTEMPATH/Config/BaseService.php(252): CodeIgniter\Config\Services::session(Object(Config\App), false)
+ 7 SYSTEMPATH/Config/BaseService.php(193): CodeIgniter\Config\BaseService::__callStatic('session', [...])
+ 8 SYSTEMPATH/Config/Services.php(641): CodeIgniter\Config\BaseService::getSharedInstance('session', null)
+ 9 SYSTEMPATH/Config/BaseService.php(252): CodeIgniter\Config\Services::session()
+10 SYSTEMPATH/Common.php(988): CodeIgniter\Config\BaseService::__callStatic('session', [])
+11 APPPATH/Filters/NoAuth.php(12): session()
+12 SYSTEMPATH/Filters/Filters.php(173): App\Filters\NoAuth->before(Object(CodeIgniter\HTTP\IncomingRequest), null)
+13 SYSTEMPATH/CodeIgniter.php(473): CodeIgniter\Filters\Filters->run('/', 'before')
+14 SYSTEMPATH/CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+15 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2024-02-19 11:47:02 --> Session: Configured save path "/opt/lampp/htdocs/writable/session" is not writable by the PHP process.
+in SYSTEMPATH/Session/Handlers/FileHandler.php on line 101.
+ 1 SYSTEMPATH/Session/Handlers/FileHandler.php(101): CodeIgniter\Session\Exceptions\SessionException::forWriteProtectedSavePath('FCPATH/writable/session')
+ 2 [internal function]: CodeIgniter\Session\Handlers\FileHandler->open('FCPATH/writable/session', 'ci_session')
+ 3 SYSTEMPATH/Session/Session.php(928): session_start()
+ 4 SYSTEMPATH/Session/Session.php(250): CodeIgniter\Session\Session->startSession()
+ 5 SYSTEMPATH/Config/Services.php(674): CodeIgniter\Session\Session->start()
+ 6 SYSTEMPATH/Config/BaseService.php(252): CodeIgniter\Config\Services::session(Object(Config\App), false)
+ 7 SYSTEMPATH/Config/BaseService.php(193): CodeIgniter\Config\BaseService::__callStatic('session', [...])
+ 8 SYSTEMPATH/Config/Services.php(641): CodeIgniter\Config\BaseService::getSharedInstance('session', null)
+ 9 SYSTEMPATH/Config/BaseService.php(252): CodeIgniter\Config\Services::session()
+10 SYSTEMPATH/Common.php(988): CodeIgniter\Config\BaseService::__callStatic('session', [])
+11 APPPATH/Filters/NoAuth.php(12): session()
+12 SYSTEMPATH/Filters/Filters.php(173): App\Filters\NoAuth->before(Object(CodeIgniter\HTTP\IncomingRequest), null)
+13 SYSTEMPATH/CodeIgniter.php(473): CodeIgniter\Filters\Filters->run('/', 'before')
+14 SYSTEMPATH/CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+15 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2024-02-19 11:47:14 --> Session: Configured save path "/opt/lampp/htdocs/writable/session" is not writable by the PHP process.
+in SYSTEMPATH/Session/Handlers/FileHandler.php on line 101.
+ 1 SYSTEMPATH/Session/Handlers/FileHandler.php(101): CodeIgniter\Session\Exceptions\SessionException::forWriteProtectedSavePath('FCPATH/writable/session')
+ 2 [internal function]: CodeIgniter\Session\Handlers\FileHandler->open('FCPATH/writable/session', 'ci_session')
+ 3 SYSTEMPATH/Session/Session.php(928): session_start()
+ 4 SYSTEMPATH/Session/Session.php(250): CodeIgniter\Session\Session->startSession()
+ 5 SYSTEMPATH/Config/Services.php(674): CodeIgniter\Session\Session->start()
+ 6 SYSTEMPATH/Config/BaseService.php(252): CodeIgniter\Config\Services::session(Object(Config\App), false)
+ 7 SYSTEMPATH/Config/BaseService.php(193): CodeIgniter\Config\BaseService::__callStatic('session', [...])
+ 8 SYSTEMPATH/Config/Services.php(641): CodeIgniter\Config\BaseService::getSharedInstance('session', null)
+ 9 SYSTEMPATH/Config/BaseService.php(252): CodeIgniter\Config\Services::session()
+10 SYSTEMPATH/Common.php(988): CodeIgniter\Config\BaseService::__callStatic('session', [])
+11 APPPATH/Filters/NoAuth.php(12): session()
+12 SYSTEMPATH/Filters/Filters.php(173): App\Filters\NoAuth->before(Object(CodeIgniter\HTTP\IncomingRequest), null)
+13 SYSTEMPATH/CodeIgniter.php(473): CodeIgniter\Filters\Filters->run('/', 'before')
+14 SYSTEMPATH/CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+15 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2024-02-19 11:47:16 --> Session: Configured save path "/opt/lampp/htdocs/writable/session" is not writable by the PHP process.
+in SYSTEMPATH/Session/Handlers/FileHandler.php on line 101.
+ 1 SYSTEMPATH/Session/Handlers/FileHandler.php(101): CodeIgniter\Session\Exceptions\SessionException::forWriteProtectedSavePath('FCPATH/writable/session')
+ 2 [internal function]: CodeIgniter\Session\Handlers\FileHandler->open('FCPATH/writable/session', 'ci_session')
+ 3 SYSTEMPATH/Session/Session.php(928): session_start()
+ 4 SYSTEMPATH/Session/Session.php(250): CodeIgniter\Session\Session->startSession()
+ 5 SYSTEMPATH/Config/Services.php(674): CodeIgniter\Session\Session->start()
+ 6 SYSTEMPATH/Config/BaseService.php(252): CodeIgniter\Config\Services::session(Object(Config\App), false)
+ 7 SYSTEMPATH/Config/BaseService.php(193): CodeIgniter\Config\BaseService::__callStatic('session', [...])
+ 8 SYSTEMPATH/Config/Services.php(641): CodeIgniter\Config\BaseService::getSharedInstance('session', null)
+ 9 SYSTEMPATH/Config/BaseService.php(252): CodeIgniter\Config\Services::session()
+10 SYSTEMPATH/Common.php(988): CodeIgniter\Config\BaseService::__callStatic('session', [])
+11 APPPATH/Filters/NoAuth.php(12): session()
+12 SYSTEMPATH/Filters/Filters.php(173): App\Filters\NoAuth->before(Object(CodeIgniter\HTTP\IncomingRequest), null)
+13 SYSTEMPATH/CodeIgniter.php(473): CodeIgniter\Filters\Filters->run('/', 'before')
+14 SYSTEMPATH/CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+15 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2024-02-19 11:47:16 --> Session: Configured save path "/opt/lampp/htdocs/writable/session" is not writable by the PHP process.
+in SYSTEMPATH/Session/Handlers/FileHandler.php on line 101.
+ 1 SYSTEMPATH/Session/Handlers/FileHandler.php(101): CodeIgniter\Session\Exceptions\SessionException::forWriteProtectedSavePath('FCPATH/writable/session')
+ 2 [internal function]: CodeIgniter\Session\Handlers\FileHandler->open('FCPATH/writable/session', 'ci_session')
+ 3 SYSTEMPATH/Session/Session.php(928): session_start()
+ 4 SYSTEMPATH/Session/Session.php(250): CodeIgniter\Session\Session->startSession()
+ 5 SYSTEMPATH/Config/Services.php(674): CodeIgniter\Session\Session->start()
+ 6 SYSTEMPATH/Config/BaseService.php(252): CodeIgniter\Config\Services::session(Object(Config\App), false)
+ 7 SYSTEMPATH/Config/BaseService.php(193): CodeIgniter\Config\BaseService::__callStatic('session', [...])
+ 8 SYSTEMPATH/Config/Services.php(641): CodeIgniter\Config\BaseService::getSharedInstance('session', null)
+ 9 SYSTEMPATH/Config/BaseService.php(252): CodeIgniter\Config\Services::session()
+10 SYSTEMPATH/Common.php(988): CodeIgniter\Config\BaseService::__callStatic('session', [])
+11 APPPATH/Filters/NoAuth.php(12): session()
+12 SYSTEMPATH/Filters/Filters.php(173): App\Filters\NoAuth->before(Object(CodeIgniter\HTTP\IncomingRequest), null)
+13 SYSTEMPATH/CodeIgniter.php(473): CodeIgniter\Filters\Filters->run('/', 'before')
+14 SYSTEMPATH/CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+15 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2024-02-19 11:47:49 --> Session: Configured save path "/opt/lampp/htdocs/writable/session" is not writable by the PHP process.
+in SYSTEMPATH/Session/Handlers/FileHandler.php on line 101.
+ 1 SYSTEMPATH/Session/Handlers/FileHandler.php(101): CodeIgniter\Session\Exceptions\SessionException::forWriteProtectedSavePath('FCPATH/writable/session')
+ 2 [internal function]: CodeIgniter\Session\Handlers\FileHandler->open('FCPATH/writable/session', 'ci_session')
+ 3 SYSTEMPATH/Session/Session.php(928): session_start()
+ 4 SYSTEMPATH/Session/Session.php(250): CodeIgniter\Session\Session->startSession()
+ 5 SYSTEMPATH/Config/Services.php(674): CodeIgniter\Session\Session->start()
+ 6 SYSTEMPATH/Config/BaseService.php(252): CodeIgniter\Config\Services::session(Object(Config\App), false)
+ 7 SYSTEMPATH/Config/BaseService.php(193): CodeIgniter\Config\BaseService::__callStatic('session', [...])
+ 8 SYSTEMPATH/Config/Services.php(641): CodeIgniter\Config\BaseService::getSharedInstance('session', null)
+ 9 SYSTEMPATH/Config/BaseService.php(252): CodeIgniter\Config\Services::session()
+10 SYSTEMPATH/Common.php(988): CodeIgniter\Config\BaseService::__callStatic('session', [])
+11 APPPATH/Filters/NoAuth.php(12): session()
+12 SYSTEMPATH/Filters/Filters.php(173): App\Filters\NoAuth->before(Object(CodeIgniter\HTTP\IncomingRequest), null)
+13 SYSTEMPATH/CodeIgniter.php(473): CodeIgniter\Filters\Filters->run('/', 'before')
+14 SYSTEMPATH/CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+15 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()
+INFO - 2024-02-19 11:49:10 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-02-19 11:49:19 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-02-19 11:49:28 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-02-19 11:49:30 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-02-19 11:49:30 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2024-02-19 17:20:47 --> Call to undefined function App\Controllers\get_magic_quotes_gpc()
+in APPPATH/Controllers/Home.php on line 5888.
+ 1 SYSTEMPATH/CodeIgniter.php(934): App\Controllers\Home->metafor_download()
+ 2 SYSTEMPATH/CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+ 3 SYSTEMPATH/CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2024-02-19 17:21:05 --> Call to undefined function App\Controllers\get_magic_quotes_gpc()
+in APPPATH/Controllers/Home.php on line 5888.
+ 1 SYSTEMPATH/CodeIgniter.php(934): App\Controllers\Home->metafor_download()
+ 2 SYSTEMPATH/CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+ 3 SYSTEMPATH/CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()
+INFO - 2024-02-19 11:51:14 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2024-02-19 17:21:14 --> Call to undefined function App\Controllers\get_magic_quotes_gpc()
+in APPPATH/Controllers/Home.php on line 5888.
+ 1 SYSTEMPATH/CodeIgniter.php(934): App\Controllers\Home->metafor_download()
+ 2 SYSTEMPATH/CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+ 3 SYSTEMPATH/CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()
+INFO - 2024-02-19 11:51:35 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-02-19 11:53:01 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-02-19 11:53:45 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-02-19 11:53:50 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-02-19 11:53:51 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-02-19 11:53:52 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-02-19 11:53:54 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-02-19 11:53:56 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-02-19 11:53:56 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-02-19 11:53:57 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-02-19 11:54:07 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-02-19 11:54:28 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-02-19 11:54:29 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2024-02-19 18:04:09 --> Undefined variable $observations_assignment
+in APPPATH/Controllers/Home.php on line 5966.
+ 1 APPPATH/Controllers/Home.php(5966): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $observations_assignment', 'APPPATH/Controllers/Home.php', 5966)
+ 2 SYSTEMPATH/CodeIgniter.php(934): App\Controllers\Home->metafor_download()
+ 3 SYSTEMPATH/CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+ 4 SYSTEMPATH/CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2024-02-19 18:04:44 --> Undefined variable $observations_assignment
+in APPPATH/Controllers/Home.php on line 5966.
+ 1 APPPATH/Controllers/Home.php(5966): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $observations_assignment', 'APPPATH/Controllers/Home.php', 5966)
+ 2 SYSTEMPATH/CodeIgniter.php(934): App\Controllers\Home->metafor_download()
+ 3 SYSTEMPATH/CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+ 4 SYSTEMPATH/CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2024-02-19 18:19:25 --> Undefined constant "success"
+in APPPATH/Views/view_posts.php on line 152.
+ 1 SYSTEMPATH/View/View.php(213): include()
+ 2 SYSTEMPATH/View/View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 3 SYSTEMPATH/Common.php(1184): CodeIgniter\View\View->render('view_posts', [], true)
+ 4 APPPATH/Controllers/Home.php(5200): view('view_posts', [...])
+ 5 SYSTEMPATH/CodeIgniter.php(934): App\Controllers\Home->view_posts()
+ 6 SYSTEMPATH/CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+ 7 SYSTEMPATH/CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 8 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2024-02-19 18:19:30 --> Undefined constant "success"
+in APPPATH/Views/view_posts.php on line 152.
+ 1 SYSTEMPATH/View/View.php(213): include()
+ 2 SYSTEMPATH/View/View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 3 SYSTEMPATH/Common.php(1184): CodeIgniter\View\View->render('view_posts', [], true)
+ 4 APPPATH/Controllers/Home.php(5200): view('view_posts', [...])
+ 5 SYSTEMPATH/CodeIgniter.php(934): App\Controllers\Home->view_posts()
+ 6 SYSTEMPATH/CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+ 7 SYSTEMPATH/CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 8 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2024-02-19 18:19:37 --> Undefined constant "success"
+in APPPATH/Views/view_posts.php on line 152.
+ 1 SYSTEMPATH/View/View.php(213): include()
+ 2 SYSTEMPATH/View/View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 3 SYSTEMPATH/Common.php(1184): CodeIgniter\View\View->render('view_posts', [], true)
+ 4 APPPATH/Controllers/Home.php(5200): view('view_posts', [...])
+ 5 SYSTEMPATH/CodeIgniter.php(934): App\Controllers\Home->view_posts()
+ 6 SYSTEMPATH/CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+ 7 SYSTEMPATH/CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 8 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2024-02-19 18:20:53 --> Undefined constant "success"
+in APPPATH/Views/view_posts.php on line 152.
+ 1 SYSTEMPATH/View/View.php(213): include()
+ 2 SYSTEMPATH/View/View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 3 SYSTEMPATH/Common.php(1184): CodeIgniter\View\View->render('view_posts', [], true)
+ 4 APPPATH/Controllers/Home.php(5200): view('view_posts', [...])
+ 5 SYSTEMPATH/CodeIgniter.php(934): App\Controllers\Home->view_posts()
+ 6 SYSTEMPATH/CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+ 7 SYSTEMPATH/CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 8 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()
+INFO - 2024-02-19 12:51:15 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2024-02-19 18:21:15 --> Undefined constant "success"
+in APPPATH/Views/view_posts.php on line 152.
+ 1 SYSTEMPATH/View/View.php(213): include()
+ 2 SYSTEMPATH/View/View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 3 SYSTEMPATH/Common.php(1184): CodeIgniter\View\View->render('view_posts', [], true)
+ 4 APPPATH/Controllers/Home.php(5200): view('view_posts', [...])
+ 5 SYSTEMPATH/CodeIgniter.php(934): App\Controllers\Home->view_posts()
+ 6 SYSTEMPATH/CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+ 7 SYSTEMPATH/CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 8 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()
+INFO - 2024-02-19 12:51:26 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-02-19 12:51:27 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-02-19 12:51:27 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-02-19 12:51:27 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-02-19 12:51:27 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-02-19 12:51:28 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-02-19 12:51:30 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-02-19 12:51:31 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-02-19 12:51:33 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-02-19 12:51:33 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-02-19 12:51:35 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-02-19 12:51:35 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-02-19 12:51:37 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-02-19 12:51:39 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-02-19 12:51:41 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-02-19 12:51:42 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-02-19 12:51:44 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-02-19 12:51:49 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-02-19 12:51:50 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-02-19 12:51:52 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-02-19 12:51:53 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-02-19 12:51:54 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-02-19 12:51:56 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-02-19 12:51:58 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-02-19 12:52:00 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-02-19 12:52:01 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-02-19 12:52:01 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-02-19 12:52:04 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-02-19 12:52:09 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2024-02-19 18:22:09 --> Undefined constant "success"
+in APPPATH/Views/view_posts.php on line 152.
+ 1 SYSTEMPATH/View/View.php(213): include()
+ 2 SYSTEMPATH/View/View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 3 SYSTEMPATH/Common.php(1184): CodeIgniter\View\View->render('view_posts', [], true)
+ 4 APPPATH/Controllers/Home.php(5200): view('view_posts', [...])
+ 5 SYSTEMPATH/CodeIgniter.php(934): App\Controllers\Home->view_posts()
+ 6 SYSTEMPATH/CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+ 7 SYSTEMPATH/CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 8 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()
+INFO - 2024-02-19 12:52:33 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-02-19 12:52:40 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-02-19 12:52:53 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-02-19 12:52:54 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-02-19 12:52:54 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-02-19 12:53:00 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2024-02-19 18:23:00 --> Undefined constant "success"
+in APPPATH/Views/view_posts.php on line 152.
+ 1 SYSTEMPATH/View/View.php(213): include()
+ 2 SYSTEMPATH/View/View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 3 SYSTEMPATH/Common.php(1184): CodeIgniter\View\View->render('view_posts', [], true)
+ 4 APPPATH/Controllers/Home.php(5200): view('view_posts', [...])
+ 5 SYSTEMPATH/CodeIgniter.php(934): App\Controllers\Home->view_posts()
+ 6 SYSTEMPATH/CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+ 7 SYSTEMPATH/CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 8 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()
+INFO - 2024-02-19 12:54:45 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2024-02-19 18:24:45 --> syntax error, unexpected token "{"
+in APPPATH/Views/view_posts.php on line 152.
+ 1 SYSTEMPATH/View/View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 2 SYSTEMPATH/Common.php(1184): CodeIgniter\View\View->render('view_posts', [], true)
+ 3 APPPATH/Controllers/Home.php(5200): view('view_posts', [...])
+ 4 SYSTEMPATH/CodeIgniter.php(934): App\Controllers\Home->view_posts()
+ 5 SYSTEMPATH/CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+ 6 SYSTEMPATH/CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()
+INFO - 2024-02-19 12:55:20 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2024-02-19 18:25:20 --> Undefined constant "success"
+in APPPATH/Views/view_posts.php on line 152.
+ 1 SYSTEMPATH/View/View.php(213): include()
+ 2 SYSTEMPATH/View/View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 3 SYSTEMPATH/Common.php(1184): CodeIgniter\View\View->render('view_posts', [], true)
+ 4 APPPATH/Controllers/Home.php(5200): view('view_posts', [...])
+ 5 SYSTEMPATH/CodeIgniter.php(934): App\Controllers\Home->view_posts()
+ 6 SYSTEMPATH/CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+ 7 SYSTEMPATH/CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 8 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()
+INFO - 2024-02-19 12:56:32 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2024-02-19 18:26:33 --> Cannot use isset() on the result of an expression (you can use "null !== expression" instead)
+in APPPATH/Views/view_posts.php on line 152.
+ 1 [internal function]: CodeIgniter\Debug\Exceptions->shutdownHandler()
+INFO - 2024-02-19 12:57:03 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2024-02-19 18:27:03 --> Undefined constant "success"
+in APPPATH/Views/view_posts.php on line 152.
+ 1 SYSTEMPATH/View/View.php(213): include()
+ 2 SYSTEMPATH/View/View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 3 SYSTEMPATH/Common.php(1184): CodeIgniter\View\View->render('view_posts', [], true)
+ 4 APPPATH/Controllers/Home.php(5200): view('view_posts', [...])
+ 5 SYSTEMPATH/CodeIgniter.php(934): App\Controllers\Home->view_posts()
+ 6 SYSTEMPATH/CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+ 7 SYSTEMPATH/CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 8 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()
+INFO - 2024-02-19 12:57:18 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2024-02-19 18:27:18 --> Undefined constant "success"
+in APPPATH/Views/view_posts.php on line 152.
+ 1 SYSTEMPATH/View/View.php(213): include()
+ 2 SYSTEMPATH/View/View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 3 SYSTEMPATH/Common.php(1184): CodeIgniter\View\View->render('view_posts', [], true)
+ 4 APPPATH/Controllers/Home.php(5200): view('view_posts', [...])
+ 5 SYSTEMPATH/CodeIgniter.php(934): App\Controllers\Home->view_posts()
+ 6 SYSTEMPATH/CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+ 7 SYSTEMPATH/CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 8 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()
+INFO - 2024-02-19 12:57:55 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2024-02-19 18:27:55 --> Cannot use isset() on the result of an expression (you can use "null !== expression" instead)
+in APPPATH/Views/view_posts.php on line 152.
+ 1 [internal function]: CodeIgniter\Debug\Exceptions->shutdownHandler()
+INFO - 2024-02-19 13:00:13 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-02-19 13:00:14 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-02-19 13:00:20 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-02-19 13:01:50 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2024-02-19 18:31:50 --> Undefined constant "success"
+in APPPATH/Views/view_posts.php on line 152.
+ 1 SYSTEMPATH/View/View.php(213): include()
+ 2 SYSTEMPATH/View/View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 3 SYSTEMPATH/Common.php(1184): CodeIgniter\View\View->render('view_posts', [], true)
+ 4 APPPATH/Controllers/Home.php(5200): view('view_posts', [...])
+ 5 SYSTEMPATH/CodeIgniter.php(934): App\Controllers\Home->view_posts()
+ 6 SYSTEMPATH/CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+ 7 SYSTEMPATH/CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 8 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()
+INFO - 2024-02-19 13:01:59 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-02-19 13:02:00 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-02-19 13:02:00 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-02-19 13:02:03 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-02-19 13:02:08 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-02-19 13:02:10 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2024-02-19 18:32:10 --> Undefined constant "success"
+in APPPATH/Views/company.php on line 100.
+ 1 SYSTEMPATH/View/View.php(213): include()
+ 2 SYSTEMPATH/View/View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 3 SYSTEMPATH/Common.php(1184): CodeIgniter\View\View->render('company', [], true)
+ 4 APPPATH/Controllers/Home.php(1609): view('company', [...])
+ 5 SYSTEMPATH/CodeIgniter.php(934): App\Controllers\Home->company()
+ 6 SYSTEMPATH/CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+ 7 SYSTEMPATH/CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 8 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()
+INFO - 2024-02-19 13:02:14 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-02-19 13:02:14 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-02-19 13:02:16 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-02-19 13:02:17 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-02-19 13:02:20 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-02-19 13:02:20 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-02-19 13:02:25 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-02-19 13:02:25 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-02-19 13:02:25 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-02-19 13:02:30 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-02-19 13:02:34 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-02-19 13:02:36 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-02-19 13:02:36 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-02-19 13:02:41 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-02-19 13:02:44 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-02-19 13:02:44 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-02-19 13:02:48 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-02-19 13:02:54 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-02-19 13:02:54 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-02-19 13:03:00 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-02-19 13:03:02 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-02-19 13:03:04 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-02-19 13:03:04 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-02-19 13:03:10 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-02-19 13:03:14 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-02-19 13:03:17 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-02-19 13:03:17 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-02-19 13:03:20 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-02-19 13:03:22 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-02-19 13:03:24 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-02-19 13:03:25 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-02-19 13:03:27 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-02-19 13:03:29 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-02-19 13:03:31 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-02-19 13:03:31 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-02-19 13:03:34 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-02-19 13:03:37 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-02-19 13:03:39 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-02-19 13:03:39 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-02-19 13:04:08 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-02-19 13:04:09 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-02-19 13:04:12 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-02-19 13:04:13 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-02-19 13:08:59 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-02-19 13:12:58 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-02-19 13:13:00 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-02-19 13:26:15 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-02-19 13:59:50 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-02-19 14:02:58 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-02-19 14:04:50 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-02-19 14:05:26 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-02-19 14:06:32 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-02-19 14:07:42 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-02-19 14:07:42 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-02-19 14:07:43 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-02-19 14:08:43 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-02-19 14:20:49 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-02-19 14:24:40 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-02-19 14:28:28 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-02-19 14:30:02 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-02-19 14:30:09 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-02-19 14:30:13 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-02-19 14:33:11 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-02-19 14:34:32 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-02-19 14:34:38 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-02-19 14:35:00 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-02-19 14:35:02 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-02-19 14:35:03 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-02-19 14:35:20 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-02-19 14:35:21 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-02-19 14:35:31 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-02-19 14:35:31 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-02-19 14:35:35 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-02-19 14:35:44 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-02-19 14:35:44 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-02-19 14:35:54 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-02-19 14:35:55 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-02-19 14:36:10 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-02-19 14:36:19 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-02-19 14:36:36 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-02-19 14:36:37 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-02-19 14:36:37 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-02-19 14:36:37 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-02-19 14:36:37 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-02-19 14:36:56 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-02-19 14:36:57 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-02-19 14:36:57 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-02-19 14:36:57 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-02-19 14:36:58 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-02-19 14:40:23 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-02-19 14:42:38 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-02-19 14:44:56 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-02-19 14:51:35 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-02-19 14:51:46 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-02-19 14:57:49 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-02-19 15:00:42 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-02-19 15:02:00 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-02-19 15:03:08 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-02-19 15:03:10 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-02-19 15:04:05 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-02-19 15:04:06 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-02-19 15:04:58 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-02-19 15:12:13 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-02-19 15:12:27 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-02-19 15:13:41 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-02-19 15:14:28 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-02-19 15:16:31 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-02-19 15:19:02 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-02-19 15:24:47 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-02-19 15:25:48 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-02-19 15:25:52 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-02-19 15:31:40 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-02-19 15:31:42 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-02-19 15:34:04 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-02-19 15:34:05 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-02-19 15:34:37 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-02-19 15:44:52 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-02-19 15:45:47 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-02-19 15:49:24 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-02-19 15:49:25 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-02-19 15:54:57 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-02-19 16:02:41 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-02-19 16:04:06 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-02-19 16:04:30 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-02-19 16:06:13 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-02-19 16:07:30 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-02-19 16:07:47 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-02-19 16:08:37 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-02-19 16:09:15 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-02-19 16:11:57 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-02-19 16:14:24 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-02-19 16:15:43 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-02-19 16:20:02 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-02-19 16:22:14 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-02-19 16:36:17 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-02-19 16:47:11 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-02-19 16:50:35 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-02-19 16:50:55 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-02-19 16:51:46 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-02-19 16:54:00 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-02-19 16:54:02 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-02-19 16:57:10 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-02-19 16:57:12 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-02-19 16:59:56 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-02-19 17:01:15 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-02-19 17:01:30 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-02-19 17:01:31 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-02-19 17:09:26 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-02-19 17:21:15 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-02-19 17:22:56 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-02-19 17:35:02 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-02-19 17:39:44 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-02-19 17:54:11 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-02-19 17:56:50 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-02-19 18:11:52 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-02-19 18:15:53 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-02-19 18:16:44 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-02-19 18:25:12 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-02-19 18:25:12 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-02-19 18:26:28 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-02-19 18:30:12 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-02-19 18:33:07 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-02-19 18:39:06 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-02-19 18:41:13 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-02-19 18:41:13 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-02-19 18:54:05 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-02-19 18:56:18 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-02-19 18:58:37 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-02-19 18:58:38 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-02-19 19:00:39 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-02-19 19:00:42 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-02-19 19:01:54 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-02-19 19:07:51 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-02-19 19:08:01 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-02-19 19:12:16 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-02-19 19:14:52 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-02-19 19:31:52 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-02-19 19:38:56 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-02-19 19:51:11 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-02-19 19:53:50 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-02-19 20:04:56 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-02-19 20:12:33 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-02-19 20:13:28 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-02-19 20:20:59 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-02-19 20:21:00 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-02-19 20:21:01 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-02-19 20:21:01 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-02-19 20:25:21 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-02-19 20:27:28 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-02-19 20:38:54 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-02-19 20:40:48 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-02-19 20:40:51 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-02-19 20:46:35 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-02-19 20:46:38 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-02-19 20:49:08 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-02-19 20:52:45 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-02-19 20:57:15 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-02-19 21:00:28 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-02-19 21:05:29 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-02-19 21:06:09 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-02-19 21:08:09 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-02-19 21:08:47 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-02-19 21:13:30 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-02-19 21:25:42 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-02-19 21:25:46 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-02-19 21:27:17 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-02-19 21:28:27 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-02-19 21:30:23 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-02-19 21:30:33 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-02-19 21:35:47 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-02-19 21:37:20 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-02-19 21:37:21 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-02-19 21:42:50 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-02-19 21:43:12 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-02-19 21:51:22 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-02-19 21:54:13 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-02-19 21:54:13 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-02-19 22:00:55 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-02-19 22:04:32 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-02-19 22:06:17 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-02-19 22:11:37 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-02-19 22:18:22 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-02-19 22:21:58 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-02-19 22:24:22 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-02-19 22:30:24 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-02-19 22:30:58 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-02-19 22:31:03 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-02-19 22:42:21 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-02-19 22:43:57 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-02-19 22:48:50 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-02-19 23:02:10 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-02-19 23:02:10 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-02-19 23:04:07 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-02-19 23:04:28 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-02-19 23:06:44 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-02-19 23:09:05 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-02-19 23:09:52 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-02-19 23:15:04 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-02-19 23:20:30 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-02-19 23:21:17 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-02-19 23:22:07 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-02-19 23:26:38 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-02-19 23:28:14 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-02-19 23:34:23 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-02-19 23:34:30 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-02-19 23:37:13 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-02-19 23:37:47 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-02-19 23:42:31 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-02-19 23:45:26 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-02-19 23:49:38 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-02-19 23:50:03 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-02-19 23:50:53 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-02-19 23:55:02 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.

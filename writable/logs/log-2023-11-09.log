@@ -1,0 +1,6 @@
+CRITICAL - 2023-11-09 12:32:09 --> Cannot redeclare App\Controllers\Home::get_attendance_old()
+in APPPATH/Controllers/Home.php on line 6755.
+ 1 [internal function]: CodeIgniter\Debug\Exceptions->shutdownHandler()
+CRITICAL - 2023-11-09 12:32:13 --> Cannot redeclare App\Controllers\Home::get_attendance_old()
+in APPPATH/Controllers/Home.php on line 6755.
+ 1 [internal function]: CodeIgniter\Debug\Exceptions->shutdownHandler()

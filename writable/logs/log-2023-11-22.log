@@ -1,0 +1,27 @@
+ERROR - 2023-11-22 00:48:44 --> mysqli_sql_exception: You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near ')' at line 8 in /home/mahentf8/public_html/mahendranextwealth/beingyou/system/Database/MySQLi/Connection.php:295
+Stack trace:
+#0 /home/mahentf8/public_html/mahendranextwealth/beingyou/system/Database/MySQLi/Connection.php(295): mysqli->query('SELECT DISTINCT...', 0)
+#1 /home/mahentf8/public_html/mahendranextwealth/beingyou/system/Database/BaseConnection.php(691): CodeIgniter\Database\MySQLi\Connection->execute('SELECT DISTINCT...')
+#2 /home/mahentf8/public_html/mahendranextwealth/beingyou/system/Database/BaseConnection.php(605): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT DISTINCT...')
+#3 /home/mahentf8/public_html/mahendranextwealth/beingyou/system/Database/BaseBuilder.php(1616): CodeIgniter\Database\BaseConnection->query('SELECT DISTINCT...', Array, false)
+#4 /home/mahentf8/public_html/mahendranextwealth/beingyou/app/Controllers/Home.php(4944): CodeIgniter\Database\BaseBuilder->get()
+#5 /home/mahentf8/public_html/mahendranextwealth/beingyou/system/CodeIgniter.php(934): App\Controllers\Home->fetch_all_forms()
+#6 /home/mahentf8/public_html/mahendranextwealth/beingyou/system/CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+#7 /home/mahentf8/public_html/mahendranextwealth/beingyou/system/CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#8 /home/mahentf8/public_html/mahendranextwealth/beingyou/index.php(67): CodeIgniter\CodeIgniter->run()
+#9 {main}
+CRITICAL - 2023-11-22 00:48:44 --> You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near ')' at line 8
+in SYSTEMPATH/Database/BaseConnection.php on line 645.
+ 1 SYSTEMPATH/Database/BaseBuilder.php(1616): CodeIgniter\Database\BaseConnection->query('SELECT DISTINCT `f`.`form_id`, `f`.`form_name`, `f`.`form_name` as `url`
+FROM `build_forms` as `f`
+JOIN `posts` as `p` ON `p`.`category_id` = `f`.`course_id`
+JOIN `course_allocation` as `c` ON `c`.`course_id` = `p`.`post_id`
+WHERE `f`.`course_id` = :f.course_id:
+AND `f`.`status` = :f.status:
+AND `c`.`is_form_send` = :c.is_form_send:
+AND `f`.`form_id` IN :f.form_id:', [...], false)
+ 2 APPPATH/Controllers/Home.php(4944): CodeIgniter\Database\BaseBuilder->get()
+ 3 SYSTEMPATH/CodeIgniter.php(934): App\Controllers\Home->fetch_all_forms()
+ 4 SYSTEMPATH/CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+ 5 SYSTEMPATH/CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 6 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()

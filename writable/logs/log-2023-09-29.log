@@ -1,0 +1,291 @@
+INFO - 2023-09-29 04:09:41 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-09-29 04:10:16 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-09-29 04:10:18 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-09-29 04:10:18 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-09-29 04:12:28 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-09-29 04:12:29 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-09-29 13:21:37 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-09-29 13:21:38 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-09-29 13:21:48 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-09-29 13:21:50 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-09-29 13:21:51 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2023-09-29 18:51:51 --> Use of undefined constant METAFOR_ASSIGN - assumed 'METAFOR_ASSIGN' (this will throw an Error in a future version of PHP)
+in APPPATH/Controllers/Home.php on line 53.
+ 1 APPPATH/Controllers/Home.php(53): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Use of undefined constant METAFOR_ASSIGN - assumed \'METAFOR_ASSIGN\' (this will throw an Error in a future version of PHP)', 'APPPATH/Controllers/Home.php', 53, [])
+ 2 SYSTEMPATH/CodeIgniter.php(906): App\Controllers\Home->__construct()
+ 3 SYSTEMPATH/CodeIgniter.php(490): CodeIgniter\CodeIgniter->createController()
+ 4 SYSTEMPATH/CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()
+INFO - 2023-09-29 13:23:09 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-09-29 13:23:09 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-09-29 13:25:38 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-09-29 13:25:43 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-09-29 13:25:44 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-09-29 13:25:44 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-09-29 13:25:46 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-09-29 13:25:47 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-09-29 13:25:47 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-09-29 13:25:47 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-09-29 13:25:48 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-09-29 13:25:48 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-09-29 13:25:50 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-09-29 13:25:50 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-09-29 13:25:52 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-09-29 13:25:53 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-09-29 13:25:53 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-09-29 13:25:53 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-09-29 13:25:57 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-09-29 13:25:57 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-09-29 13:25:59 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-09-29 13:26:00 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-09-29 13:26:01 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-09-29 13:26:03 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-09-29 13:26:04 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-09-29 13:26:05 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-09-29 13:26:07 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-09-29 13:26:08 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-09-29 13:26:10 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+ERROR - 2023-09-29 18:56:10 --> mysqli_sql_exception: Table 'mahentf8_beingyou.daily_work_status' doesn't exist in /home/mahentf8/public_html/mahendranextwealth/beingyou/system/Database/MySQLi/Connection.php:295
+Stack trace:
+#0 /home/mahentf8/public_html/mahendranextwealth/beingyou/system/Database/MySQLi/Connection.php(295): mysqli->query('SELECT `w`.*, `...', 0)
+#1 /home/mahentf8/public_html/mahendranextwealth/beingyou/system/Database/BaseConnection.php(691): CodeIgniter\Database\MySQLi\Connection->execute('SELECT `w`.*, `...')
+#2 /home/mahentf8/public_html/mahendranextwealth/beingyou/system/Database/BaseConnection.php(605): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT `w`.*, `...')
+#3 /home/mahentf8/public_html/mahendranextwealth/beingyou/system/Database/BaseBuilder.php(1616): CodeIgniter\Database\BaseConnection->query('SELECT `w`.*, `...', Array, false)
+#4 /home/mahentf8/public_html/mahendranextwealth/beingyou/app/Controllers/Home.php(3388): CodeIgniter\Database\BaseBuilder->get()
+#5 /home/mahentf8/public_html/mahendranextwealth/beingyou/system/CodeIgniter.php(934): App\Controllers\Home->fetch_work_status()
+#6 /home/mahentf8/public_html/mahendranextwealth/beingyou/system/CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+#7 /home/mahentf8/public_html/mahendranextwealth/beingyou/system/CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#8 /home/mahentf8/public_html/mahendranextwealth/beingyou/index.php(67): CodeIgniter\CodeIgniter->run()
+#9 {main}
+CRITICAL - 2023-09-29 18:56:10 --> Table 'mahentf8_beingyou.daily_work_status' doesn't exist
+in SYSTEMPATH/Database/BaseConnection.php on line 645.
+ 1 SYSTEMPATH/Database/BaseBuilder.php(1616): CodeIgniter\Database\BaseConnection->query('SELECT `w`.*, `s`.*
+FROM `worksheet` as `w`
+LEFT JOIN `daily_work_status` as `s` ON `s`.`wsheet_id`=`w`.`wsheet_id`
+WHERE `s`.`course_id` = :s.course_id:
+AND `s`.`user_email` = :s.user_email:', [...], false)
+ 2 APPPATH/Controllers/Home.php(3388): CodeIgniter\Database\BaseBuilder->get()
+ 3 SYSTEMPATH/CodeIgniter.php(934): App\Controllers\Home->fetch_work_status()
+ 4 SYSTEMPATH/CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+ 5 SYSTEMPATH/CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 6 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()
+INFO - 2023-09-29 13:26:29 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-09-29 13:26:30 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-09-29 13:26:30 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-09-29 13:26:32 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-09-29 13:26:36 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-09-29 13:26:36 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-09-29 13:26:38 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-09-29 13:26:39 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+ERROR - 2023-09-29 18:56:39 --> mysqli_sql_exception: Table 'mahentf8_beingyou.metafor_assignation' doesn't exist in /home/mahentf8/public_html/mahendranextwealth/beingyou/system/Database/MySQLi/Connection.php:295
+Stack trace:
+#0 /home/mahentf8/public_html/mahendranextwealth/beingyou/system/Database/MySQLi/Connection.php(295): mysqli->query('SELECT `w`.*, `...', 0)
+#1 /home/mahentf8/public_html/mahendranextwealth/beingyou/system/Database/BaseConnection.php(691): CodeIgniter\Database\MySQLi\Connection->execute('SELECT `w`.*, `...')
+#2 /home/mahentf8/public_html/mahendranextwealth/beingyou/system/Database/BaseConnection.php(605): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT `w`.*, `...')
+#3 /home/mahentf8/public_html/mahendranextwealth/beingyou/system/Database/BaseBuilder.php(1616): CodeIgniter\Database\BaseConnection->query('SELECT `w`.*, `...', Array, false)
+#4 /home/mahentf8/public_html/mahendranextwealth/beingyou/app/Controllers/Home.php(3936): CodeIgniter\Database\BaseBuilder->get()
+#5 /home/mahentf8/public_html/mahendranextwealth/beingyou/system/CodeIgniter.php(934): App\Controllers\Home->fetch_rating_status()
+#6 /home/mahentf8/public_html/mahendranextwealth/beingyou/system/CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+#7 /home/mahentf8/public_html/mahendranextwealth/beingyou/system/CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#8 /home/mahentf8/public_html/mahendranextwealth/beingyou/index.php(67): CodeIgniter\CodeIgniter->run()
+#9 {main}
+CRITICAL - 2023-09-29 18:56:39 --> Table 'mahentf8_beingyou.metafor_assignation' doesn't exist
+in SYSTEMPATH/Database/BaseConnection.php on line 645.
+ 1 SYSTEMPATH/Database/BaseBuilder.php(1616): CodeIgniter\Database\BaseConnection->query('SELECT `w`.*, `m`.*, `a`.*
+FROM `worksheet` as `w`
+LEFT JOIN `metafor_assignation` as `a` ON `a`.`meta_id`=`w`.`wsheet_id`
+LEFT JOIN `metafor` as `m` ON `m`.`meta_id`=`w`.`wsheet_id`
+WHERE `m`.`course_id` = :m.course_id:
+AND `m`.`user_id` = :m.user_id:
+GROUP BY `m`.`meta_id`', [...], false)
+ 2 APPPATH/Controllers/Home.php(3936): CodeIgniter\Database\BaseBuilder->get()
+ 3 SYSTEMPATH/CodeIgniter.php(934): App\Controllers\Home->fetch_rating_status()
+ 4 SYSTEMPATH/CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+ 5 SYSTEMPATH/CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 6 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()
+INFO - 2023-09-29 13:26:54 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+ERROR - 2023-09-29 18:56:54 --> mysqli_sql_exception: Table 'mahentf8_beingyou.metafor_assignation' doesn't exist in /home/mahentf8/public_html/mahendranextwealth/beingyou/system/Database/MySQLi/Connection.php:295
+Stack trace:
+#0 /home/mahentf8/public_html/mahendranextwealth/beingyou/system/Database/MySQLi/Connection.php(295): mysqli->query('SELECT `w`.*, `...', 0)
+#1 /home/mahentf8/public_html/mahendranextwealth/beingyou/system/Database/BaseConnection.php(691): CodeIgniter\Database\MySQLi\Connection->execute('SELECT `w`.*, `...')
+#2 /home/mahentf8/public_html/mahendranextwealth/beingyou/system/Database/BaseConnection.php(605): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT `w`.*, `...')
+#3 /home/mahentf8/public_html/mahendranextwealth/beingyou/system/Database/BaseBuilder.php(1616): CodeIgniter\Database\BaseConnection->query('SELECT `w`.*, `...', Array, false)
+#4 /home/mahentf8/public_html/mahendranextwealth/beingyou/app/Controllers/Home.php(3936): CodeIgniter\Database\BaseBuilder->get()
+#5 /home/mahentf8/public_html/mahendranextwealth/beingyou/system/CodeIgniter.php(934): App\Controllers\Home->fetch_rating_status()
+#6 /home/mahentf8/public_html/mahendranextwealth/beingyou/system/CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+#7 /home/mahentf8/public_html/mahendranextwealth/beingyou/system/CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#8 /home/mahentf8/public_html/mahendranextwealth/beingyou/index.php(67): CodeIgniter\CodeIgniter->run()
+#9 {main}
+CRITICAL - 2023-09-29 18:56:54 --> Table 'mahentf8_beingyou.metafor_assignation' doesn't exist
+in SYSTEMPATH/Database/BaseConnection.php on line 645.
+ 1 SYSTEMPATH/Database/BaseBuilder.php(1616): CodeIgniter\Database\BaseConnection->query('SELECT `w`.*, `m`.*, `a`.*
+FROM `worksheet` as `w`
+LEFT JOIN `metafor_assignation` as `a` ON `a`.`meta_id`=`w`.`wsheet_id`
+LEFT JOIN `metafor` as `m` ON `m`.`meta_id`=`w`.`wsheet_id`
+WHERE `m`.`course_id` = :m.course_id:
+AND `m`.`user_id` = :m.user_id:
+GROUP BY `m`.`meta_id`', [...], false)
+ 2 APPPATH/Controllers/Home.php(3936): CodeIgniter\Database\BaseBuilder->get()
+ 3 SYSTEMPATH/CodeIgniter.php(934): App\Controllers\Home->fetch_rating_status()
+ 4 SYSTEMPATH/CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+ 5 SYSTEMPATH/CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 6 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()
+INFO - 2023-09-29 13:27:45 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-09-29 13:27:46 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-09-29 13:27:47 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-09-29 13:27:48 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-09-29 13:27:50 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-09-29 13:27:52 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-09-29 13:27:56 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-09-29 13:27:56 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-09-29 13:27:57 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+ERROR - 2023-09-29 18:57:57 --> mysqli_sql_exception: Table 'mahentf8_beingyou.daily_work_status' doesn't exist in /home/mahentf8/public_html/mahendranextwealth/beingyou/system/Database/MySQLi/Connection.php:295
+Stack trace:
+#0 /home/mahentf8/public_html/mahendranextwealth/beingyou/system/Database/MySQLi/Connection.php(295): mysqli->query('SELECT `w`.*, `...', 0)
+#1 /home/mahentf8/public_html/mahendranextwealth/beingyou/system/Database/BaseConnection.php(691): CodeIgniter\Database\MySQLi\Connection->execute('SELECT `w`.*, `...')
+#2 /home/mahentf8/public_html/mahendranextwealth/beingyou/system/Database/BaseConnection.php(605): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT `w`.*, `...')
+#3 /home/mahentf8/public_html/mahendranextwealth/beingyou/system/Database/BaseBuilder.php(1616): CodeIgniter\Database\BaseConnection->query('SELECT `w`.*, `...', Array, false)
+#4 /home/mahentf8/public_html/mahendranextwealth/beingyou/app/Controllers/Home.php(3388): CodeIgniter\Database\BaseBuilder->get()
+#5 /home/mahentf8/public_html/mahendranextwealth/beingyou/system/CodeIgniter.php(934): App\Controllers\Home->fetch_work_status()
+#6 /home/mahentf8/public_html/mahendranextwealth/beingyou/system/CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+#7 /home/mahentf8/public_html/mahendranextwealth/beingyou/system/CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#8 /home/mahentf8/public_html/mahendranextwealth/beingyou/index.php(67): CodeIgniter\CodeIgniter->run()
+#9 {main}
+CRITICAL - 2023-09-29 18:57:57 --> Table 'mahentf8_beingyou.daily_work_status' doesn't exist
+in SYSTEMPATH/Database/BaseConnection.php on line 645.
+ 1 SYSTEMPATH/Database/BaseBuilder.php(1616): CodeIgniter\Database\BaseConnection->query('SELECT `w`.*, `s`.*
+FROM `worksheet` as `w`
+LEFT JOIN `daily_work_status` as `s` ON `s`.`wsheet_id`=`w`.`wsheet_id`
+WHERE `s`.`course_id` = :s.course_id:
+AND `s`.`user_email` = :s.user_email:', [...], false)
+ 2 APPPATH/Controllers/Home.php(3388): CodeIgniter\Database\BaseBuilder->get()
+ 3 SYSTEMPATH/CodeIgniter.php(934): App\Controllers\Home->fetch_work_status()
+ 4 SYSTEMPATH/CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+ 5 SYSTEMPATH/CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 6 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()
+INFO - 2023-09-29 13:28:05 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+ERROR - 2023-09-29 18:58:05 --> mysqli_sql_exception: Table 'mahentf8_beingyou.daily_work_status' doesn't exist in /home/mahentf8/public_html/mahendranextwealth/beingyou/system/Database/MySQLi/Connection.php:295
+Stack trace:
+#0 /home/mahentf8/public_html/mahendranextwealth/beingyou/system/Database/MySQLi/Connection.php(295): mysqli->query('SELECT `w`.*, `...', 0)
+#1 /home/mahentf8/public_html/mahendranextwealth/beingyou/system/Database/BaseConnection.php(691): CodeIgniter\Database\MySQLi\Connection->execute('SELECT `w`.*, `...')
+#2 /home/mahentf8/public_html/mahendranextwealth/beingyou/system/Database/BaseConnection.php(605): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT `w`.*, `...')
+#3 /home/mahentf8/public_html/mahendranextwealth/beingyou/system/Database/BaseBuilder.php(1616): CodeIgniter\Database\BaseConnection->query('SELECT `w`.*, `...', Array, false)
+#4 /home/mahentf8/public_html/mahendranextwealth/beingyou/app/Controllers/Home.php(3388): CodeIgniter\Database\BaseBuilder->get()
+#5 /home/mahentf8/public_html/mahendranextwealth/beingyou/system/CodeIgniter.php(934): App\Controllers\Home->fetch_work_status()
+#6 /home/mahentf8/public_html/mahendranextwealth/beingyou/system/CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+#7 /home/mahentf8/public_html/mahendranextwealth/beingyou/system/CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#8 /home/mahentf8/public_html/mahendranextwealth/beingyou/index.php(67): CodeIgniter\CodeIgniter->run()
+#9 {main}
+CRITICAL - 2023-09-29 18:58:05 --> Table 'mahentf8_beingyou.daily_work_status' doesn't exist
+in SYSTEMPATH/Database/BaseConnection.php on line 645.
+ 1 SYSTEMPATH/Database/BaseBuilder.php(1616): CodeIgniter\Database\BaseConnection->query('SELECT `w`.*, `s`.*
+FROM `worksheet` as `w`
+LEFT JOIN `daily_work_status` as `s` ON `s`.`wsheet_id`=`w`.`wsheet_id`
+WHERE `s`.`course_id` = :s.course_id:
+AND `s`.`user_email` = :s.user_email:', [...], false)
+ 2 APPPATH/Controllers/Home.php(3388): CodeIgniter\Database\BaseBuilder->get()
+ 3 SYSTEMPATH/CodeIgniter.php(934): App\Controllers\Home->fetch_work_status()
+ 4 SYSTEMPATH/CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+ 5 SYSTEMPATH/CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 6 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()
+INFO - 2023-09-29 13:28:10 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+ERROR - 2023-09-29 18:58:10 --> mysqli_sql_exception: Table 'mahentf8_beingyou.daily_work_status' doesn't exist in /home/mahentf8/public_html/mahendranextwealth/beingyou/system/Database/MySQLi/Connection.php:295
+Stack trace:
+#0 /home/mahentf8/public_html/mahendranextwealth/beingyou/system/Database/MySQLi/Connection.php(295): mysqli->query('SELECT `w`.*, `...', 0)
+#1 /home/mahentf8/public_html/mahendranextwealth/beingyou/system/Database/BaseConnection.php(691): CodeIgniter\Database\MySQLi\Connection->execute('SELECT `w`.*, `...')
+#2 /home/mahentf8/public_html/mahendranextwealth/beingyou/system/Database/BaseConnection.php(605): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT `w`.*, `...')
+#3 /home/mahentf8/public_html/mahendranextwealth/beingyou/system/Database/BaseBuilder.php(1616): CodeIgniter\Database\BaseConnection->query('SELECT `w`.*, `...', Array, false)
+#4 /home/mahentf8/public_html/mahendranextwealth/beingyou/app/Controllers/Home.php(3388): CodeIgniter\Database\BaseBuilder->get()
+#5 /home/mahentf8/public_html/mahendranextwealth/beingyou/system/CodeIgniter.php(934): App\Controllers\Home->fetch_work_status()
+#6 /home/mahentf8/public_html/mahendranextwealth/beingyou/system/CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+#7 /home/mahentf8/public_html/mahendranextwealth/beingyou/system/CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#8 /home/mahentf8/public_html/mahendranextwealth/beingyou/index.php(67): CodeIgniter\CodeIgniter->run()
+#9 {main}
+CRITICAL - 2023-09-29 18:58:10 --> Table 'mahentf8_beingyou.daily_work_status' doesn't exist
+in SYSTEMPATH/Database/BaseConnection.php on line 645.
+ 1 SYSTEMPATH/Database/BaseBuilder.php(1616): CodeIgniter\Database\BaseConnection->query('SELECT `w`.*, `s`.*
+FROM `worksheet` as `w`
+LEFT JOIN `daily_work_status` as `s` ON `s`.`wsheet_id`=`w`.`wsheet_id`
+WHERE `s`.`course_id` = :s.course_id:
+AND `s`.`user_email` = :s.user_email:', [...], false)
+ 2 APPPATH/Controllers/Home.php(3388): CodeIgniter\Database\BaseBuilder->get()
+ 3 SYSTEMPATH/CodeIgniter.php(934): App\Controllers\Home->fetch_work_status()
+ 4 SYSTEMPATH/CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+ 5 SYSTEMPATH/CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 6 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()
+INFO - 2023-09-29 13:28:39 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-09-29 13:28:39 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-09-29 13:28:41 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+ERROR - 2023-09-29 18:58:41 --> mysqli_sql_exception: Table 'mahentf8_beingyou.daily_work_status' doesn't exist in /home/mahentf8/public_html/mahendranextwealth/beingyou/system/Database/MySQLi/Connection.php:295
+Stack trace:
+#0 /home/mahentf8/public_html/mahendranextwealth/beingyou/system/Database/MySQLi/Connection.php(295): mysqli->query('SELECT `w`.*, `...', 0)
+#1 /home/mahentf8/public_html/mahendranextwealth/beingyou/system/Database/BaseConnection.php(691): CodeIgniter\Database\MySQLi\Connection->execute('SELECT `w`.*, `...')
+#2 /home/mahentf8/public_html/mahendranextwealth/beingyou/system/Database/BaseConnection.php(605): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT `w`.*, `...')
+#3 /home/mahentf8/public_html/mahendranextwealth/beingyou/system/Database/BaseBuilder.php(1616): CodeIgniter\Database\BaseConnection->query('SELECT `w`.*, `...', Array, false)
+#4 /home/mahentf8/public_html/mahendranextwealth/beingyou/app/Controllers/Home.php(3388): CodeIgniter\Database\BaseBuilder->get()
+#5 /home/mahentf8/public_html/mahendranextwealth/beingyou/system/CodeIgniter.php(934): App\Controllers\Home->fetch_work_status()
+#6 /home/mahentf8/public_html/mahendranextwealth/beingyou/system/CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+#7 /home/mahentf8/public_html/mahendranextwealth/beingyou/system/CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#8 /home/mahentf8/public_html/mahendranextwealth/beingyou/index.php(67): CodeIgniter\CodeIgniter->run()
+#9 {main}
+CRITICAL - 2023-09-29 18:58:41 --> Table 'mahentf8_beingyou.daily_work_status' doesn't exist
+in SYSTEMPATH/Database/BaseConnection.php on line 645.
+ 1 SYSTEMPATH/Database/BaseBuilder.php(1616): CodeIgniter\Database\BaseConnection->query('SELECT `w`.*, `s`.*
+FROM `worksheet` as `w`
+LEFT JOIN `daily_work_status` as `s` ON `s`.`wsheet_id`=`w`.`wsheet_id`
+WHERE `s`.`course_id` = :s.course_id:
+AND `s`.`user_email` = :s.user_email:', [...], false)
+ 2 APPPATH/Controllers/Home.php(3388): CodeIgniter\Database\BaseBuilder->get()
+ 3 SYSTEMPATH/CodeIgniter.php(934): App\Controllers\Home->fetch_work_status()
+ 4 SYSTEMPATH/CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+ 5 SYSTEMPATH/CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 6 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()
+INFO - 2023-09-29 13:28:54 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+ERROR - 2023-09-29 18:58:54 --> mysqli_sql_exception: Table 'mahentf8_beingyou.daily_work_status' doesn't exist in /home/mahentf8/public_html/mahendranextwealth/beingyou/system/Database/MySQLi/Connection.php:295
+Stack trace:
+#0 /home/mahentf8/public_html/mahendranextwealth/beingyou/system/Database/MySQLi/Connection.php(295): mysqli->query('SELECT `w`.*, `...', 0)
+#1 /home/mahentf8/public_html/mahendranextwealth/beingyou/system/Database/BaseConnection.php(691): CodeIgniter\Database\MySQLi\Connection->execute('SELECT `w`.*, `...')
+#2 /home/mahentf8/public_html/mahendranextwealth/beingyou/system/Database/BaseConnection.php(605): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT `w`.*, `...')
+#3 /home/mahentf8/public_html/mahendranextwealth/beingyou/system/Database/BaseBuilder.php(1616): CodeIgniter\Database\BaseConnection->query('SELECT `w`.*, `...', Array, false)
+#4 /home/mahentf8/public_html/mahendranextwealth/beingyou/app/Controllers/Home.php(3388): CodeIgniter\Database\BaseBuilder->get()
+#5 /home/mahentf8/public_html/mahendranextwealth/beingyou/system/CodeIgniter.php(934): App\Controllers\Home->fetch_work_status()
+#6 /home/mahentf8/public_html/mahendranextwealth/beingyou/system/CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+#7 /home/mahentf8/public_html/mahendranextwealth/beingyou/system/CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#8 /home/mahentf8/public_html/mahendranextwealth/beingyou/index.php(67): CodeIgniter\CodeIgniter->run()
+#9 {main}
+CRITICAL - 2023-09-29 18:58:54 --> Table 'mahentf8_beingyou.daily_work_status' doesn't exist
+in SYSTEMPATH/Database/BaseConnection.php on line 645.
+ 1 SYSTEMPATH/Database/BaseBuilder.php(1616): CodeIgniter\Database\BaseConnection->query('SELECT `w`.*, `s`.*
+FROM `worksheet` as `w`
+LEFT JOIN `daily_work_status` as `s` ON `s`.`wsheet_id`=`w`.`wsheet_id`
+WHERE `s`.`course_id` = :s.course_id:
+AND `s`.`user_email` = :s.user_email:', [...], false)
+ 2 APPPATH/Controllers/Home.php(3388): CodeIgniter\Database\BaseBuilder->get()
+ 3 SYSTEMPATH/CodeIgniter.php(934): App\Controllers\Home->fetch_work_status()
+ 4 SYSTEMPATH/CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+ 5 SYSTEMPATH/CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 6 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()
+INFO - 2023-09-29 13:29:54 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-09-29 13:29:56 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-09-29 13:29:57 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-09-29 13:29:58 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-09-29 13:30:01 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-09-29 13:30:01 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-09-29 13:30:05 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-09-29 13:30:05 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-09-29 13:30:07 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-09-29 13:30:07 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-09-29 13:30:13 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-09-29 13:30:14 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-09-29 13:30:15 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-09-29 13:30:20 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-09-29 13:30:22 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-09-29 13:30:22 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-09-29 13:30:23 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-09-29 13:30:25 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-09-29 13:30:25 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-09-29 13:30:26 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-09-29 13:30:29 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-09-29 13:30:31 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-09-29 13:30:37 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-09-29 13:30:37 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.

@@ -1,0 +1,181 @@
+ERROR - 2023-11-06 11:04:17 --> Email: Unable to send email using SMTP. Your server might not be configured to send mail using this method.
+ERROR - 2023-11-06 11:04:17 --> 220 PN3PR01CA0177.outlook.office365.com Microsoft ESMTP MAIL Service ready at Mon, 6 Nov 2023 05:34:10 +0000
+
+hello: 250-PN3PR01CA0177.outlook.office365.com Hello [103.50.163.30]
+250-SIZE 157286400
+250-PIPELINING
+250-DSN
+250-ENHANCEDSTATUSCODES
+250-STARTTLS
+250-8BITMIME
+250-BINARYMIME
+250-CHUNKING
+250 SMTPUTF8
+
+starttls: 220 2.0.0 SMTP server ready
+
+hello: 250-PN3PR01CA0177.outlook.office365.com Hello [103.50.163.30]
+250-SIZE 157286400
+250-PIPELINING
+250-DSN
+250-ENHANCEDSTATUSCODES
+250-AUTH LOGIN XOAUTH2
+250-8BITMIME
+250-BINARYMIME
+250-CHUNKING
+250 SMTPUTF8
+
+Failed to authenticate password. Error: 535 5.7.139 Authentication unsuccessful, the request did not meet the criteria to be authenticated successfully. Contact your administrator. [PN3PR01CA0177.INDPRD01.PROD.OUTLOOK.COM 2023-11-06T05:34:17.771Z 08DBDE703CF92EBD]
+
+ERROR - 2023-11-06 11:05:29 --> Email: Unable to send email using SMTP. Your server might not be configured to send mail using this method.
+ERROR - 2023-11-06 11:05:29 --> 220 PN3PR01CA0147.outlook.office365.com Microsoft ESMTP MAIL Service ready at Mon, 6 Nov 2023 05:35:24 +0000
+
+hello: 250-PN3PR01CA0147.outlook.office365.com Hello [103.50.163.30]
+250-SIZE 157286400
+250-PIPELINING
+250-DSN
+250-ENHANCEDSTATUSCODES
+250-STARTTLS
+250-8BITMIME
+250-BINARYMIME
+250-CHUNKING
+250 SMTPUTF8
+
+starttls: 220 2.0.0 SMTP server ready
+
+hello: 250-PN3PR01CA0147.outlook.office365.com Hello [103.50.163.30]
+250-SIZE 157286400
+250-PIPELINING
+250-DSN
+250-ENHANCEDSTATUSCODES
+250-AUTH LOGIN XOAUTH2
+250-8BITMIME
+250-BINARYMIME
+250-CHUNKING
+250 SMTPUTF8
+
+Failed to authenticate password. Error: 535 5.7.139 Authentication unsuccessful, the request did not meet the criteria to be authenticated successfully. Contact your administrator. [PN3PR01CA0147.INDPRD01.PROD.OUTLOOK.COM 2023-11-06T05:35:29.949Z 08DBDDFA45086D7E]
+
+ERROR - 2023-11-06 12:13:50 --> Email: Unable to send email using SMTP. Your server might not be configured to send mail using this method.
+ERROR - 2023-11-06 12:13:50 --> 220 BM1PR01CA0164.outlook.office365.com Microsoft ESMTP MAIL Service ready at Mon, 6 Nov 2023 06:43:43 +0000
+
+hello: 250-BM1PR01CA0164.outlook.office365.com Hello [103.50.163.30]
+250-SIZE 157286400
+250-PIPELINING
+250-DSN
+250-ENHANCEDSTATUSCODES
+250-STARTTLS
+250-8BITMIME
+250-BINARYMIME
+250-CHUNKING
+250 SMTPUTF8
+
+starttls: 220 2.0.0 SMTP server ready
+
+hello: 250-BM1PR01CA0164.outlook.office365.com Hello [103.50.163.30]
+250-SIZE 157286400
+250-PIPELINING
+250-DSN
+250-ENHANCEDSTATUSCODES
+250-AUTH LOGIN XOAUTH2
+250-8BITMIME
+250-BINARYMIME
+250-CHUNKING
+250 SMTPUTF8
+
+Failed to authenticate password. Error: 535 5.7.139 Authentication unsuccessful, the request did not meet the criteria to be authenticated successfully. Contact your administrator. [BM1PR01CA0164.INDPRD01.PROD.OUTLOOK.COM 2023-11-06T06:43:50.440Z 08DBDE55B74434DD]
+
+ERROR - 2023-11-06 13:22:06 --> Email: Unable to send email using SMTP. Your server might not be configured to send mail using this method.
+ERROR - 2023-11-06 13:22:06 --> 220 BMXP287CA0009.outlook.office365.com Microsoft ESMTP MAIL Service ready at Mon, 6 Nov 2023 07:51:58 +0000
+
+hello: 250-BMXP287CA0009.outlook.office365.com Hello [103.50.163.30]
+250-SIZE 157286400
+250-PIPELINING
+250-DSN
+250-ENHANCEDSTATUSCODES
+250-STARTTLS
+250-8BITMIME
+250-BINARYMIME
+250-CHUNKING
+250 SMTPUTF8
+
+starttls: 220 2.0.0 SMTP server ready
+
+hello: 250-BMXP287CA0009.outlook.office365.com Hello [103.50.163.30]
+250-SIZE 157286400
+250-PIPELINING
+250-DSN
+250-ENHANCEDSTATUSCODES
+250-AUTH LOGIN XOAUTH2
+250-8BITMIME
+250-BINARYMIME
+250-CHUNKING
+250 SMTPUTF8
+
+Failed to authenticate password. Error: 535 5.7.139 Authentication unsuccessful, the request did not meet the criteria to be authenticated successfully. Contact your administrator. [BMXP287CA0009.INDP287.PROD.OUTLOOK.COM 2023-11-06T07:52:06.583Z 08DBDE781BCE38A4]
+
+ERROR - 2023-11-06 17:54:47 --> Email: Unable to send email using SMTP. Your server might not be configured to send mail using this method.
+ERROR - 2023-11-06 17:54:47 --> 220 PN2PR01CA0093.outlook.office365.com Microsoft ESMTP MAIL Service ready at Mon, 6 Nov 2023 12:24:41 +0000
+
+hello: 250-PN2PR01CA0093.outlook.office365.com Hello [103.50.163.30]
+250-SIZE 157286400
+250-PIPELINING
+250-DSN
+250-ENHANCEDSTATUSCODES
+250-STARTTLS
+250-8BITMIME
+250-BINARYMIME
+250-CHUNKING
+250 SMTPUTF8
+
+starttls: 220 2.0.0 SMTP server ready
+
+hello: 250-PN2PR01CA0093.outlook.office365.com Hello [103.50.163.30]
+250-SIZE 157286400
+250-PIPELINING
+250-DSN
+250-ENHANCEDSTATUSCODES
+250-AUTH LOGIN XOAUTH2
+250-8BITMIME
+250-BINARYMIME
+250-CHUNKING
+250 SMTPUTF8
+
+Failed to authenticate password. Error: 535 5.7.3 Authentication unsuccessful [PN2PR01CA0093.INDPRD01.PROD.OUTLOOK.COM 2023-11-06T12:24:47.346Z 08DBDE2B37304D8F]
+
+CRITICAL - 2023-11-06 18:03:07 --> count(): Parameter must be an array or an object that implements Countable
+in APPPATH/Views/course_assignments.php on line 154.
+ 1 APPPATH/Views/course_assignments.php(154): CodeIgniter\Debug\Exceptions->errorHandler(2, 'count(): Parameter must be an array or an object that implements Countable', 'APPPATH/Views/course_assignments.php', 154, [...])
+ 2 SYSTEMPATH/View/View.php(213): include('APPPATH/Views/course_assignments.php')
+ 3 SYSTEMPATH/View/View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH/Common.php(1184): CodeIgniter\View\View->render('course_assignments', [], true)
+ 5 APPPATH/Controllers/Home.php(2124): view('course_assignments', [...])
+ 6 SYSTEMPATH/CodeIgniter.php(934): App\Controllers\Home->course_assignments()
+ 7 SYSTEMPATH/CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+ 8 SYSTEMPATH/CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-11-06 18:03:26 --> count(): Parameter must be an array or an object that implements Countable
+in APPPATH/Views/course_assignments.php on line 154.
+ 1 APPPATH/Views/course_assignments.php(154): CodeIgniter\Debug\Exceptions->errorHandler(2, 'count(): Parameter must be an array or an object that implements Countable', 'APPPATH/Views/course_assignments.php', 154, [...])
+ 2 SYSTEMPATH/View/View.php(213): include('APPPATH/Views/course_assignments.php')
+ 3 SYSTEMPATH/View/View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH/Common.php(1184): CodeIgniter\View\View->render('course_assignments', [], true)
+ 5 APPPATH/Controllers/Home.php(2124): view('course_assignments', [...])
+ 6 SYSTEMPATH/CodeIgniter.php(934): App\Controllers\Home->course_assignments()
+ 7 SYSTEMPATH/CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+ 8 SYSTEMPATH/CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-11-06 19:20:29 --> Invalid argument supplied for foreach()
+in APPPATH/Controllers/Home.php on line 4219.
+ 1 APPPATH/Controllers/Home.php(4219): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Invalid argument supplied for foreach()', 'APPPATH/Controllers/Home.php', 4219, [...])
+ 2 SYSTEMPATH/CodeIgniter.php(934): App\Controllers\Home->metafor_assign()
+ 3 SYSTEMPATH/CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+ 4 SYSTEMPATH/CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-11-06 19:20:40 --> Invalid argument supplied for foreach()
+in APPPATH/Controllers/Home.php on line 4219.
+ 1 APPPATH/Controllers/Home.php(4219): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Invalid argument supplied for foreach()', 'APPPATH/Controllers/Home.php', 4219, [...])
+ 2 SYSTEMPATH/CodeIgniter.php(934): App\Controllers\Home->metafor_assign()
+ 3 SYSTEMPATH/CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+ 4 SYSTEMPATH/CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()

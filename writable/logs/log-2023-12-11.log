@@ -1,0 +1,24 @@
+CRITICAL - 2023-12-11 11:25:55 --> Call to a member function where() on null
+in APPPATH/Controllers/Home.php on line 872.
+ 1 SYSTEMPATH/CodeIgniter.php(934): App\Controllers\Home->fetch_role_list()
+ 2 SYSTEMPATH/CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+ 3 SYSTEMPATH/CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-12-11 16:37:26 --> Call to a member function where() on null
+in APPPATH/Controllers/Home.php on line 872.
+ 1 SYSTEMPATH/CodeIgniter.php(934): App\Controllers\Home->fetch_role_list()
+ 2 SYSTEMPATH/CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+ 3 SYSTEMPATH/CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-12-11 16:37:33 --> Call to a member function where() on null
+in APPPATH/Controllers/Home.php on line 872.
+ 1 SYSTEMPATH/CodeIgniter.php(934): App\Controllers\Home->fetch_role_list()
+ 2 SYSTEMPATH/CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+ 3 SYSTEMPATH/CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-12-11 16:42:27 --> Call to a member function where() on null
+in APPPATH/Controllers/Home.php on line 872.
+ 1 SYSTEMPATH/CodeIgniter.php(934): App\Controllers\Home->fetch_role_list()
+ 2 SYSTEMPATH/CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+ 3 SYSTEMPATH/CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()

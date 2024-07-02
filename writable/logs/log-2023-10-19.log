@@ -1,0 +1,39 @@
+CRITICAL - 2023-10-19 04:21:12 --> Undefined variable: key
+in APPPATH/Controllers/Home.php on line 3044.
+ 1 APPPATH/Controllers/Home.php(3044): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Undefined variable: key', 'APPPATH/Controllers/Home.php', 3044, [...])
+ 2 SYSTEMPATH/CodeIgniter.php(934): App\Controllers\Home->edit_form()
+ 3 SYSTEMPATH/CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+ 4 SYSTEMPATH/CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-10-19 04:22:03 --> Undefined variable: key
+in APPPATH/Controllers/Home.php on line 3044.
+ 1 APPPATH/Controllers/Home.php(3044): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Undefined variable: key', 'APPPATH/Controllers/Home.php', 3044, [...])
+ 2 SYSTEMPATH/CodeIgniter.php(934): App\Controllers\Home->edit_form()
+ 3 SYSTEMPATH/CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+ 4 SYSTEMPATH/CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-10-19 04:22:16 --> Undefined variable: key
+in APPPATH/Controllers/Home.php on line 3044.
+ 1 APPPATH/Controllers/Home.php(3044): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Undefined variable: key', 'APPPATH/Controllers/Home.php', 3044, [...])
+ 2 SYSTEMPATH/CodeIgniter.php(934): App\Controllers\Home->edit_form()
+ 3 SYSTEMPATH/CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+ 4 SYSTEMPATH/CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-10-19 04:23:43 --> Undefined variable: key
+in APPPATH/Controllers/Home.php on line 3044.
+ 1 APPPATH/Controllers/Home.php(3044): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Undefined variable: key', 'APPPATH/Controllers/Home.php', 3044, [...])
+ 2 SYSTEMPATH/CodeIgniter.php(934): App\Controllers\Home->edit_form()
+ 3 SYSTEMPATH/CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+ 4 SYSTEMPATH/CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()
+INFO - 2023-10-19 06:05:10 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-10-19 06:05:16 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-10-19 06:05:19 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-10-19 06:05:19 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-10-19 06:05:31 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-10-19 06:05:33 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-10-19 06:05:33 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-10-19 06:05:33 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-10-19 06:05:33 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-10-19 06:05:57 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-10-19 06:05:57 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.

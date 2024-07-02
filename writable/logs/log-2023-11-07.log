@@ -1,0 +1,657 @@
+ERROR - 2023-11-07 10:10:20 --> mysqli_sql_exception: Unknown column 'p.name' in 'where clause' in /home/mahentf8/public_html/mahendranextwealth/beingyou/system/Database/MySQLi/Connection.php:295
+Stack trace:
+#0 /home/mahentf8/public_html/mahendranextwealth/beingyou/system/Database/MySQLi/Connection.php(295): mysqli->query('SELECT `p`.`pos...', 0)
+#1 /home/mahentf8/public_html/mahendranextwealth/beingyou/system/Database/BaseConnection.php(691): CodeIgniter\Database\MySQLi\Connection->execute('SELECT `p`.`pos...')
+#2 /home/mahentf8/public_html/mahendranextwealth/beingyou/system/Database/BaseConnection.php(605): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT `p`.`pos...')
+#3 /home/mahentf8/public_html/mahendranextwealth/beingyou/system/Database/BaseBuilder.php(1616): CodeIgniter\Database\BaseConnection->query('SELECT `p`.`pos...', Array, false)
+#4 /home/mahentf8/public_html/mahendranextwealth/beingyou/app/Controllers/Home.php(5983): CodeIgniter\Database\BaseBuilder->get()
+#5 /home/mahentf8/public_html/mahendranextwealth/beingyou/system/CodeIgniter.php(934): App\Controllers\Home->iMap_fetch_programs()
+#6 /home/mahentf8/public_html/mahendranextwealth/beingyou/system/CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+#7 /home/mahentf8/public_html/mahendranextwealth/beingyou/system/CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#8 /home/mahentf8/public_html/mahendranextwealth/beingyou/index.php(67): CodeIgniter\CodeIgniter->run()
+#9 {main}
+CRITICAL - 2023-11-07 10:10:20 --> Unknown column 'p.name' in 'where clause'
+in SYSTEMPATH/Database/BaseConnection.php on line 645.
+ 1 SYSTEMPATH/Database/BaseBuilder.php(1616): CodeIgniter\Database\BaseConnection->query('SELECT `p`.`post_id`, `p`.`category_Id`, `c`.`id`, `p`.`title`, `c`.`start_date`, `c`.`end_date`, `c`.`venue`
+FROM `posts` as `p`
+LEFT JOIN `course_allocation` as `c` ON `c`.`course_id`=`p`.`post_id`
+WHERE `c`.`exp_date` >= :c.exp_date:
+AND `p`.`name` = :p.name:
+AND `p`.`status` = :p.status:
+ORDER BY `c`.`exp_date` ASC, `p`.`post_id` ASC', [...], false)
+ 2 APPPATH/Controllers/Home.php(5983): CodeIgniter\Database\BaseBuilder->get()
+ 3 SYSTEMPATH/CodeIgniter.php(934): App\Controllers\Home->iMap_fetch_programs()
+ 4 SYSTEMPATH/CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+ 5 SYSTEMPATH/CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 6 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()
+ERROR - 2023-11-07 10:10:57 --> mysqli_sql_exception: Unknown column 'p.name' in 'where clause' in /home/mahentf8/public_html/mahendranextwealth/beingyou/system/Database/MySQLi/Connection.php:295
+Stack trace:
+#0 /home/mahentf8/public_html/mahendranextwealth/beingyou/system/Database/MySQLi/Connection.php(295): mysqli->query('SELECT `p`.`pos...', 0)
+#1 /home/mahentf8/public_html/mahendranextwealth/beingyou/system/Database/BaseConnection.php(691): CodeIgniter\Database\MySQLi\Connection->execute('SELECT `p`.`pos...')
+#2 /home/mahentf8/public_html/mahendranextwealth/beingyou/system/Database/BaseConnection.php(605): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT `p`.`pos...')
+#3 /home/mahentf8/public_html/mahendranextwealth/beingyou/system/Database/BaseBuilder.php(1616): CodeIgniter\Database\BaseConnection->query('SELECT `p`.`pos...', Array, false)
+#4 /home/mahentf8/public_html/mahendranextwealth/beingyou/app/Controllers/Home.php(5983): CodeIgniter\Database\BaseBuilder->get()
+#5 /home/mahentf8/public_html/mahendranextwealth/beingyou/system/CodeIgniter.php(934): App\Controllers\Home->iMap_fetch_programs()
+#6 /home/mahentf8/public_html/mahendranextwealth/beingyou/system/CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+#7 /home/mahentf8/public_html/mahendranextwealth/beingyou/system/CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#8 /home/mahentf8/public_html/mahendranextwealth/beingyou/index.php(67): CodeIgniter\CodeIgniter->run()
+#9 {main}
+CRITICAL - 2023-11-07 10:10:57 --> Unknown column 'p.name' in 'where clause'
+in SYSTEMPATH/Database/BaseConnection.php on line 645.
+ 1 SYSTEMPATH/Database/BaseBuilder.php(1616): CodeIgniter\Database\BaseConnection->query('SELECT `p`.`post_id`, `p`.`category_Id`, `c`.`id`, `p`.`title`, `c`.`start_date`, `c`.`end_date`, `c`.`venue`
+FROM `posts` as `p`
+LEFT JOIN `course_allocation` as `c` ON `c`.`course_id`=`p`.`post_id`
+WHERE `c`.`exp_date` >= :c.exp_date:
+AND `p`.`name` = :p.name:
+AND `p`.`status` = :p.status:
+ORDER BY `c`.`exp_date` ASC, `p`.`post_id` ASC', [...], false)
+ 2 APPPATH/Controllers/Home.php(5983): CodeIgniter\Database\BaseBuilder->get()
+ 3 SYSTEMPATH/CodeIgniter.php(934): App\Controllers\Home->iMap_fetch_programs()
+ 4 SYSTEMPATH/CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+ 5 SYSTEMPATH/CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 6 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()
+ERROR - 2023-11-07 10:15:56 --> mysqli_sql_exception: Unknown column 'p.name' in 'field list' in /home/mahentf8/public_html/mahendranextwealth/beingyou/system/Database/MySQLi/Connection.php:295
+Stack trace:
+#0 /home/mahentf8/public_html/mahendranextwealth/beingyou/system/Database/MySQLi/Connection.php(295): mysqli->query('SELECT `p`.`nam...', 0)
+#1 /home/mahentf8/public_html/mahendranextwealth/beingyou/system/Database/BaseConnection.php(691): CodeIgniter\Database\MySQLi\Connection->execute('SELECT `p`.`nam...')
+#2 /home/mahentf8/public_html/mahendranextwealth/beingyou/system/Database/BaseConnection.php(605): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT `p`.`nam...')
+#3 /home/mahentf8/public_html/mahendranextwealth/beingyou/system/Database/BaseBuilder.php(1616): CodeIgniter\Database\BaseConnection->query('SELECT `p`.`nam...', Array, false)
+#4 /home/mahentf8/public_html/mahendranextwealth/beingyou/app/Controllers/Home.php(5924): CodeIgniter\Database\BaseBuilder->get()
+#5 /home/mahentf8/public_html/mahendranextwealth/beingyou/system/CodeIgniter.php(934): App\Controllers\Home->fetch_current_programs()
+#6 /home/mahentf8/public_html/mahendranextwealth/beingyou/system/CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+#7 /home/mahentf8/public_html/mahendranextwealth/beingyou/system/CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#8 /home/mahentf8/public_html/mahendranextwealth/beingyou/index.php(67): CodeIgniter\CodeIgniter->run()
+#9 {main}
+CRITICAL - 2023-11-07 10:15:56 --> Unknown column 'p.name' in 'field list'
+in SYSTEMPATH/Database/BaseConnection.php on line 645.
+ 1 SYSTEMPATH/Database/BaseBuilder.php(1616): CodeIgniter\Database\BaseConnection->query('SELECT `p`.`name`, `p`.`post_id`, `c`.`id`, `p`.`title`, `c`.`start_date`, `c`.`end_date`, `c`.`venue`
+FROM `posts` as `p`
+LEFT JOIN `course_allocation` as `c` ON `c`.`course_id`=`p`.`post_id`
+WHERE `c`.`exp_date` >= :c.exp_date:
+AND `p`.`name` <> :p.name:
+AND `p`.`status` = :p.status:
+ORDER BY `p`.`post_id` ASC', [...], false)
+ 2 APPPATH/Controllers/Home.php(5924): CodeIgniter\Database\BaseBuilder->get()
+ 3 SYSTEMPATH/CodeIgniter.php(934): App\Controllers\Home->fetch_current_programs()
+ 4 SYSTEMPATH/CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+ 5 SYSTEMPATH/CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 6 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()
+ERROR - 2023-11-07 10:17:19 --> mysqli_sql_exception: Unknown column 'p.name' in 'field list' in /home/mahentf8/public_html/mahendranextwealth/beingyou/system/Database/MySQLi/Connection.php:295
+Stack trace:
+#0 /home/mahentf8/public_html/mahendranextwealth/beingyou/system/Database/MySQLi/Connection.php(295): mysqli->query('SELECT `p`.`nam...', 0)
+#1 /home/mahentf8/public_html/mahendranextwealth/beingyou/system/Database/BaseConnection.php(691): CodeIgniter\Database\MySQLi\Connection->execute('SELECT `p`.`nam...')
+#2 /home/mahentf8/public_html/mahendranextwealth/beingyou/system/Database/BaseConnection.php(605): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT `p`.`nam...')
+#3 /home/mahentf8/public_html/mahendranextwealth/beingyou/system/Database/BaseBuilder.php(1616): CodeIgniter\Database\BaseConnection->query('SELECT `p`.`nam...', Array, false)
+#4 /home/mahentf8/public_html/mahendranextwealth/beingyou/app/Controllers/Home.php(5930): CodeIgniter\Database\BaseBuilder->get()
+#5 /home/mahentf8/public_html/mahendranextwealth/beingyou/system/CodeIgniter.php(934): App\Controllers\Home->fetch_current_programs()
+#6 /home/mahentf8/public_html/mahendranextwealth/beingyou/system/CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+#7 /home/mahentf8/public_html/mahendranextwealth/beingyou/system/CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#8 /home/mahentf8/public_html/mahendranextwealth/beingyou/index.php(67): CodeIgniter\CodeIgniter->run()
+#9 {main}
+CRITICAL - 2023-11-07 10:17:19 --> Unknown column 'p.name' in 'field list'
+in SYSTEMPATH/Database/BaseConnection.php on line 645.
+ 1 SYSTEMPATH/Database/BaseBuilder.php(1616): CodeIgniter\Database\BaseConnection->query('SELECT `p`.`name`, `p`.`post_id`, `c`.`id`, `p`.`title`, `c`.`start_date`, `c`.`end_date`, `c`.`venue`
+FROM `posts` as `p`
+LEFT JOIN `course_allocation` as `c` ON `c`.`course_id`=`p`.`post_id`
+WHERE `c`.`exp_date` >= :c.exp_date:
+AND `p`.`name` <> :p.name:
+AND `p`.`status` = :p.status:
+ORDER BY `p`.`post_id` ASC', [...], false)
+ 2 APPPATH/Controllers/Home.php(5930): CodeIgniter\Database\BaseBuilder->get()
+ 3 SYSTEMPATH/CodeIgniter.php(934): App\Controllers\Home->fetch_current_programs()
+ 4 SYSTEMPATH/CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+ 5 SYSTEMPATH/CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 6 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()
+ERROR - 2023-11-07 10:17:52 --> mysqli_sql_exception: Unknown column 'p.name' in 'field list' in /home/mahentf8/public_html/mahendranextwealth/beingyou/system/Database/MySQLi/Connection.php:295
+Stack trace:
+#0 /home/mahentf8/public_html/mahendranextwealth/beingyou/system/Database/MySQLi/Connection.php(295): mysqli->query('SELECT `p`.`nam...', 0)
+#1 /home/mahentf8/public_html/mahendranextwealth/beingyou/system/Database/BaseConnection.php(691): CodeIgniter\Database\MySQLi\Connection->execute('SELECT `p`.`nam...')
+#2 /home/mahentf8/public_html/mahendranextwealth/beingyou/system/Database/BaseConnection.php(605): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT `p`.`nam...')
+#3 /home/mahentf8/public_html/mahendranextwealth/beingyou/system/Database/BaseBuilder.php(1616): CodeIgniter\Database\BaseConnection->query('SELECT `p`.`nam...', Array, false)
+#4 /home/mahentf8/public_html/mahendranextwealth/beingyou/app/Controllers/Home.php(5930): CodeIgniter\Database\BaseBuilder->get()
+#5 /home/mahentf8/public_html/mahendranextwealth/beingyou/system/CodeIgniter.php(934): App\Controllers\Home->fetch_current_programs()
+#6 /home/mahentf8/public_html/mahendranextwealth/beingyou/system/CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+#7 /home/mahentf8/public_html/mahendranextwealth/beingyou/system/CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#8 /home/mahentf8/public_html/mahendranextwealth/beingyou/index.php(67): CodeIgniter\CodeIgniter->run()
+#9 {main}
+CRITICAL - 2023-11-07 10:17:52 --> Unknown column 'p.name' in 'field list'
+in SYSTEMPATH/Database/BaseConnection.php on line 645.
+ 1 SYSTEMPATH/Database/BaseBuilder.php(1616): CodeIgniter\Database\BaseConnection->query('SELECT `p`.`name`, `p`.`post_id`, `c`.`id`, `p`.`title`, `c`.`start_date`, `c`.`end_date`, `c`.`venue`
+FROM `posts` as `p`
+LEFT JOIN `course_allocation` as `c` ON `c`.`course_id`=`p`.`post_id`
+WHERE `c`.`exp_date` >= :c.exp_date:
+AND `p`.`name` != :p.name:
+AND `p`.`status` = :p.status:
+ORDER BY `p`.`post_id` ASC', [...], false)
+ 2 APPPATH/Controllers/Home.php(5930): CodeIgniter\Database\BaseBuilder->get()
+ 3 SYSTEMPATH/CodeIgniter.php(934): App\Controllers\Home->fetch_current_programs()
+ 4 SYSTEMPATH/CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+ 5 SYSTEMPATH/CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 6 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()
+ERROR - 2023-11-07 10:19:00 --> mysqli_sql_exception: Unknown column 'p.name' in 'field list' in /home/mahentf8/public_html/mahendranextwealth/beingyou/system/Database/MySQLi/Connection.php:295
+Stack trace:
+#0 /home/mahentf8/public_html/mahendranextwealth/beingyou/system/Database/MySQLi/Connection.php(295): mysqli->query('SELECT `p`.`nam...', 0)
+#1 /home/mahentf8/public_html/mahendranextwealth/beingyou/system/Database/BaseConnection.php(691): CodeIgniter\Database\MySQLi\Connection->execute('SELECT `p`.`nam...')
+#2 /home/mahentf8/public_html/mahendranextwealth/beingyou/system/Database/BaseConnection.php(605): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT `p`.`nam...')
+#3 /home/mahentf8/public_html/mahendranextwealth/beingyou/system/Database/BaseBuilder.php(1616): CodeIgniter\Database\BaseConnection->query('SELECT `p`.`nam...', Array, false)
+#4 /home/mahentf8/public_html/mahendranextwealth/beingyou/app/Controllers/Home.php(5930): CodeIgniter\Database\BaseBuilder->get()
+#5 /home/mahentf8/public_html/mahendranextwealth/beingyou/system/CodeIgniter.php(934): App\Controllers\Home->fetch_current_programs()
+#6 /home/mahentf8/public_html/mahendranextwealth/beingyou/system/CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+#7 /home/mahentf8/public_html/mahendranextwealth/beingyou/system/CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#8 /home/mahentf8/public_html/mahendranextwealth/beingyou/index.php(67): CodeIgniter\CodeIgniter->run()
+#9 {main}
+CRITICAL - 2023-11-07 10:19:00 --> Unknown column 'p.name' in 'field list'
+in SYSTEMPATH/Database/BaseConnection.php on line 645.
+ 1 SYSTEMPATH/Database/BaseBuilder.php(1616): CodeIgniter\Database\BaseConnection->query('SELECT `p`.`name`, `p`.`status`, `p`.`post_id`, `c`.`id`, `p`.`title`, `c`.`start_date`, `c`.`end_date`, `c`.`venue`
+FROM `posts` as `p`
+LEFT JOIN `course_allocation` as `c` ON `c`.`course_id`=`p`.`post_id`
+WHERE `c`.`exp_date` >= :c.exp_date:
+AND `p`.`name` <> :p.name:
+AND `p`.`status` = :p.status:
+ORDER BY `p`.`post_id` ASC', [...], false)
+ 2 APPPATH/Controllers/Home.php(5930): CodeIgniter\Database\BaseBuilder->get()
+ 3 SYSTEMPATH/CodeIgniter.php(934): App\Controllers\Home->fetch_current_programs()
+ 4 SYSTEMPATH/CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+ 5 SYSTEMPATH/CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 6 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()
+ERROR - 2023-11-07 10:20:00 --> mysqli_sql_exception: Unknown column 'p.name' in 'where clause' in /home/mahentf8/public_html/mahendranextwealth/beingyou/system/Database/MySQLi/Connection.php:295
+Stack trace:
+#0 /home/mahentf8/public_html/mahendranextwealth/beingyou/system/Database/MySQLi/Connection.php(295): mysqli->query('SELECT `p`.`pos...', 0)
+#1 /home/mahentf8/public_html/mahendranextwealth/beingyou/system/Database/BaseConnection.php(691): CodeIgniter\Database\MySQLi\Connection->execute('SELECT `p`.`pos...')
+#2 /home/mahentf8/public_html/mahendranextwealth/beingyou/system/Database/BaseConnection.php(605): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT `p`.`pos...')
+#3 /home/mahentf8/public_html/mahendranextwealth/beingyou/system/Database/BaseBuilder.php(1616): CodeIgniter\Database\BaseConnection->query('SELECT `p`.`pos...', Array, false)
+#4 /home/mahentf8/public_html/mahendranextwealth/beingyou/app/Controllers/Home.php(5924): CodeIgniter\Database\BaseBuilder->get()
+#5 /home/mahentf8/public_html/mahendranextwealth/beingyou/system/CodeIgniter.php(934): App\Controllers\Home->fetch_current_programs()
+#6 /home/mahentf8/public_html/mahendranextwealth/beingyou/system/CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+#7 /home/mahentf8/public_html/mahendranextwealth/beingyou/system/CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#8 /home/mahentf8/public_html/mahendranextwealth/beingyou/index.php(67): CodeIgniter\CodeIgniter->run()
+#9 {main}
+CRITICAL - 2023-11-07 10:20:00 --> Unknown column 'p.name' in 'where clause'
+in SYSTEMPATH/Database/BaseConnection.php on line 645.
+ 1 SYSTEMPATH/Database/BaseBuilder.php(1616): CodeIgniter\Database\BaseConnection->query('SELECT `p`.`post_id`, `c`.`id`, `p`.`title`, `c`.`start_date`, `c`.`end_date`, `c`.`venue`
+FROM `posts` as `p`
+LEFT JOIN `course_allocation` as `c` ON `c`.`course_id`=`p`.`post_id`
+WHERE `c`.`exp_date` >= :c.exp_date:
+AND `p`.`name` <> :p.name:
+AND `p`.`status` = :p.status:
+ORDER BY `p`.`post_id` ASC', [...], false)
+ 2 APPPATH/Controllers/Home.php(5924): CodeIgniter\Database\BaseBuilder->get()
+ 3 SYSTEMPATH/CodeIgniter.php(934): App\Controllers\Home->fetch_current_programs()
+ 4 SYSTEMPATH/CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+ 5 SYSTEMPATH/CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 6 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()
+ERROR - 2023-11-07 10:21:22 --> mysqli_sql_exception: Unknown column 'p.name' in 'field list' in /home/mahentf8/public_html/mahendranextwealth/beingyou/system/Database/MySQLi/Connection.php:295
+Stack trace:
+#0 /home/mahentf8/public_html/mahendranextwealth/beingyou/system/Database/MySQLi/Connection.php(295): mysqli->query('SELECT `p`.`nam...', 0)
+#1 /home/mahentf8/public_html/mahendranextwealth/beingyou/system/Database/BaseConnection.php(691): CodeIgniter\Database\MySQLi\Connection->execute('SELECT `p`.`nam...')
+#2 /home/mahentf8/public_html/mahendranextwealth/beingyou/system/Database/BaseConnection.php(605): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT `p`.`nam...')
+#3 /home/mahentf8/public_html/mahendranextwealth/beingyou/system/Database/BaseBuilder.php(1616): CodeIgniter\Database\BaseConnection->query('SELECT `p`.`nam...', Array, false)
+#4 /home/mahentf8/public_html/mahendranextwealth/beingyou/app/Controllers/Home.php(5925): CodeIgniter\Database\BaseBuilder->get()
+#5 /home/mahentf8/public_html/mahendranextwealth/beingyou/system/CodeIgniter.php(934): App\Controllers\Home->fetch_current_programs()
+#6 /home/mahentf8/public_html/mahendranextwealth/beingyou/system/CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+#7 /home/mahentf8/public_html/mahendranextwealth/beingyou/system/CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#8 /home/mahentf8/public_html/mahendranextwealth/beingyou/index.php(67): CodeIgniter\CodeIgniter->run()
+#9 {main}
+CRITICAL - 2023-11-07 10:21:22 --> Unknown column 'p.name' in 'field list'
+in SYSTEMPATH/Database/BaseConnection.php on line 645.
+ 1 SYSTEMPATH/Database/BaseBuilder.php(1616): CodeIgniter\Database\BaseConnection->query('SELECT `p`.`name`, `p`.`post_id`, `p`.`category_Id`, `c`.`id`, `p`.`title`, `c`.`start_date`, `c`.`end_date`, `c`.`venue`
+FROM `posts` as `p`
+LEFT JOIN `course_allocation` as `c` ON `c`.`course_id`=`p`.`post_id`
+WHERE `c`.`exp_date` >= :c.exp_date:
+AND `p`.`name` <> :p.name:
+AND `p`.`status` = :p.status:
+ORDER BY `p`.`post_id` ASC', [...], false)
+ 2 APPPATH/Controllers/Home.php(5925): CodeIgniter\Database\BaseBuilder->get()
+ 3 SYSTEMPATH/CodeIgniter.php(934): App\Controllers\Home->fetch_current_programs()
+ 4 SYSTEMPATH/CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+ 5 SYSTEMPATH/CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 6 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()
+ERROR - 2023-11-07 10:21:40 --> mysqli_sql_exception: Unknown column 'p.name' in 'field list' in /home/mahentf8/public_html/mahendranextwealth/beingyou/system/Database/MySQLi/Connection.php:295
+Stack trace:
+#0 /home/mahentf8/public_html/mahendranextwealth/beingyou/system/Database/MySQLi/Connection.php(295): mysqli->query('SELECT `p`.`nam...', 0)
+#1 /home/mahentf8/public_html/mahendranextwealth/beingyou/system/Database/BaseConnection.php(691): CodeIgniter\Database\MySQLi\Connection->execute('SELECT `p`.`nam...')
+#2 /home/mahentf8/public_html/mahendranextwealth/beingyou/system/Database/BaseConnection.php(605): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT `p`.`nam...')
+#3 /home/mahentf8/public_html/mahendranextwealth/beingyou/system/Database/BaseBuilder.php(1616): CodeIgniter\Database\BaseConnection->query('SELECT `p`.`nam...', Array, false)
+#4 /home/mahentf8/public_html/mahendranextwealth/beingyou/app/Controllers/Home.php(5925): CodeIgniter\Database\BaseBuilder->get()
+#5 /home/mahentf8/public_html/mahendranextwealth/beingyou/system/CodeIgniter.php(934): App\Controllers\Home->fetch_current_programs()
+#6 /home/mahentf8/public_html/mahendranextwealth/beingyou/system/CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+#7 /home/mahentf8/public_html/mahendranextwealth/beingyou/system/CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#8 /home/mahentf8/public_html/mahendranextwealth/beingyou/index.php(67): CodeIgniter\CodeIgniter->run()
+#9 {main}
+CRITICAL - 2023-11-07 10:21:40 --> Unknown column 'p.name' in 'field list'
+in SYSTEMPATH/Database/BaseConnection.php on line 645.
+ 1 SYSTEMPATH/Database/BaseBuilder.php(1616): CodeIgniter\Database\BaseConnection->query('SELECT `p`.`name`, `p`.`post_id`, `p`.`category_Id`, `c`.`id`, `p`.`title`, `c`.`start_date`, `c`.`end_date`, `c`.`venue`
+FROM `posts` as `p`
+LEFT JOIN `course_allocation` as `c` ON `c`.`course_id`=`p`.`post_id`
+WHERE `c`.`exp_date` >= :c.exp_date:
+AND `p`.`name` <> :p.name:
+AND `p`.`status` = :p.status:
+ORDER BY `p`.`post_id` ASC', [...], false)
+ 2 APPPATH/Controllers/Home.php(5925): CodeIgniter\Database\BaseBuilder->get()
+ 3 SYSTEMPATH/CodeIgniter.php(934): App\Controllers\Home->fetch_current_programs()
+ 4 SYSTEMPATH/CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+ 5 SYSTEMPATH/CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 6 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()
+ERROR - 2023-11-07 10:21:55 --> mysqli_sql_exception: Unknown column 'p.name' in 'field list' in /home/mahentf8/public_html/mahendranextwealth/beingyou/system/Database/MySQLi/Connection.php:295
+Stack trace:
+#0 /home/mahentf8/public_html/mahendranextwealth/beingyou/system/Database/MySQLi/Connection.php(295): mysqli->query('SELECT `p`.`nam...', 0)
+#1 /home/mahentf8/public_html/mahendranextwealth/beingyou/system/Database/BaseConnection.php(691): CodeIgniter\Database\MySQLi\Connection->execute('SELECT `p`.`nam...')
+#2 /home/mahentf8/public_html/mahendranextwealth/beingyou/system/Database/BaseConnection.php(605): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT `p`.`nam...')
+#3 /home/mahentf8/public_html/mahendranextwealth/beingyou/system/Database/BaseBuilder.php(1616): CodeIgniter\Database\BaseConnection->query('SELECT `p`.`nam...', Array, false)
+#4 /home/mahentf8/public_html/mahendranextwealth/beingyou/app/Controllers/Home.php(5925): CodeIgniter\Database\BaseBuilder->get()
+#5 /home/mahentf8/public_html/mahendranextwealth/beingyou/system/CodeIgniter.php(934): App\Controllers\Home->fetch_current_programs()
+#6 /home/mahentf8/public_html/mahendranextwealth/beingyou/system/CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+#7 /home/mahentf8/public_html/mahendranextwealth/beingyou/system/CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#8 /home/mahentf8/public_html/mahendranextwealth/beingyou/index.php(67): CodeIgniter\CodeIgniter->run()
+#9 {main}
+CRITICAL - 2023-11-07 10:21:55 --> Unknown column 'p.name' in 'field list'
+in SYSTEMPATH/Database/BaseConnection.php on line 645.
+ 1 SYSTEMPATH/Database/BaseBuilder.php(1616): CodeIgniter\Database\BaseConnection->query('SELECT `p`.`name`, `p`.`post_id`, `p`.`category_Id`, `c`.`id`, `p`.`title`, `c`.`start_date`, `c`.`end_date`, `c`.`venue`
+FROM `posts` as `p`
+LEFT JOIN `course_allocation` as `c` ON `c`.`course_id`=`p`.`post_id`
+WHERE `c`.`exp_date` >= :c.exp_date:
+AND `p`.`category_Id` <> :p.category_Id:
+AND `p`.`status` = :p.status:
+ORDER BY `p`.`post_id` ASC', [...], false)
+ 2 APPPATH/Controllers/Home.php(5925): CodeIgniter\Database\BaseBuilder->get()
+ 3 SYSTEMPATH/CodeIgniter.php(934): App\Controllers\Home->fetch_current_programs()
+ 4 SYSTEMPATH/CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+ 5 SYSTEMPATH/CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 6 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()
+ERROR - 2023-11-07 11:15:30 --> mysqli_sql_exception: Unknown column 'p.post_id' in 'on clause' in /home/mahentf8/public_html/mahendranextwealth/beingyou/system/Database/MySQLi/Connection.php:295
+Stack trace:
+#0 /home/mahentf8/public_html/mahendranextwealth/beingyou/system/Database/MySQLi/Connection.php(295): mysqli->query('SELECT `a`.*, `...', 0)
+#1 /home/mahentf8/public_html/mahendranextwealth/beingyou/system/Database/BaseConnection.php(691): CodeIgniter\Database\MySQLi\Connection->execute('SELECT `a`.*, `...')
+#2 /home/mahentf8/public_html/mahendranextwealth/beingyou/system/Database/BaseConnection.php(605): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT `a`.*, `...')
+#3 /home/mahentf8/public_html/mahendranextwealth/beingyou/system/Database/BaseBuilder.php(1616): CodeIgniter\Database\BaseConnection->query('SELECT `a`.*, `...', Array, false)
+#4 /home/mahentf8/public_html/mahendranextwealth/beingyou/app/Controllers/Home.php(6365): CodeIgniter\Database\BaseBuilder->get()
+#5 /home/mahentf8/public_html/mahendranextwealth/beingyou/system/CodeIgniter.php(934): App\Controllers\Home->download_attendance('3')
+#6 /home/mahentf8/public_html/mahendranextwealth/beingyou/system/CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+#7 /home/mahentf8/public_html/mahendranextwealth/beingyou/system/CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#8 /home/mahentf8/public_html/mahendranextwealth/beingyou/index.php(67): CodeIgniter\CodeIgniter->run()
+#9 {main}
+CRITICAL - 2023-11-07 11:15:30 --> Unknown column 'p.post_id' in 'on clause'
+in SYSTEMPATH/Database/BaseConnection.php on line 645.
+ 1 SYSTEMPATH/Database/BaseBuilder.php(1616): CodeIgniter\Database\BaseConnection->query('SELECT `a`.*, `p`.`title` as `program_name`, `s`.`full_name`, `rollno`, `rep_mail` as `reporting_person`, `p`.`post_id`
+FROM `attendance` as `a`
+LEFT JOIN `course_allocation` as `c` ON `c`.`course_id`=`p`.`post_id`
+LEFT JOIN `posts` as `p` ON `a`.`program_id`=`p`.`post_id`
+LEFT JOIN `staff_details` as `s` ON `s`.`email`=`a`.`user_id`
+WHERE `a`.`program_id` = :a.program_id:', [...], false)
+ 2 APPPATH/Controllers/Home.php(6365): CodeIgniter\Database\BaseBuilder->get()
+ 3 SYSTEMPATH/CodeIgniter.php(934): App\Controllers\Home->download_attendance('3')
+ 4 SYSTEMPATH/CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+ 5 SYSTEMPATH/CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 6 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()
+ERROR - 2023-11-07 11:22:32 --> mysqli_sql_exception: Unknown column 'p.post_id' in 'on clause' in /home/mahentf8/public_html/mahendranextwealth/beingyou/system/Database/MySQLi/Connection.php:295
+Stack trace:
+#0 /home/mahentf8/public_html/mahendranextwealth/beingyou/system/Database/MySQLi/Connection.php(295): mysqli->query('SELECT `a`.*, `...', 0)
+#1 /home/mahentf8/public_html/mahendranextwealth/beingyou/system/Database/BaseConnection.php(691): CodeIgniter\Database\MySQLi\Connection->execute('SELECT `a`.*, `...')
+#2 /home/mahentf8/public_html/mahendranextwealth/beingyou/system/Database/BaseConnection.php(605): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT `a`.*, `...')
+#3 /home/mahentf8/public_html/mahendranextwealth/beingyou/system/Database/BaseBuilder.php(1616): CodeIgniter\Database\BaseConnection->query('SELECT `a`.*, `...', Array, false)
+#4 /home/mahentf8/public_html/mahendranextwealth/beingyou/app/Controllers/Home.php(6365): CodeIgniter\Database\BaseBuilder->get()
+#5 /home/mahentf8/public_html/mahendranextwealth/beingyou/system/CodeIgniter.php(934): App\Controllers\Home->download_attendance('2')
+#6 /home/mahentf8/public_html/mahendranextwealth/beingyou/system/CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+#7 /home/mahentf8/public_html/mahendranextwealth/beingyou/system/CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#8 /home/mahentf8/public_html/mahendranextwealth/beingyou/index.php(67): CodeIgniter\CodeIgniter->run()
+#9 {main}
+CRITICAL - 2023-11-07 11:22:32 --> Unknown column 'p.post_id' in 'on clause'
+in SYSTEMPATH/Database/BaseConnection.php on line 645.
+ 1 SYSTEMPATH/Database/BaseBuilder.php(1616): CodeIgniter\Database\BaseConnection->query('SELECT `a`.*, `p`.`title` as `program_name`, `s`.`full_name`, `rollno`, `rep_mail` as `reporting_person`, `p`.`post_id`
+FROM `attendance` as `a`
+LEFT JOIN `course_allocation` as `c` ON `c`.`course_id`=`p`.`post_id`
+LEFT JOIN `posts` as `p` ON `a`.`program_id`=`p`.`post_id`
+LEFT JOIN `staff_details` as `s` ON `s`.`email`=`a`.`user_id`
+WHERE `a`.`program_id` = :a.program_id:', [...], false)
+ 2 APPPATH/Controllers/Home.php(6365): CodeIgniter\Database\BaseBuilder->get()
+ 3 SYSTEMPATH/CodeIgniter.php(934): App\Controllers\Home->download_attendance('2')
+ 4 SYSTEMPATH/CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+ 5 SYSTEMPATH/CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 6 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()
+ERROR - 2023-11-07 12:06:46 --> mysqli_sql_exception: Unknown column 'p.name' in 'field list' in /home/mahentf8/public_html/mahendranextwealth/beingyou/system/Database/MySQLi/Connection.php:295
+Stack trace:
+#0 /home/mahentf8/public_html/mahendranextwealth/beingyou/system/Database/MySQLi/Connection.php(295): mysqli->query('SELECT `p`.`nam...', 0)
+#1 /home/mahentf8/public_html/mahendranextwealth/beingyou/system/Database/BaseConnection.php(691): CodeIgniter\Database\MySQLi\Connection->execute('SELECT `p`.`nam...')
+#2 /home/mahentf8/public_html/mahendranextwealth/beingyou/system/Database/BaseConnection.php(605): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT `p`.`nam...')
+#3 /home/mahentf8/public_html/mahendranextwealth/beingyou/system/Database/BaseBuilder.php(1616): CodeIgniter\Database\BaseConnection->query('SELECT `p`.`nam...', Array, false)
+#4 /home/mahentf8/public_html/mahendranextwealth/beingyou/app/Controllers/Home.php(5983): CodeIgniter\Database\BaseBuilder->get()
+#5 /home/mahentf8/public_html/mahendranextwealth/beingyou/system/CodeIgniter.php(934): App\Controllers\Home->iMap_fetch_programs()
+#6 /home/mahentf8/public_html/mahendranextwealth/beingyou/system/CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+#7 /home/mahentf8/public_html/mahendranextwealth/beingyou/system/CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#8 /home/mahentf8/public_html/mahendranextwealth/beingyou/index.php(67): CodeIgniter\CodeIgniter->run()
+#9 {main}
+CRITICAL - 2023-11-07 12:06:46 --> Unknown column 'p.name' in 'field list'
+in SYSTEMPATH/Database/BaseConnection.php on line 645.
+ 1 SYSTEMPATH/Database/BaseBuilder.php(1616): CodeIgniter\Database\BaseConnection->query('SELECT `p`.`name`, `p`.`post_id`, `p`.`category_Id`, `c`.`id`, `p`.`title`, `c`.`start_date`, `c`.`end_date`, `c`.`venue`
+FROM `posts` as `p`
+LEFT JOIN `course_allocation` as `c` ON `c`.`course_id`=`p`.`post_id`
+WHERE `c`.`exp_date` >= :c.exp_date:
+AND `p`.`name` = :p.name:
+AND `p`.`status` = :p.status:
+ORDER BY `c`.`exp_date` ASC, `p`.`post_id` ASC', [...], false)
+ 2 APPPATH/Controllers/Home.php(5983): CodeIgniter\Database\BaseBuilder->get()
+ 3 SYSTEMPATH/CodeIgniter.php(934): App\Controllers\Home->iMap_fetch_programs()
+ 4 SYSTEMPATH/CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+ 5 SYSTEMPATH/CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 6 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()
+ERROR - 2023-11-07 12:06:51 --> mysqli_sql_exception: Unknown column 'p.name' in 'field list' in /home/mahentf8/public_html/mahendranextwealth/beingyou/system/Database/MySQLi/Connection.php:295
+Stack trace:
+#0 /home/mahentf8/public_html/mahendranextwealth/beingyou/system/Database/MySQLi/Connection.php(295): mysqli->query('SELECT `p`.`nam...', 0)
+#1 /home/mahentf8/public_html/mahendranextwealth/beingyou/system/Database/BaseConnection.php(691): CodeIgniter\Database\MySQLi\Connection->execute('SELECT `p`.`nam...')
+#2 /home/mahentf8/public_html/mahendranextwealth/beingyou/system/Database/BaseConnection.php(605): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT `p`.`nam...')
+#3 /home/mahentf8/public_html/mahendranextwealth/beingyou/system/Database/BaseBuilder.php(1616): CodeIgniter\Database\BaseConnection->query('SELECT `p`.`nam...', Array, false)
+#4 /home/mahentf8/public_html/mahendranextwealth/beingyou/app/Controllers/Home.php(5983): CodeIgniter\Database\BaseBuilder->get()
+#5 /home/mahentf8/public_html/mahendranextwealth/beingyou/system/CodeIgniter.php(934): App\Controllers\Home->iMap_fetch_programs()
+#6 /home/mahentf8/public_html/mahendranextwealth/beingyou/system/CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+#7 /home/mahentf8/public_html/mahendranextwealth/beingyou/system/CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#8 /home/mahentf8/public_html/mahendranextwealth/beingyou/index.php(67): CodeIgniter\CodeIgniter->run()
+#9 {main}
+CRITICAL - 2023-11-07 12:06:51 --> Unknown column 'p.name' in 'field list'
+in SYSTEMPATH/Database/BaseConnection.php on line 645.
+ 1 SYSTEMPATH/Database/BaseBuilder.php(1616): CodeIgniter\Database\BaseConnection->query('SELECT `p`.`name`, `p`.`post_id`, `p`.`category_Id`, `c`.`id`, `p`.`title`, `c`.`start_date`, `c`.`end_date`, `c`.`venue`
+FROM `posts` as `p`
+LEFT JOIN `course_allocation` as `c` ON `c`.`course_id`=`p`.`post_id`
+WHERE `c`.`exp_date` >= :c.exp_date:
+AND `p`.`name` = :p.name:
+AND `p`.`status` = :p.status:
+ORDER BY `c`.`exp_date` ASC, `p`.`post_id` ASC', [...], false)
+ 2 APPPATH/Controllers/Home.php(5983): CodeIgniter\Database\BaseBuilder->get()
+ 3 SYSTEMPATH/CodeIgniter.php(934): App\Controllers\Home->iMap_fetch_programs()
+ 4 SYSTEMPATH/CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+ 5 SYSTEMPATH/CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 6 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()
+ERROR - 2023-11-07 12:07:01 --> mysqli_sql_exception: Unknown column 'p.name' in 'field list' in /home/mahentf8/public_html/mahendranextwealth/beingyou/system/Database/MySQLi/Connection.php:295
+Stack trace:
+#0 /home/mahentf8/public_html/mahendranextwealth/beingyou/system/Database/MySQLi/Connection.php(295): mysqli->query('SELECT `p`.`nam...', 0)
+#1 /home/mahentf8/public_html/mahendranextwealth/beingyou/system/Database/BaseConnection.php(691): CodeIgniter\Database\MySQLi\Connection->execute('SELECT `p`.`nam...')
+#2 /home/mahentf8/public_html/mahendranextwealth/beingyou/system/Database/BaseConnection.php(605): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT `p`.`nam...')
+#3 /home/mahentf8/public_html/mahendranextwealth/beingyou/system/Database/BaseBuilder.php(1616): CodeIgniter\Database\BaseConnection->query('SELECT `p`.`nam...', Array, false)
+#4 /home/mahentf8/public_html/mahendranextwealth/beingyou/app/Controllers/Home.php(5983): CodeIgniter\Database\BaseBuilder->get()
+#5 /home/mahentf8/public_html/mahendranextwealth/beingyou/system/CodeIgniter.php(934): App\Controllers\Home->iMap_fetch_programs()
+#6 /home/mahentf8/public_html/mahendranextwealth/beingyou/system/CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+#7 /home/mahentf8/public_html/mahendranextwealth/beingyou/system/CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#8 /home/mahentf8/public_html/mahendranextwealth/beingyou/index.php(67): CodeIgniter\CodeIgniter->run()
+#9 {main}
+CRITICAL - 2023-11-07 12:07:01 --> Unknown column 'p.name' in 'field list'
+in SYSTEMPATH/Database/BaseConnection.php on line 645.
+ 1 SYSTEMPATH/Database/BaseBuilder.php(1616): CodeIgniter\Database\BaseConnection->query('SELECT `p`.`name`, `p`.`post_id`, `p`.`category_Id`, `c`.`id`, `p`.`title`, `c`.`start_date`, `c`.`end_date`, `c`.`venue`
+FROM `posts` as `p`
+LEFT JOIN `course_allocation` as `c` ON `c`.`course_id`=`p`.`post_id`
+WHERE `c`.`exp_date` >= :c.exp_date:
+AND `p`.`name` = :p.name:
+AND `p`.`status` = :p.status:
+ORDER BY `c`.`exp_date` ASC, `p`.`post_id` ASC', [...], false)
+ 2 APPPATH/Controllers/Home.php(5983): CodeIgniter\Database\BaseBuilder->get()
+ 3 SYSTEMPATH/CodeIgniter.php(934): App\Controllers\Home->iMap_fetch_programs()
+ 4 SYSTEMPATH/CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+ 5 SYSTEMPATH/CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 6 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()
+ERROR - 2023-11-07 12:23:14 --> mysqli_sql_exception: Unknown column 'p.name' in 'field list' in /home/mahentf8/public_html/mahendranextwealth/beingyou/system/Database/MySQLi/Connection.php:295
+Stack trace:
+#0 /home/mahentf8/public_html/mahendranextwealth/beingyou/system/Database/MySQLi/Connection.php(295): mysqli->query('SELECT `p`.`nam...', 0)
+#1 /home/mahentf8/public_html/mahendranextwealth/beingyou/system/Database/BaseConnection.php(691): CodeIgniter\Database\MySQLi\Connection->execute('SELECT `p`.`nam...')
+#2 /home/mahentf8/public_html/mahendranextwealth/beingyou/system/Database/BaseConnection.php(605): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT `p`.`nam...')
+#3 /home/mahentf8/public_html/mahendranextwealth/beingyou/system/Database/BaseBuilder.php(1616): CodeIgniter\Database\BaseConnection->query('SELECT `p`.`nam...', Array, false)
+#4 /home/mahentf8/public_html/mahendranextwealth/beingyou/app/Controllers/Home.php(5985): CodeIgniter\Database\BaseBuilder->get()
+#5 /home/mahentf8/public_html/mahendranextwealth/beingyou/system/CodeIgniter.php(934): App\Controllers\Home->iMap_fetch_programs()
+#6 /home/mahentf8/public_html/mahendranextwealth/beingyou/system/CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+#7 /home/mahentf8/public_html/mahendranextwealth/beingyou/system/CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#8 /home/mahentf8/public_html/mahendranextwealth/beingyou/index.php(67): CodeIgniter\CodeIgniter->run()
+#9 {main}
+CRITICAL - 2023-11-07 12:23:14 --> Unknown column 'p.name' in 'field list'
+in SYSTEMPATH/Database/BaseConnection.php on line 645.
+ 1 SYSTEMPATH/Database/BaseBuilder.php(1616): CodeIgniter\Database\BaseConnection->query('SELECT `p`.`name`, `p`.`post_id`, `p`.`category_Id`, `c`.`id`, `p`.`title`, `c`.`start_date`, `c`.`end_date`, `c`.`venue`
+FROM `posts` as `p`
+LEFT JOIN `course_allocation` as `c` ON `c`.`course_id`=`p`.`post_id`
+WHERE `c`.`exp_date` >= :c.exp_date:
+AND `p`.`name` = :p.name:
+AND `p`.`status` = :p.status:
+ORDER BY `c`.`exp_date` ASC, `p`.`post_id` ASC', [...], false)
+ 2 APPPATH/Controllers/Home.php(5985): CodeIgniter\Database\BaseBuilder->get()
+ 3 SYSTEMPATH/CodeIgniter.php(934): App\Controllers\Home->iMap_fetch_programs()
+ 4 SYSTEMPATH/CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+ 5 SYSTEMPATH/CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 6 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()
+ERROR - 2023-11-07 12:23:50 --> mysqli_sql_exception: Unknown column 'p.name' in 'field list' in /home/mahentf8/public_html/mahendranextwealth/beingyou/system/Database/MySQLi/Connection.php:295
+Stack trace:
+#0 /home/mahentf8/public_html/mahendranextwealth/beingyou/system/Database/MySQLi/Connection.php(295): mysqli->query('SELECT `p`.`nam...', 0)
+#1 /home/mahentf8/public_html/mahendranextwealth/beingyou/system/Database/BaseConnection.php(691): CodeIgniter\Database\MySQLi\Connection->execute('SELECT `p`.`nam...')
+#2 /home/mahentf8/public_html/mahendranextwealth/beingyou/system/Database/BaseConnection.php(605): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT `p`.`nam...')
+#3 /home/mahentf8/public_html/mahendranextwealth/beingyou/system/Database/BaseBuilder.php(1616): CodeIgniter\Database\BaseConnection->query('SELECT `p`.`nam...', Array, false)
+#4 /home/mahentf8/public_html/mahendranextwealth/beingyou/app/Controllers/Home.php(5985): CodeIgniter\Database\BaseBuilder->get()
+#5 /home/mahentf8/public_html/mahendranextwealth/beingyou/system/CodeIgniter.php(934): App\Controllers\Home->iMap_fetch_programs()
+#6 /home/mahentf8/public_html/mahendranextwealth/beingyou/system/CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+#7 /home/mahentf8/public_html/mahendranextwealth/beingyou/system/CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#8 /home/mahentf8/public_html/mahendranextwealth/beingyou/index.php(67): CodeIgniter\CodeIgniter->run()
+#9 {main}
+CRITICAL - 2023-11-07 12:23:50 --> Unknown column 'p.name' in 'field list'
+in SYSTEMPATH/Database/BaseConnection.php on line 645.
+ 1 SYSTEMPATH/Database/BaseBuilder.php(1616): CodeIgniter\Database\BaseConnection->query('SELECT `p`.`name`, `p`.`post_id`, `p`.`category_Id`, `c`.`id`, `p`.`title`, `c`.`start_date`, `c`.`end_date`, `c`.`venue`
+FROM `posts` as `p`
+LEFT JOIN `course_allocation` as `c` ON `c`.`course_id`=`p`.`post_id`
+WHERE `c`.`exp_date` >= :c.exp_date:
+AND `p`.`name` = :p.name:
+AND `p`.`status` = :p.status:
+ORDER BY `c`.`exp_date` ASC, `p`.`post_id` ASC', [...], false)
+ 2 APPPATH/Controllers/Home.php(5985): CodeIgniter\Database\BaseBuilder->get()
+ 3 SYSTEMPATH/CodeIgniter.php(934): App\Controllers\Home->iMap_fetch_programs()
+ 4 SYSTEMPATH/CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+ 5 SYSTEMPATH/CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 6 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()
+ERROR - 2023-11-07 12:23:52 --> mysqli_sql_exception: Unknown column 'p.name' in 'field list' in /home/mahentf8/public_html/mahendranextwealth/beingyou/system/Database/MySQLi/Connection.php:295
+Stack trace:
+#0 /home/mahentf8/public_html/mahendranextwealth/beingyou/system/Database/MySQLi/Connection.php(295): mysqli->query('SELECT `p`.`nam...', 0)
+#1 /home/mahentf8/public_html/mahendranextwealth/beingyou/system/Database/BaseConnection.php(691): CodeIgniter\Database\MySQLi\Connection->execute('SELECT `p`.`nam...')
+#2 /home/mahentf8/public_html/mahendranextwealth/beingyou/system/Database/BaseConnection.php(605): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT `p`.`nam...')
+#3 /home/mahentf8/public_html/mahendranextwealth/beingyou/system/Database/BaseBuilder.php(1616): CodeIgniter\Database\BaseConnection->query('SELECT `p`.`nam...', Array, false)
+#4 /home/mahentf8/public_html/mahendranextwealth/beingyou/app/Controllers/Home.php(5985): CodeIgniter\Database\BaseBuilder->get()
+#5 /home/mahentf8/public_html/mahendranextwealth/beingyou/system/CodeIgniter.php(934): App\Controllers\Home->iMap_fetch_programs()
+#6 /home/mahentf8/public_html/mahendranextwealth/beingyou/system/CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+#7 /home/mahentf8/public_html/mahendranextwealth/beingyou/system/CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#8 /home/mahentf8/public_html/mahendranextwealth/beingyou/index.php(67): CodeIgniter\CodeIgniter->run()
+#9 {main}
+CRITICAL - 2023-11-07 12:23:52 --> Unknown column 'p.name' in 'field list'
+in SYSTEMPATH/Database/BaseConnection.php on line 645.
+ 1 SYSTEMPATH/Database/BaseBuilder.php(1616): CodeIgniter\Database\BaseConnection->query('SELECT `p`.`name`, `p`.`post_id`, `p`.`category_Id`, `c`.`id`, `p`.`title`, `c`.`start_date`, `c`.`end_date`, `c`.`venue`
+FROM `posts` as `p`
+LEFT JOIN `course_allocation` as `c` ON `c`.`course_id`=`p`.`post_id`
+WHERE `c`.`exp_date` >= :c.exp_date:
+AND `p`.`name` = :p.name:
+AND `p`.`status` = :p.status:
+ORDER BY `c`.`exp_date` ASC, `p`.`post_id` ASC', [...], false)
+ 2 APPPATH/Controllers/Home.php(5985): CodeIgniter\Database\BaseBuilder->get()
+ 3 SYSTEMPATH/CodeIgniter.php(934): App\Controllers\Home->iMap_fetch_programs()
+ 4 SYSTEMPATH/CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+ 5 SYSTEMPATH/CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 6 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()
+ERROR - 2023-11-07 12:24:20 --> mysqli_sql_exception: Unknown column 'p.name' in 'field list' in /home/mahentf8/public_html/mahendranextwealth/beingyou/system/Database/MySQLi/Connection.php:295
+Stack trace:
+#0 /home/mahentf8/public_html/mahendranextwealth/beingyou/system/Database/MySQLi/Connection.php(295): mysqli->query('SELECT `p`.`nam...', 0)
+#1 /home/mahentf8/public_html/mahendranextwealth/beingyou/system/Database/BaseConnection.php(691): CodeIgniter\Database\MySQLi\Connection->execute('SELECT `p`.`nam...')
+#2 /home/mahentf8/public_html/mahendranextwealth/beingyou/system/Database/BaseConnection.php(605): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT `p`.`nam...')
+#3 /home/mahentf8/public_html/mahendranextwealth/beingyou/system/Database/BaseBuilder.php(1616): CodeIgniter\Database\BaseConnection->query('SELECT `p`.`nam...', Array, false)
+#4 /home/mahentf8/public_html/mahendranextwealth/beingyou/app/Controllers/Home.php(5985): CodeIgniter\Database\BaseBuilder->get()
+#5 /home/mahentf8/public_html/mahendranextwealth/beingyou/system/CodeIgniter.php(934): App\Controllers\Home->iMap_fetch_programs()
+#6 /home/mahentf8/public_html/mahendranextwealth/beingyou/system/CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+#7 /home/mahentf8/public_html/mahendranextwealth/beingyou/system/CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#8 /home/mahentf8/public_html/mahendranextwealth/beingyou/index.php(67): CodeIgniter\CodeIgniter->run()
+#9 {main}
+CRITICAL - 2023-11-07 12:24:20 --> Unknown column 'p.name' in 'field list'
+in SYSTEMPATH/Database/BaseConnection.php on line 645.
+ 1 SYSTEMPATH/Database/BaseBuilder.php(1616): CodeIgniter\Database\BaseConnection->query('SELECT `p`.`name`, `p`.`post_id`, `p`.`category_Id`, `c`.`id`, `p`.`title`, `c`.`start_date`, `c`.`end_date`, `c`.`venue`
+FROM `posts` as `p`
+LEFT JOIN `course_allocation` as `c` ON `c`.`course_id`=`p`.`post_id`
+WHERE `c`.`exp_date` >= :c.exp_date:
+AND `p`.`category_Id` = :p.category_Id:
+AND `p`.`status` = :p.status:
+ORDER BY `c`.`exp_date` ASC, `p`.`post_id` ASC', [...], false)
+ 2 APPPATH/Controllers/Home.php(5985): CodeIgniter\Database\BaseBuilder->get()
+ 3 SYSTEMPATH/CodeIgniter.php(934): App\Controllers\Home->iMap_fetch_programs()
+ 4 SYSTEMPATH/CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+ 5 SYSTEMPATH/CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 6 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()
+ERROR - 2023-11-07 12:25:37 --> mysqli_sql_exception: Unknown column 'p.name' in 'field list' in /home/mahentf8/public_html/mahendranextwealth/beingyou/system/Database/MySQLi/Connection.php:295
+Stack trace:
+#0 /home/mahentf8/public_html/mahendranextwealth/beingyou/system/Database/MySQLi/Connection.php(295): mysqli->query('SELECT `p`.`nam...', 0)
+#1 /home/mahentf8/public_html/mahendranextwealth/beingyou/system/Database/BaseConnection.php(691): CodeIgniter\Database\MySQLi\Connection->execute('SELECT `p`.`nam...')
+#2 /home/mahentf8/public_html/mahendranextwealth/beingyou/system/Database/BaseConnection.php(605): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT `p`.`nam...')
+#3 /home/mahentf8/public_html/mahendranextwealth/beingyou/system/Database/BaseBuilder.php(1616): CodeIgniter\Database\BaseConnection->query('SELECT `p`.`nam...', Array, false)
+#4 /home/mahentf8/public_html/mahendranextwealth/beingyou/app/Controllers/Home.php(5985): CodeIgniter\Database\BaseBuilder->get()
+#5 /home/mahentf8/public_html/mahendranextwealth/beingyou/system/CodeIgniter.php(934): App\Controllers\Home->iMap_fetch_programs()
+#6 /home/mahentf8/public_html/mahendranextwealth/beingyou/system/CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+#7 /home/mahentf8/public_html/mahendranextwealth/beingyou/system/CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#8 /home/mahentf8/public_html/mahendranextwealth/beingyou/index.php(67): CodeIgniter\CodeIgniter->run()
+#9 {main}
+CRITICAL - 2023-11-07 12:25:37 --> Unknown column 'p.name' in 'field list'
+in SYSTEMPATH/Database/BaseConnection.php on line 645.
+ 1 SYSTEMPATH/Database/BaseBuilder.php(1616): CodeIgniter\Database\BaseConnection->query('SELECT `p`.`name`, `p`.`post_id`, `p`.`category_id`, `c`.`id`, `p`.`title`, `c`.`start_date`, `c`.`end_date`, `c`.`venue`
+FROM `posts` as `p`
+LEFT JOIN `course_allocation` as `c` ON `c`.`course_id`=`p`.`post_id`
+WHERE `c`.`exp_date` >= :c.exp_date:
+AND `p`.`category_id` = :p.category_id:
+AND `p`.`status` = :p.status:
+ORDER BY `c`.`exp_date` ASC, `p`.`post_id` ASC', [...], false)
+ 2 APPPATH/Controllers/Home.php(5985): CodeIgniter\Database\BaseBuilder->get()
+ 3 SYSTEMPATH/CodeIgniter.php(934): App\Controllers\Home->iMap_fetch_programs()
+ 4 SYSTEMPATH/CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+ 5 SYSTEMPATH/CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 6 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()
+ERROR - 2023-11-07 12:25:44 --> mysqli_sql_exception: Unknown column 'p.name' in 'field list' in /home/mahentf8/public_html/mahendranextwealth/beingyou/system/Database/MySQLi/Connection.php:295
+Stack trace:
+#0 /home/mahentf8/public_html/mahendranextwealth/beingyou/system/Database/MySQLi/Connection.php(295): mysqli->query('SELECT `p`.`nam...', 0)
+#1 /home/mahentf8/public_html/mahendranextwealth/beingyou/system/Database/BaseConnection.php(691): CodeIgniter\Database\MySQLi\Connection->execute('SELECT `p`.`nam...')
+#2 /home/mahentf8/public_html/mahendranextwealth/beingyou/system/Database/BaseConnection.php(605): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT `p`.`nam...')
+#3 /home/mahentf8/public_html/mahendranextwealth/beingyou/system/Database/BaseBuilder.php(1616): CodeIgniter\Database\BaseConnection->query('SELECT `p`.`nam...', Array, false)
+#4 /home/mahentf8/public_html/mahendranextwealth/beingyou/app/Controllers/Home.php(5985): CodeIgniter\Database\BaseBuilder->get()
+#5 /home/mahentf8/public_html/mahendranextwealth/beingyou/system/CodeIgniter.php(934): App\Controllers\Home->iMap_fetch_programs()
+#6 /home/mahentf8/public_html/mahendranextwealth/beingyou/system/CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+#7 /home/mahentf8/public_html/mahendranextwealth/beingyou/system/CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#8 /home/mahentf8/public_html/mahendranextwealth/beingyou/index.php(67): CodeIgniter\CodeIgniter->run()
+#9 {main}
+CRITICAL - 2023-11-07 12:25:44 --> Unknown column 'p.name' in 'field list'
+in SYSTEMPATH/Database/BaseConnection.php on line 645.
+ 1 SYSTEMPATH/Database/BaseBuilder.php(1616): CodeIgniter\Database\BaseConnection->query('SELECT `p`.`name`, `p`.`post_id`, `p`.`category_id`, `c`.`id`, `p`.`title`, `c`.`start_date`, `c`.`end_date`, `c`.`venue`
+FROM `posts` as `p`
+LEFT JOIN `course_allocation` as `c` ON `c`.`course_id`=`p`.`post_id`
+WHERE `c`.`exp_date` >= :c.exp_date:
+AND `p`.`category_id` = :p.category_id:
+AND `p`.`status` = :p.status:
+ORDER BY `c`.`exp_date` ASC, `p`.`post_id` ASC', [...], false)
+ 2 APPPATH/Controllers/Home.php(5985): CodeIgniter\Database\BaseBuilder->get()
+ 3 SYSTEMPATH/CodeIgniter.php(934): App\Controllers\Home->iMap_fetch_programs()
+ 4 SYSTEMPATH/CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+ 5 SYSTEMPATH/CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 6 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()
+ERROR - 2023-11-07 12:26:21 --> mysqli_sql_exception: Unknown column 'p.name' in 'field list' in /home/mahentf8/public_html/mahendranextwealth/beingyou/system/Database/MySQLi/Connection.php:295
+Stack trace:
+#0 /home/mahentf8/public_html/mahendranextwealth/beingyou/system/Database/MySQLi/Connection.php(295): mysqli->query('SELECT `p`.`nam...', 0)
+#1 /home/mahentf8/public_html/mahendranextwealth/beingyou/system/Database/BaseConnection.php(691): CodeIgniter\Database\MySQLi\Connection->execute('SELECT `p`.`nam...')
+#2 /home/mahentf8/public_html/mahendranextwealth/beingyou/system/Database/BaseConnection.php(605): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT `p`.`nam...')
+#3 /home/mahentf8/public_html/mahendranextwealth/beingyou/system/Database/BaseBuilder.php(1616): CodeIgniter\Database\BaseConnection->query('SELECT `p`.`nam...', Array, false)
+#4 /home/mahentf8/public_html/mahendranextwealth/beingyou/app/Controllers/Home.php(5985): CodeIgniter\Database\BaseBuilder->get()
+#5 /home/mahentf8/public_html/mahendranextwealth/beingyou/system/CodeIgniter.php(934): App\Controllers\Home->iMap_fetch_programs()
+#6 /home/mahentf8/public_html/mahendranextwealth/beingyou/system/CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+#7 /home/mahentf8/public_html/mahendranextwealth/beingyou/system/CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#8 /home/mahentf8/public_html/mahendranextwealth/beingyou/index.php(67): CodeIgniter\CodeIgniter->run()
+#9 {main}
+CRITICAL - 2023-11-07 12:26:21 --> Unknown column 'p.name' in 'field list'
+in SYSTEMPATH/Database/BaseConnection.php on line 645.
+ 1 SYSTEMPATH/Database/BaseBuilder.php(1616): CodeIgniter\Database\BaseConnection->query('SELECT `p`.`name`, `p`.`post_id`, `p`.`category_id`, `c`.`id`, `p`.`title`, `c`.`start_date`, `c`.`end_date`, `c`.`venue`
+FROM `posts` as `p`
+LEFT JOIN `course_allocation` as `c` ON `c`.`course_id`=`p`.`post_id`
+WHERE `c`.`exp_date` >= :c.exp_date:
+AND `p`.`status` = :p.status:
+ORDER BY `c`.`exp_date` ASC, `p`.`post_id` ASC', [...], false)
+ 2 APPPATH/Controllers/Home.php(5985): CodeIgniter\Database\BaseBuilder->get()
+ 3 SYSTEMPATH/CodeIgniter.php(934): App\Controllers\Home->iMap_fetch_programs()
+ 4 SYSTEMPATH/CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+ 5 SYSTEMPATH/CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 6 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()
+ERROR - 2023-11-07 12:26:53 --> mysqli_sql_exception: Unknown column 'p.name' in 'field list' in /home/mahentf8/public_html/mahendranextwealth/beingyou/system/Database/MySQLi/Connection.php:295
+Stack trace:
+#0 /home/mahentf8/public_html/mahendranextwealth/beingyou/system/Database/MySQLi/Connection.php(295): mysqli->query('SELECT `p`.`nam...', 0)
+#1 /home/mahentf8/public_html/mahendranextwealth/beingyou/system/Database/BaseConnection.php(691): CodeIgniter\Database\MySQLi\Connection->execute('SELECT `p`.`nam...')
+#2 /home/mahentf8/public_html/mahendranextwealth/beingyou/system/Database/BaseConnection.php(605): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT `p`.`nam...')
+#3 /home/mahentf8/public_html/mahendranextwealth/beingyou/system/Database/BaseBuilder.php(1616): CodeIgniter\Database\BaseConnection->query('SELECT `p`.`nam...', Array, false)
+#4 /home/mahentf8/public_html/mahendranextwealth/beingyou/app/Controllers/Home.php(5985): CodeIgniter\Database\BaseBuilder->get()
+#5 /home/mahentf8/public_html/mahendranextwealth/beingyou/system/CodeIgniter.php(934): App\Controllers\Home->iMap_fetch_programs()
+#6 /home/mahentf8/public_html/mahendranextwealth/beingyou/system/CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+#7 /home/mahentf8/public_html/mahendranextwealth/beingyou/system/CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#8 /home/mahentf8/public_html/mahendranextwealth/beingyou/index.php(67): CodeIgniter\CodeIgniter->run()
+#9 {main}
+CRITICAL - 2023-11-07 12:26:53 --> Unknown column 'p.name' in 'field list'
+in SYSTEMPATH/Database/BaseConnection.php on line 645.
+ 1 SYSTEMPATH/Database/BaseBuilder.php(1616): CodeIgniter\Database\BaseConnection->query('SELECT `p`.`name`, `p`.`post_id`, `p`.`category_id`, `c`.`id`, `p`.`title`, `c`.`start_date`, `c`.`end_date`, `c`.`venue`
+FROM `posts` as `p`
+LEFT JOIN `course_allocation` as `c` ON `c`.`course_id`=`p`.`post_id`
+WHERE `c`.`exp_date` >= :c.exp_date:
+AND `p`.`category_id` = :p.category_id:
+AND `p`.`status` = :p.status:
+ORDER BY `c`.`exp_date` ASC, `p`.`post_id` ASC', [...], false)
+ 2 APPPATH/Controllers/Home.php(5985): CodeIgniter\Database\BaseBuilder->get()
+ 3 SYSTEMPATH/CodeIgniter.php(934): App\Controllers\Home->iMap_fetch_programs()
+ 4 SYSTEMPATH/CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+ 5 SYSTEMPATH/CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 6 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()
+ERROR - 2023-11-07 12:27:12 --> mysqli_sql_exception: Unknown column 'p.name' in 'field list' in /home/mahentf8/public_html/mahendranextwealth/beingyou/system/Database/MySQLi/Connection.php:295
+Stack trace:
+#0 /home/mahentf8/public_html/mahendranextwealth/beingyou/system/Database/MySQLi/Connection.php(295): mysqli->query('SELECT `p`.`nam...', 0)
+#1 /home/mahentf8/public_html/mahendranextwealth/beingyou/system/Database/BaseConnection.php(691): CodeIgniter\Database\MySQLi\Connection->execute('SELECT `p`.`nam...')
+#2 /home/mahentf8/public_html/mahendranextwealth/beingyou/system/Database/BaseConnection.php(605): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT `p`.`nam...')
+#3 /home/mahentf8/public_html/mahendranextwealth/beingyou/system/Database/BaseBuilder.php(1616): CodeIgniter\Database\BaseConnection->query('SELECT `p`.`nam...', Array, false)
+#4 /home/mahentf8/public_html/mahendranextwealth/beingyou/app/Controllers/Home.php(5985): CodeIgniter\Database\BaseBuilder->get()
+#5 /home/mahentf8/public_html/mahendranextwealth/beingyou/system/CodeIgniter.php(934): App\Controllers\Home->iMap_fetch_programs()
+#6 /home/mahentf8/public_html/mahendranextwealth/beingyou/system/CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+#7 /home/mahentf8/public_html/mahendranextwealth/beingyou/system/CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#8 /home/mahentf8/public_html/mahendranextwealth/beingyou/index.php(67): CodeIgniter\CodeIgniter->run()
+#9 {main}
+CRITICAL - 2023-11-07 12:27:12 --> Unknown column 'p.name' in 'field list'
+in SYSTEMPATH/Database/BaseConnection.php on line 645.
+ 1 SYSTEMPATH/Database/BaseBuilder.php(1616): CodeIgniter\Database\BaseConnection->query('SELECT `p`.`name`, `p`.`post_id`, `p`.`category_id`, `c`.`id`, `p`.`title`, `c`.`start_date`, `c`.`end_date`, `c`.`venue`
+FROM `posts` as `p`
+LEFT JOIN `course_allocation` as `c` ON `c`.`course_id`=`p`.`post_id`
+WHERE `c`.`exp_date` >= :c.exp_date:
+AND `p`.`category_id` = :p.category_id:
+AND `p`.`status` = :p.status:
+ORDER BY `c`.`exp_date` ASC, `p`.`post_id` ASC', [...], false)
+ 2 APPPATH/Controllers/Home.php(5985): CodeIgniter\Database\BaseBuilder->get()
+ 3 SYSTEMPATH/CodeIgniter.php(934): App\Controllers\Home->iMap_fetch_programs()
+ 4 SYSTEMPATH/CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+ 5 SYSTEMPATH/CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 6 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()
+ERROR - 2023-11-07 12:27:31 --> mysqli_sql_exception: Unknown column 'p.name' in 'field list' in /home/mahentf8/public_html/mahendranextwealth/beingyou/system/Database/MySQLi/Connection.php:295
+Stack trace:
+#0 /home/mahentf8/public_html/mahendranextwealth/beingyou/system/Database/MySQLi/Connection.php(295): mysqli->query('SELECT `p`.`nam...', 0)
+#1 /home/mahentf8/public_html/mahendranextwealth/beingyou/system/Database/BaseConnection.php(691): CodeIgniter\Database\MySQLi\Connection->execute('SELECT `p`.`nam...')
+#2 /home/mahentf8/public_html/mahendranextwealth/beingyou/system/Database/BaseConnection.php(605): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT `p`.`nam...')
+#3 /home/mahentf8/public_html/mahendranextwealth/beingyou/system/Database/BaseBuilder.php(1616): CodeIgniter\Database\BaseConnection->query('SELECT `p`.`nam...', Array, false)
+#4 /home/mahentf8/public_html/mahendranextwealth/beingyou/app/Controllers/Home.php(5985): CodeIgniter\Database\BaseBuilder->get()
+#5 /home/mahentf8/public_html/mahendranextwealth/beingyou/system/CodeIgniter.php(934): App\Controllers\Home->iMap_fetch_programs()
+#6 /home/mahentf8/public_html/mahendranextwealth/beingyou/system/CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+#7 /home/mahentf8/public_html/mahendranextwealth/beingyou/system/CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#8 /home/mahentf8/public_html/mahendranextwealth/beingyou/index.php(67): CodeIgniter\CodeIgniter->run()
+#9 {main}
+CRITICAL - 2023-11-07 12:27:31 --> Unknown column 'p.name' in 'field list'
+in SYSTEMPATH/Database/BaseConnection.php on line 645.
+ 1 SYSTEMPATH/Database/BaseBuilder.php(1616): CodeIgniter\Database\BaseConnection->query('SELECT `p`.`name`, `p`.`post_id`, `p`.`category_id`, `c`.`id`, `p`.`title`, `c`.`start_date`, `c`.`end_date`, `c`.`venue`
+FROM `posts` as `p`
+LEFT JOIN `course_allocation` as `c` ON `c`.`course_id`=`p`.`post_id`
+WHERE `c`.`exp_date` >= :c.exp_date:
+ORDER BY `c`.`exp_date` ASC, `p`.`post_id` ASC', [...], false)
+ 2 APPPATH/Controllers/Home.php(5985): CodeIgniter\Database\BaseBuilder->get()
+ 3 SYSTEMPATH/CodeIgniter.php(934): App\Controllers\Home->iMap_fetch_programs()
+ 4 SYSTEMPATH/CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+ 5 SYSTEMPATH/CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 6 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-11-07 13:20:01 --> Call to undefined method CodeIgniter\Database\MySQLi\Builder::group_by()
+in APPPATH/Controllers/Home.php on line 3599.
+ 1 SYSTEMPATH/CodeIgniter.php(934): App\Controllers\Home->fetch_user_courses()
+ 2 SYSTEMPATH/CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+ 3 SYSTEMPATH/CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-11-07 13:20:48 --> Call to undefined method CodeIgniter\Database\MySQLi\Builder::group_by()
+in APPPATH/Controllers/Home.php on line 3599.
+ 1 SYSTEMPATH/CodeIgniter.php(934): App\Controllers\Home->fetch_user_courses()
+ 2 SYSTEMPATH/CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+ 3 SYSTEMPATH/CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()

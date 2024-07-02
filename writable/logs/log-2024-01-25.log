@@ -1,0 +1,70 @@
+CRITICAL - 2024-01-25 05:21:21 --> syntax error, unexpected 'die' (T_EXIT), expecting ';' or ','
+in APPPATH/Controllers/Home.php on line 5678.
+ 1 SYSTEMPATH/Autoloader/Autoloader.php(289): CodeIgniter\Autoloader\Autoloader->includeFile('APPPATH/Controllers/Home.php')
+ 2 SYSTEMPATH/Autoloader/Autoloader.php(267): CodeIgniter\Autoloader\Autoloader->loadInNamespace('App\\Controllers\\Home')
+ 3 [internal function]: CodeIgniter\Autoloader\Autoloader->loadClass('App\\Controllers\\Home')
+ 4 [internal function]: spl_autoload_call('App\\Controllers\\Home')
+ 5 SYSTEMPATH/CodeIgniter.php(892): class_exists('\\App\\Controllers\\Home', true)
+ 6 SYSTEMPATH/CodeIgniter.php(486): CodeIgniter\CodeIgniter->startController()
+ 7 SYSTEMPATH/CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 8 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2024-01-25 11:08:31 --> Invalid argument supplied for foreach()
+in APPPATH/Controllers/Home.php on line 5784.
+ 1 APPPATH/Controllers/Home.php(5784): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Invalid argument supplied for foreach()', 'APPPATH/Controllers/Home.php', 5784, [...])
+ 2 SYSTEMPATH/CodeIgniter.php(934): App\Controllers\Home->metafor_download()
+ 3 SYSTEMPATH/CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+ 4 SYSTEMPATH/CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2024-01-25 11:08:57 --> Invalid argument supplied for foreach()
+in APPPATH/Controllers/Home.php on line 5784.
+ 1 APPPATH/Controllers/Home.php(5784): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Invalid argument supplied for foreach()', 'APPPATH/Controllers/Home.php', 5784, [...])
+ 2 SYSTEMPATH/CodeIgniter.php(934): App\Controllers\Home->metafor_download()
+ 3 SYSTEMPATH/CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+ 4 SYSTEMPATH/CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2024-01-25 11:11:45 --> array_column() expects parameter 1 to be array, null given
+in APPPATH/Controllers/Home.php on line 5622.
+ 1 [internal function]: CodeIgniter\Debug\Exceptions->errorHandler(2, 'array_column() expects parameter 1 to be array, null given', 'APPPATH/Controllers/Home.php', 5622, [...])
+ 2 APPPATH/Controllers/Home.php(5622): array_column(null, 'rollno', 'rollno')
+ 3 SYSTEMPATH/CodeIgniter.php(934): App\Controllers\Home->metafor_download()
+ 4 SYSTEMPATH/CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+ 5 SYSTEMPATH/CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 6 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2024-01-25 11:12:22 --> array_column() expects parameter 1 to be array, null given
+in APPPATH/Controllers/Home.php on line 5622.
+ 1 [internal function]: CodeIgniter\Debug\Exceptions->errorHandler(2, 'array_column() expects parameter 1 to be array, null given', 'APPPATH/Controllers/Home.php', 5622, [...])
+ 2 APPPATH/Controllers/Home.php(5622): array_column(null, 'rollno', 'rollno')
+ 3 SYSTEMPATH/CodeIgniter.php(934): App\Controllers\Home->metafor_download()
+ 4 SYSTEMPATH/CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+ 5 SYSTEMPATH/CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 6 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2024-01-25 11:12:52 --> array_column() expects parameter 1 to be array, null given
+in APPPATH/Controllers/Home.php on line 5622.
+ 1 [internal function]: CodeIgniter\Debug\Exceptions->errorHandler(2, 'array_column() expects parameter 1 to be array, null given', 'APPPATH/Controllers/Home.php', 5622, [...])
+ 2 APPPATH/Controllers/Home.php(5622): array_column(null, 'rollno', 'rollno')
+ 3 SYSTEMPATH/CodeIgniter.php(934): App\Controllers\Home->metafor_download()
+ 4 SYSTEMPATH/CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+ 5 SYSTEMPATH/CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 6 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2024-01-25 11:13:39 --> array_column() expects parameter 1 to be array, null given
+in APPPATH/Controllers/Home.php on line 5622.
+ 1 [internal function]: CodeIgniter\Debug\Exceptions->errorHandler(2, 'array_column() expects parameter 1 to be array, null given', 'APPPATH/Controllers/Home.php', 5622, [...])
+ 2 APPPATH/Controllers/Home.php(5622): array_column(null, 'rollno', 'rollno')
+ 3 SYSTEMPATH/CodeIgniter.php(934): App\Controllers\Home->metafor_download()
+ 4 SYSTEMPATH/CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+ 5 SYSTEMPATH/CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 6 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2024-01-25 18:27:42 --> A non-numeric value encountered
+in APPPATH/Controllers/Home.php on line 5799.
+ 1 APPPATH/Controllers/Home.php(5799): CodeIgniter\Debug\Exceptions->errorHandler(2, 'A non-numeric value encountered', 'APPPATH/Controllers/Home.php', 5799, [...])
+ 2 SYSTEMPATH/CodeIgniter.php(934): App\Controllers\Home->metafor_download()
+ 3 SYSTEMPATH/CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+ 4 SYSTEMPATH/CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2024-01-25 18:28:26 --> A non-numeric value encountered
+in APPPATH/Controllers/Home.php on line 5799.
+ 1 APPPATH/Controllers/Home.php(5799): CodeIgniter\Debug\Exceptions->errorHandler(2, 'A non-numeric value encountered', 'APPPATH/Controllers/Home.php', 5799, [...])
+ 2 SYSTEMPATH/CodeIgniter.php(934): App\Controllers\Home->metafor_download()
+ 3 SYSTEMPATH/CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+ 4 SYSTEMPATH/CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()

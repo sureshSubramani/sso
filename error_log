@@ -1,0 +1,148 @@
+[15-Sep-2023 07:11:41 UTC] PHP Fatal error:  Uncaught CodeIgniter\Format\Exceptions\FormatException: Failed to parse JSON string. Error: Type is not supported in /home/mahentf8/public_html/mahendranextwealth/beingyou/system/Format/JSONFormatter.php:41
+Stack trace:
+#0 /home/mahentf8/public_html/mahendranextwealth/beingyou/system/Format/JSONFormatter.php(41): CodeIgniter\Format\Exceptions\FormatException::forInvalidJSON('Type is not sup...')
+#1 /home/mahentf8/public_html/mahendranextwealth/beingyou/system/API/ResponseTrait.php(346): CodeIgniter\Format\JSONFormatter->format(Array)
+#2 /home/mahentf8/public_html/mahendranextwealth/beingyou/system/API/ResponseTrait.php(99): CodeIgniter\Debug\Exceptions->format(Array)
+#3 /home/mahentf8/public_html/mahendranextwealth/beingyou/system/Debug/Exceptions.php(145): CodeIgniter\Debug\Exceptions->respond(Array, 500)
+#4 [internal function]: CodeIgniter\Debug\Exceptions->exceptionHandler(Object(ErrorException))
+#5 {main}
+  thrown in /home/mahentf8/public_html/mahendranextwealth/beingyou/system/Format/JSONFormatter.php on line 41
+[15-Sep-2023 09:22:27 UTC] PHP Fatal error:  Uncaught CodeIgniter\Format\Exceptions\FormatException: Failed to parse JSON string. Error: Type is not supported in /home/mahentf8/public_html/mahendranextwealth/beingyou/system/Format/JSONFormatter.php:41
+Stack trace:
+#0 /home/mahentf8/public_html/mahendranextwealth/beingyou/system/Format/JSONFormatter.php(41): CodeIgniter\Format\Exceptions\FormatException::forInvalidJSON('Type is not sup...')
+#1 /home/mahentf8/public_html/mahendranextwealth/beingyou/system/API/ResponseTrait.php(346): CodeIgniter\Format\JSONFormatter->format(Array)
+#2 /home/mahentf8/public_html/mahendranextwealth/beingyou/system/API/ResponseTrait.php(99): CodeIgniter\Debug\Exceptions->format(Array)
+#3 /home/mahentf8/public_html/mahendranextwealth/beingyou/system/Debug/Exceptions.php(145): CodeIgniter\Debug\Exceptions->respond(Array, 500)
+#4 [internal function]: CodeIgniter\Debug\Exceptions->exceptionHandler(Object(ErrorException))
+#5 {main}
+  thrown in /home/mahentf8/public_html/mahendranextwealth/beingyou/system/Format/JSONFormatter.php on line 41
+[15-Sep-2023 11:09:26 UTC] PHP Fatal error:  Uncaught CodeIgniter\Format\Exceptions\FormatException: Failed to parse JSON string. Error: Type is not supported in /home/mahentf8/public_html/mahendranextwealth/beingyou/system/Format/JSONFormatter.php:41
+Stack trace:
+#0 /home/mahentf8/public_html/mahendranextwealth/beingyou/system/Format/JSONFormatter.php(41): CodeIgniter\Format\Exceptions\FormatException::forInvalidJSON('Type is not sup...')
+#1 /home/mahentf8/public_html/mahendranextwealth/beingyou/system/API/ResponseTrait.php(346): CodeIgniter\Format\JSONFormatter->format(Array)
+#2 /home/mahentf8/public_html/mahendranextwealth/beingyou/system/API/ResponseTrait.php(99): CodeIgniter\Debug\Exceptions->format(Array)
+#3 /home/mahentf8/public_html/mahendranextwealth/beingyou/system/Debug/Exceptions.php(145): CodeIgniter\Debug\Exceptions->respond(Array, 500)
+#4 [internal function]: CodeIgniter\Debug\Exceptions->exceptionHandler(Object(ErrorException))
+#5 {main}
+  thrown in /home/mahentf8/public_html/mahendranextwealth/beingyou/system/Format/JSONFormatter.php on line 41
+[15-Sep-2023 11:11:23 UTC] PHP Fatal error:  Uncaught CodeIgniter\Format\Exceptions\FormatException: Failed to parse JSON string. Error: Type is not supported in /home/mahentf8/public_html/mahendranextwealth/beingyou/system/Format/JSONFormatter.php:41
+Stack trace:
+#0 /home/mahentf8/public_html/mahendranextwealth/beingyou/system/Format/JSONFormatter.php(41): CodeIgniter\Format\Exceptions\FormatException::forInvalidJSON('Type is not sup...')
+#1 /home/mahentf8/public_html/mahendranextwealth/beingyou/system/API/ResponseTrait.php(346): CodeIgniter\Format\JSONFormatter->format(Array)
+#2 /home/mahentf8/public_html/mahendranextwealth/beingyou/system/API/ResponseTrait.php(99): CodeIgniter\Debug\Exceptions->format(Array)
+#3 /home/mahentf8/public_html/mahendranextwealth/beingyou/system/Debug/Exceptions.php(145): CodeIgniter\Debug\Exceptions->respond(Array, 500)
+#4 [internal function]: CodeIgniter\Debug\Exceptions->exceptionHandler(Object(ErrorException))
+#5 {main}
+  thrown in /home/mahentf8/public_html/mahendranextwealth/beingyou/system/Format/JSONFormatter.php on line 41
+[25-Sep-2023 06:57:59 UTC] PHP Fatal error:  Uncaught CodeIgniter\Format\Exceptions\FormatException: Failed to parse JSON string. Error: Type is not supported in /home/mahentf8/public_html/mahendranextwealth/beingyou/system/Format/JSONFormatter.php:41
+Stack trace:
+#0 /home/mahentf8/public_html/mahendranextwealth/beingyou/system/Format/JSONFormatter.php(41): CodeIgniter\Format\Exceptions\FormatException::forInvalidJSON('Type is not sup...')
+#1 /home/mahentf8/public_html/mahendranextwealth/beingyou/system/API/ResponseTrait.php(346): CodeIgniter\Format\JSONFormatter->format(Array)
+#2 /home/mahentf8/public_html/mahendranextwealth/beingyou/system/API/ResponseTrait.php(99): CodeIgniter\Debug\Exceptions->format(Array)
+#3 /home/mahentf8/public_html/mahendranextwealth/beingyou/system/Debug/Exceptions.php(145): CodeIgniter\Debug\Exceptions->respond(Array, 500)
+#4 [internal function]: CodeIgniter\Debug\Exceptions->exceptionHandler(Object(ErrorException))
+#5 {main}
+  thrown in /home/mahentf8/public_html/mahendranextwealth/beingyou/system/Format/JSONFormatter.php on line 41
+[03-Oct-2023 09:53:21 Asia/Kolkata] PHP Fatal error:  Uncaught CodeIgniter\Format\Exceptions\FormatException: Failed to parse JSON string. Error: Type is not supported in /home/mahentf8/public_html/mahendranextwealth/beingyou/system/Format/JSONFormatter.php:41
+Stack trace:
+#0 /home/mahentf8/public_html/mahendranextwealth/beingyou/system/Format/JSONFormatter.php(41): CodeIgniter\Format\Exceptions\FormatException::forInvalidJSON('Type is not sup...')
+#1 /home/mahentf8/public_html/mahendranextwealth/beingyou/system/API/ResponseTrait.php(346): CodeIgniter\Format\JSONFormatter->format(Array)
+#2 /home/mahentf8/public_html/mahendranextwealth/beingyou/system/API/ResponseTrait.php(99): CodeIgniter\Debug\Exceptions->format(Array)
+#3 /home/mahentf8/public_html/mahendranextwealth/beingyou/system/Debug/Exceptions.php(145): CodeIgniter\Debug\Exceptions->respond(Array, 500)
+#4 [internal function]: CodeIgniter\Debug\Exceptions->exceptionHandler(Object(ErrorException))
+#5 {main}
+  thrown in /home/mahentf8/public_html/mahendranextwealth/beingyou/system/Format/JSONFormatter.php on line 41
+[03-Oct-2023 10:01:23 Asia/Kolkata] PHP Fatal error:  Uncaught CodeIgniter\Format\Exceptions\FormatException: Failed to parse JSON string. Error: Type is not supported in /home/mahentf8/public_html/mahendranextwealth/beingyou/system/Format/JSONFormatter.php:41
+Stack trace:
+#0 /home/mahentf8/public_html/mahendranextwealth/beingyou/system/Format/JSONFormatter.php(41): CodeIgniter\Format\Exceptions\FormatException::forInvalidJSON('Type is not sup...')
+#1 /home/mahentf8/public_html/mahendranextwealth/beingyou/system/API/ResponseTrait.php(346): CodeIgniter\Format\JSONFormatter->format(Array)
+#2 /home/mahentf8/public_html/mahendranextwealth/beingyou/system/API/ResponseTrait.php(99): CodeIgniter\Debug\Exceptions->format(Array)
+#3 /home/mahentf8/public_html/mahendranextwealth/beingyou/system/Debug/Exceptions.php(145): CodeIgniter\Debug\Exceptions->respond(Array, 500)
+#4 [internal function]: CodeIgniter\Debug\Exceptions->exceptionHandler(Object(ErrorException))
+#5 {main}
+  thrown in /home/mahentf8/public_html/mahendranextwealth/beingyou/system/Format/JSONFormatter.php on line 41
+[03-Oct-2023 10:04:42 Asia/Kolkata] PHP Fatal error:  Uncaught CodeIgniter\Format\Exceptions\FormatException: Failed to parse JSON string. Error: Type is not supported in /home/mahentf8/public_html/mahendranextwealth/beingyou/system/Format/JSONFormatter.php:41
+Stack trace:
+#0 /home/mahentf8/public_html/mahendranextwealth/beingyou/system/Format/JSONFormatter.php(41): CodeIgniter\Format\Exceptions\FormatException::forInvalidJSON('Type is not sup...')
+#1 /home/mahentf8/public_html/mahendranextwealth/beingyou/system/API/ResponseTrait.php(346): CodeIgniter\Format\JSONFormatter->format(Array)
+#2 /home/mahentf8/public_html/mahendranextwealth/beingyou/system/API/ResponseTrait.php(99): CodeIgniter\Debug\Exceptions->format(Array)
+#3 /home/mahentf8/public_html/mahendranextwealth/beingyou/system/Debug/Exceptions.php(145): CodeIgniter\Debug\Exceptions->respond(Array, 500)
+#4 [internal function]: CodeIgniter\Debug\Exceptions->exceptionHandler(Object(ErrorException))
+#5 {main}
+  thrown in /home/mahentf8/public_html/mahendranextwealth/beingyou/system/Format/JSONFormatter.php on line 41
+[03-Oct-2023 10:09:25 Asia/Kolkata] PHP Fatal error:  Uncaught CodeIgniter\Format\Exceptions\FormatException: Failed to parse JSON string. Error: Type is not supported in /home/mahentf8/public_html/mahendranextwealth/beingyou/system/Format/JSONFormatter.php:41
+Stack trace:
+#0 /home/mahentf8/public_html/mahendranextwealth/beingyou/system/Format/JSONFormatter.php(41): CodeIgniter\Format\Exceptions\FormatException::forInvalidJSON('Type is not sup...')
+#1 /home/mahentf8/public_html/mahendranextwealth/beingyou/system/API/ResponseTrait.php(346): CodeIgniter\Format\JSONFormatter->format(Array)
+#2 /home/mahentf8/public_html/mahendranextwealth/beingyou/system/API/ResponseTrait.php(99): CodeIgniter\Debug\Exceptions->format(Array)
+#3 /home/mahentf8/public_html/mahendranextwealth/beingyou/system/Debug/Exceptions.php(145): CodeIgniter\Debug\Exceptions->respond(Array, 500)
+#4 [internal function]: CodeIgniter\Debug\Exceptions->exceptionHandler(Object(ErrorException))
+#5 {main}
+  thrown in /home/mahentf8/public_html/mahendranextwealth/beingyou/system/Format/JSONFormatter.php on line 41
+[03-Oct-2023 13:10:49 Asia/Kolkata] PHP Fatal error:  Uncaught CodeIgniter\Format\Exceptions\FormatException: Failed to parse JSON string. Error: Type is not supported in /home/mahentf8/public_html/mahendranextwealth/beingyou/system/Format/JSONFormatter.php:41
+Stack trace:
+#0 /home/mahentf8/public_html/mahendranextwealth/beingyou/system/Format/JSONFormatter.php(41): CodeIgniter\Format\Exceptions\FormatException::forInvalidJSON('Type is not sup...')
+#1 /home/mahentf8/public_html/mahendranextwealth/beingyou/system/API/ResponseTrait.php(346): CodeIgniter\Format\JSONFormatter->format(Array)
+#2 /home/mahentf8/public_html/mahendranextwealth/beingyou/system/API/ResponseTrait.php(99): CodeIgniter\Debug\Exceptions->format(Array)
+#3 /home/mahentf8/public_html/mahendranextwealth/beingyou/system/Debug/Exceptions.php(145): CodeIgniter\Debug\Exceptions->respond(Array, 500)
+#4 [internal function]: CodeIgniter\Debug\Exceptions->exceptionHandler(Object(ErrorException))
+#5 {main}
+  thrown in /home/mahentf8/public_html/mahendranextwealth/beingyou/system/Format/JSONFormatter.php on line 41
+[03-Oct-2023 13:17:02 Asia/Kolkata] PHP Fatal error:  Uncaught CodeIgniter\Format\Exceptions\FormatException: Failed to parse JSON string. Error: Type is not supported in /home/mahentf8/public_html/mahendranextwealth/beingyou/system/Format/JSONFormatter.php:41
+Stack trace:
+#0 /home/mahentf8/public_html/mahendranextwealth/beingyou/system/Format/JSONFormatter.php(41): CodeIgniter\Format\Exceptions\FormatException::forInvalidJSON('Type is not sup...')
+#1 /home/mahentf8/public_html/mahendranextwealth/beingyou/system/API/ResponseTrait.php(346): CodeIgniter\Format\JSONFormatter->format(Array)
+#2 /home/mahentf8/public_html/mahendranextwealth/beingyou/system/API/ResponseTrait.php(99): CodeIgniter\Debug\Exceptions->format(Array)
+#3 /home/mahentf8/public_html/mahendranextwealth/beingyou/system/Debug/Exceptions.php(145): CodeIgniter\Debug\Exceptions->respond(Array, 500)
+#4 [internal function]: CodeIgniter\Debug\Exceptions->exceptionHandler(Object(ErrorException))
+#5 {main}
+  thrown in /home/mahentf8/public_html/mahendranextwealth/beingyou/system/Format/JSONFormatter.php on line 41
+[04-Oct-2023 11:58:07 Asia/Kolkata] PHP Fatal error:  Uncaught CodeIgniter\Format\Exceptions\FormatException: Failed to parse JSON string. Error: Type is not supported in /home/mahentf8/public_html/mahendranextwealth/beingyou/system/Format/JSONFormatter.php:41
+Stack trace:
+#0 /home/mahentf8/public_html/mahendranextwealth/beingyou/system/Format/JSONFormatter.php(41): CodeIgniter\Format\Exceptions\FormatException::forInvalidJSON('Type is not sup...')
+#1 /home/mahentf8/public_html/mahendranextwealth/beingyou/system/API/ResponseTrait.php(346): CodeIgniter\Format\JSONFormatter->format(Array)
+#2 /home/mahentf8/public_html/mahendranextwealth/beingyou/system/API/ResponseTrait.php(99): CodeIgniter\Debug\Exceptions->format(Array)
+#3 /home/mahentf8/public_html/mahendranextwealth/beingyou/system/Debug/Exceptions.php(145): CodeIgniter\Debug\Exceptions->respond(Array, 500)
+#4 [internal function]: CodeIgniter\Debug\Exceptions->exceptionHandler(Object(ErrorException))
+#5 {main}
+  thrown in /home/mahentf8/public_html/mahendranextwealth/beingyou/system/Format/JSONFormatter.php on line 41
+[06-Oct-2023 15:54:56 Asia/Kolkata] PHP Fatal error:  Uncaught CodeIgniter\Format\Exceptions\FormatException: Failed to parse JSON string. Error: Type is not supported in /home/mahentf8/public_html/mahendranextwealth/beingyou/system/Format/JSONFormatter.php:41
+Stack trace:
+#0 /home/mahentf8/public_html/mahendranextwealth/beingyou/system/Format/JSONFormatter.php(41): CodeIgniter\Format\Exceptions\FormatException::forInvalidJSON('Type is not sup...')
+#1 /home/mahentf8/public_html/mahendranextwealth/beingyou/system/API/ResponseTrait.php(346): CodeIgniter\Format\JSONFormatter->format(Array)
+#2 /home/mahentf8/public_html/mahendranextwealth/beingyou/system/API/ResponseTrait.php(99): CodeIgniter\Debug\Exceptions->format(Array)
+#3 /home/mahentf8/public_html/mahendranextwealth/beingyou/system/Debug/Exceptions.php(145): CodeIgniter\Debug\Exceptions->respond(Array, 500)
+#4 [internal function]: CodeIgniter\Debug\Exceptions->exceptionHandler(Object(ErrorException))
+#5 {main}
+  thrown in /home/mahentf8/public_html/mahendranextwealth/beingyou/system/Format/JSONFormatter.php on line 41
+[16-Oct-2023 11:45:27 Asia/Kolkata] whereIn() expects $values to be of type array or closure
+[16-Oct-2023 11:47:22 Asia/Kolkata] whereIn() expects $values to be of type array or closure
+[16-Oct-2023 15:25:51 Asia/Kolkata] whereIn() expects $values to be of type array or closure
+[16-Oct-2023 15:42:28 Asia/Kolkata] whereIn() expects $values to be of type array or closure
+[16-Oct-2023 15:42:47 Asia/Kolkata] whereIn() expects $values to be of type array or closure
+[16-Oct-2023 17:24:41 Asia/Kolkata] whereIn() expects $values to be of type array or closure
+[16-Oct-2023 17:25:59 Asia/Kolkata] whereIn() expects $values to be of type array or closure
+[16-Oct-2023 17:41:24 Asia/Kolkata] whereIn() expects $values to be of type array or closure
+[16-Oct-2023 22:10:43 Asia/Kolkata] whereIn() expects $values to be of type array or closure
+[17-Oct-2023 11:39:57 Asia/Kolkata] whereIn() expects $values to be of type array or closure
+[17-Oct-2023 11:46:18 Asia/Kolkata] whereIn() expects $values to be of type array or closure
+[17-Oct-2023 12:41:20 Asia/Kolkata] whereIn() expects $values to be of type array or closure
+[17-Oct-2023 13:13:14 Asia/Kolkata] whereIn() expects $values to be of type array or closure
+[17-Oct-2023 13:17:30 Asia/Kolkata] whereIn() expects $values to be of type array or closure
+[17-Oct-2023 15:05:10 Asia/Kolkata] whereIn() expects $values to be of type array or closure
+[18-Oct-2023 01:31:20 Asia/Kolkata] whereIn() expects $values to be of type array or closure
+[18-Oct-2023 13:09:36 Asia/Kolkata] whereIn() expects $values to be of type array or closure
+[18-Oct-2023 13:09:47 Asia/Kolkata] whereIn() expects $values to be of type array or closure
+[18-Oct-2023 21:20:07 Asia/Kolkata] whereIn() expects $values to be of type array or closure
+[19-Oct-2023 03:51:19 Asia/Kolkata] whereIn() expects $values to be of type array or closure
+[19-Oct-2023 03:55:32 Asia/Kolkata] whereIn() expects $values to be of type array or closure
+[19-Oct-2023 04:26:18 Asia/Kolkata] whereIn() expects $values to be of type array or closure
+[19-Oct-2023 11:35:33 Asia/Kolkata] whereIn() expects $values to be of type array or closure
+[20-Oct-2023 12:09:09 Asia/Kolkata] whereIn() expects $values to be of type array or closure
+[20-Oct-2023 12:11:16 Asia/Kolkata] whereIn() expects $values to be of type array or closure
+[20-Oct-2023 12:12:38 Asia/Kolkata] whereIn() expects $values to be of type array or closure
+[20-Oct-2023 12:13:16 Asia/Kolkata] whereIn() expects $values to be of type array or closure
+[09-Nov-2023 12:32:09 UTC] PHP Fatal error:  Cannot redeclare App\Controllers\Home::get_attendance_old() in /home/mahentf8/public_html/mahendranextwealth/beingyou/app/Controllers/Home.php on line 6755
+[09-Nov-2023 12:32:13 UTC] PHP Fatal error:  Cannot redeclare App\Controllers\Home::get_attendance_old() in /home/mahentf8/public_html/mahendranextwealth/beingyou/app/Controllers/Home.php on line 6755
+[16-Nov-2023 07:25:13 UTC] PHP Fatal error:  Cannot redeclare App\Controllers\Home::staff_old() in /home/mahentf8/public_html/mahendranextwealth/beingyou/app/Controllers/Home.php on line 1487
+[16-Nov-2023 07:26:29 UTC] PHP Fatal error:  Cannot redeclare App\Controllers\Home::staff_old() in /home/mahentf8/public_html/mahendranextwealth/beingyou/app/Controllers/Home.php on line 1474

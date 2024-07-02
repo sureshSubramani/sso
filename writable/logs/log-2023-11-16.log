@@ -1,0 +1,6 @@
+CRITICAL - 2023-11-16 07:25:13 --> Cannot redeclare App\Controllers\Home::staff_old()
+in APPPATH/Controllers/Home.php on line 1487.
+ 1 [internal function]: CodeIgniter\Debug\Exceptions->shutdownHandler()
+CRITICAL - 2023-11-16 07:26:29 --> Cannot redeclare App\Controllers\Home::staff_old()
+in APPPATH/Controllers/Home.php on line 1474.
+ 1 [internal function]: CodeIgniter\Debug\Exceptions->shutdownHandler()

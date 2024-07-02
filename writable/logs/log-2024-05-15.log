@@ -1,0 +1,240 @@
+INFO - 2024-05-15 04:18:15 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-05-15 04:20:23 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-05-15 04:20:26 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-05-15 04:20:26 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-05-15 04:31:40 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-05-15 04:31:41 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-05-15 04:31:44 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-05-15 04:31:49 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-05-15 04:44:52 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-05-15 10:15:03 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-05-15 10:15:21 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-05-15 10:15:37 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-05-15 10:16:06 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-05-15 10:17:12 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-05-15 10:19:18 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-05-15 10:19:38 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-05-15 10:19:59 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-05-15 10:20:21 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-05-15 10:21:53 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+ERROR - 2024-05-15 10:21:53 --> mysqli_sql_exception: You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near 'FROM `worksheet` as `w`
+LEFT JOIN `worksheet_assignation` as `a` ON `a`.`wsheet_' at line 2 in D:\wamp64\www\beingyou\system\Database\MySQLi\Connection.php:295
+Stack trace:
+#0 D:\wamp64\www\beingyou\system\Database\MySQLi\Connection.php(295): mysqli->query('SELECT `a`.`cou...', 0)
+#1 D:\wamp64\www\beingyou\system\Database\BaseConnection.php(691): CodeIgniter\Database\MySQLi\Connection->execute('SELECT `a`.`cou...')
+#2 D:\wamp64\www\beingyou\system\Database\BaseConnection.php(605): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT `a`.`cou...')
+#3 D:\wamp64\www\beingyou\system\Database\BaseBuilder.php(1616): CodeIgniter\Database\BaseConnection->query('SELECT `a`.`cou...', Array, false)
+#4 D:\wamp64\www\beingyou\app\Controllers\Home.php(9368): CodeIgniter\Database\BaseBuilder->get()
+#5 D:\wamp64\www\beingyou\system\CodeIgniter.php(934): App\Controllers\Home->is_reminder_send()
+#6 D:\wamp64\www\beingyou\system\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+#7 D:\wamp64\www\beingyou\system\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#8 D:\wamp64\www\beingyou\index.php(67): CodeIgniter\CodeIgniter->run()
+#9 {main}
+CRITICAL - 2024-05-15 10:21:53 --> You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near 'FROM `worksheet` as `w`
+LEFT JOIN `worksheet_assignation` as `a` ON `a`.`wsheet_' at line 2
+in SYSTEMPATH\Database\BaseConnection.php on line 645.
+ 1 SYSTEMPATH\Database\BaseBuilder.php(1616): CodeIgniter\Database\BaseConnection->query('SELECT `a`.`course_id`, `c`.`part` as `session_id`, LOWER(a.user_email) as email, `a`.`is_days`, `p`.`title`, DATE_FORMAT(STR_TO_DATE(c.end_date, "%d/%m/%Y"), "%d/%m/%Y") as end_date, DATE_FORMAT(STR_TO_DATE(CURDATE(), "%d/%m/%Y") as is_date
+FROM `worksheet` as `w`
+LEFT JOIN `worksheet_assignation` as `a` ON `a`.`wsheet_id`=`w`.`wsheet_id`
+LEFT JOIN `course_allocation` as `c` ON `c`.`part`=`a`.`program_id`
+LEFT JOIN `posts` as `p` ON `p`.`post_id`=`a`.`course_id`
+WHERE DATE_FORMAT(STR_TO_DATE(c.end_date,\'%d/%m/%Y\'),\'%d/%m/%Y\') < DATE_FORMAT(STR_TO_DATE(CURDATE(),\'%d/%m/%Y\')
+GROUP BY `a`.`course_id`, `a`.`user_email`', [], false)
+ 2 APPPATH\Controllers\Home.php(9368): CodeIgniter\Database\BaseBuilder->get()
+ 3 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\Home->is_reminder_send()
+ 4 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+ 5 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 6 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+INFO - 2024-05-15 10:22:42 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+ERROR - 2024-05-15 10:22:42 --> mysqli_sql_exception: Incorrect parameter count in the call to native function 'DATE_FORMAT' in D:\wamp64\www\beingyou\system\Database\MySQLi\Connection.php:295
+Stack trace:
+#0 D:\wamp64\www\beingyou\system\Database\MySQLi\Connection.php(295): mysqli->query('SELECT `a`.`cou...', 0)
+#1 D:\wamp64\www\beingyou\system\Database\BaseConnection.php(691): CodeIgniter\Database\MySQLi\Connection->execute('SELECT `a`.`cou...')
+#2 D:\wamp64\www\beingyou\system\Database\BaseConnection.php(605): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT `a`.`cou...')
+#3 D:\wamp64\www\beingyou\system\Database\BaseBuilder.php(1616): CodeIgniter\Database\BaseConnection->query('SELECT `a`.`cou...', Array, false)
+#4 D:\wamp64\www\beingyou\app\Controllers\Home.php(9368): CodeIgniter\Database\BaseBuilder->get()
+#5 D:\wamp64\www\beingyou\system\CodeIgniter.php(934): App\Controllers\Home->is_reminder_send()
+#6 D:\wamp64\www\beingyou\system\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+#7 D:\wamp64\www\beingyou\system\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#8 D:\wamp64\www\beingyou\index.php(67): CodeIgniter\CodeIgniter->run()
+#9 {main}
+CRITICAL - 2024-05-15 10:22:42 --> Incorrect parameter count in the call to native function 'DATE_FORMAT'
+in SYSTEMPATH\Database\BaseConnection.php on line 645.
+ 1 SYSTEMPATH\Database\BaseBuilder.php(1616): CodeIgniter\Database\BaseConnection->query('SELECT `a`.`course_id`, `c`.`part` as `session_id`, LOWER(a.user_email) as email, `a`.`is_days`, `p`.`title`, DATE_FORMAT(STR_TO_DATE(c.end_date, "%d/%m/%Y"), "%d/%m/%Y") as end_date, DATE_FORMAT(STR_TO_DATE(CURDATE(), "%d/%m/%Y")) as is_date
+FROM `worksheet` as `w`
+LEFT JOIN `worksheet_assignation` as `a` ON `a`.`wsheet_id`=`w`.`wsheet_id`
+LEFT JOIN `course_allocation` as `c` ON `c`.`part`=`a`.`program_id`
+LEFT JOIN `posts` as `p` ON `p`.`post_id`=`a`.`course_id`
+WHERE DATE_FORMAT(STR_TO_DATE(c.end_date,\'%d/%m/%Y\'),\'%d/%m/%Y\') < DATE_FORMAT(STR_TO_DATE(CURDATE(),\'%d/%m/%Y\'))
+GROUP BY `a`.`course_id`, `a`.`user_email`', [], false)
+ 2 APPPATH\Controllers\Home.php(9368): CodeIgniter\Database\BaseBuilder->get()
+ 3 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\Home->is_reminder_send()
+ 4 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+ 5 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 6 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+INFO - 2024-05-15 10:23:04 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+ERROR - 2024-05-15 10:23:04 --> mysqli_sql_exception: Incorrect parameter count in the call to native function 'DATE_FORMAT' in D:\wamp64\www\beingyou\system\Database\MySQLi\Connection.php:295
+Stack trace:
+#0 D:\wamp64\www\beingyou\system\Database\MySQLi\Connection.php(295): mysqli->query('SELECT `a`.`cou...', 0)
+#1 D:\wamp64\www\beingyou\system\Database\BaseConnection.php(691): CodeIgniter\Database\MySQLi\Connection->execute('SELECT `a`.`cou...')
+#2 D:\wamp64\www\beingyou\system\Database\BaseConnection.php(605): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT `a`.`cou...')
+#3 D:\wamp64\www\beingyou\system\Database\BaseBuilder.php(1616): CodeIgniter\Database\BaseConnection->query('SELECT `a`.`cou...', Array, false)
+#4 D:\wamp64\www\beingyou\app\Controllers\Home.php(9368): CodeIgniter\Database\BaseBuilder->get()
+#5 D:\wamp64\www\beingyou\system\CodeIgniter.php(934): App\Controllers\Home->is_reminder_send()
+#6 D:\wamp64\www\beingyou\system\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+#7 D:\wamp64\www\beingyou\system\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#8 D:\wamp64\www\beingyou\index.php(67): CodeIgniter\CodeIgniter->run()
+#9 {main}
+CRITICAL - 2024-05-15 10:23:04 --> Incorrect parameter count in the call to native function 'DATE_FORMAT'
+in SYSTEMPATH\Database\BaseConnection.php on line 645.
+ 1 SYSTEMPATH\Database\BaseBuilder.php(1616): CodeIgniter\Database\BaseConnection->query('SELECT `a`.`course_id`, `c`.`part` as `session_id`, LOWER(a.user_email) as email, `a`.`is_days`, `p`.`title`, DATE_FORMAT(STR_TO_DATE(c.end_date, "%d/%m/%Y"), "%d/%m/%Y") as end_date, DATE_FORMAT(STR_TO_DATE(CURDATE(), "%d/%m/%Y")) as is_date
+FROM `worksheet` as `w`
+LEFT JOIN `worksheet_assignation` as `a` ON `a`.`wsheet_id`=`w`.`wsheet_id`
+LEFT JOIN `course_allocation` as `c` ON `c`.`part`=`a`.`program_id`
+LEFT JOIN `posts` as `p` ON `p`.`post_id`=`a`.`course_id`
+WHERE DATE_FORMAT(STR_TO_DATE(c.end_date,\'%d/%m/%Y\'),\'%d/%m/%Y\') < CURDATE()
+GROUP BY `a`.`course_id`, `a`.`user_email`', [], false)
+ 2 APPPATH\Controllers\Home.php(9368): CodeIgniter\Database\BaseBuilder->get()
+ 3 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\Home->is_reminder_send()
+ 4 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+ 5 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 6 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+INFO - 2024-05-15 10:23:25 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+ERROR - 2024-05-15 10:23:25 --> mysqli_sql_exception: Incorrect parameter count in the call to native function 'DATE_FORMAT' in D:\wamp64\www\beingyou\system\Database\MySQLi\Connection.php:295
+Stack trace:
+#0 D:\wamp64\www\beingyou\system\Database\MySQLi\Connection.php(295): mysqli->query('SELECT `a`.`cou...', 0)
+#1 D:\wamp64\www\beingyou\system\Database\BaseConnection.php(691): CodeIgniter\Database\MySQLi\Connection->execute('SELECT `a`.`cou...')
+#2 D:\wamp64\www\beingyou\system\Database\BaseConnection.php(605): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT `a`.`cou...')
+#3 D:\wamp64\www\beingyou\system\Database\BaseBuilder.php(1616): CodeIgniter\Database\BaseConnection->query('SELECT `a`.`cou...', Array, false)
+#4 D:\wamp64\www\beingyou\app\Controllers\Home.php(9368): CodeIgniter\Database\BaseBuilder->get()
+#5 D:\wamp64\www\beingyou\system\CodeIgniter.php(934): App\Controllers\Home->is_reminder_send()
+#6 D:\wamp64\www\beingyou\system\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+#7 D:\wamp64\www\beingyou\system\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#8 D:\wamp64\www\beingyou\index.php(67): CodeIgniter\CodeIgniter->run()
+#9 {main}
+CRITICAL - 2024-05-15 10:23:25 --> Incorrect parameter count in the call to native function 'DATE_FORMAT'
+in SYSTEMPATH\Database\BaseConnection.php on line 645.
+ 1 SYSTEMPATH\Database\BaseBuilder.php(1616): CodeIgniter\Database\BaseConnection->query('SELECT `a`.`course_id`, `c`.`part` as `session_id`, LOWER(a.user_email) as email, `a`.`is_days`, `p`.`title`, DATE_FORMAT(STR_TO_DATE(c.end_date, "%d/%m/%Y"), "%d/%m/%Y") as end_date, DATE_FORMAT(STR_TO_DATE(CURDATE(), "%d/%m/%Y")) as is_date
+FROM `worksheet` as `w`
+LEFT JOIN `worksheet_assignation` as `a` ON `a`.`wsheet_id`=`w`.`wsheet_id`
+LEFT JOIN `course_allocation` as `c` ON `c`.`part`=`a`.`program_id`
+LEFT JOIN `posts` as `p` ON `p`.`post_id`=`a`.`course_id`
+WHERE DATE_FORMAT(STR_TO_DATE(c.end_date,\'%d/%m/%Y\'),\'%d/%m/%Y\') < :DATE_FORMAT(STR_TO_DATE(c.end_date,\'%d/%m/%Y\'),\'%d/%m/%Y\'):
+GROUP BY `a`.`course_id`, `a`.`user_email`', [...], false)
+ 2 APPPATH\Controllers\Home.php(9368): CodeIgniter\Database\BaseBuilder->get()
+ 3 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\Home->is_reminder_send()
+ 4 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+ 5 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 6 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+INFO - 2024-05-15 10:23:41 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-05-15 10:23:53 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-05-15 10:26:54 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-05-15 10:27:28 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-05-15 10:27:46 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-05-15 10:28:13 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-05-15 10:28:19 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-05-15 10:28:41 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-05-15 10:28:52 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-05-15 10:33:08 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-05-15 10:33:31 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-05-15 10:33:46 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-05-15 10:34:44 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-05-15 10:35:11 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-05-15 10:36:41 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-05-15 10:37:08 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-05-15 10:37:45 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-05-15 10:38:52 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-05-15 10:39:41 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-05-15 10:40:05 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+ERROR - 2024-05-15 10:40:05 --> mysqli_sql_exception: FUNCTION being_new.STR_TO_TIME does not exist in D:\wamp64\www\beingyou\system\Database\MySQLi\Connection.php:295
+Stack trace:
+#0 D:\wamp64\www\beingyou\system\Database\MySQLi\Connection.php(295): mysqli->query('SELECT `a`.`cou...', 0)
+#1 D:\wamp64\www\beingyou\system\Database\BaseConnection.php(691): CodeIgniter\Database\MySQLi\Connection->execute('SELECT `a`.`cou...')
+#2 D:\wamp64\www\beingyou\system\Database\BaseConnection.php(605): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT `a`.`cou...')
+#3 D:\wamp64\www\beingyou\system\Database\BaseBuilder.php(1616): CodeIgniter\Database\BaseConnection->query('SELECT `a`.`cou...', Array, false)
+#4 D:\wamp64\www\beingyou\app\Controllers\Home.php(9369): CodeIgniter\Database\BaseBuilder->get()
+#5 D:\wamp64\www\beingyou\system\CodeIgniter.php(934): App\Controllers\Home->is_reminder_send()
+#6 D:\wamp64\www\beingyou\system\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+#7 D:\wamp64\www\beingyou\system\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#8 D:\wamp64\www\beingyou\index.php(67): CodeIgniter\CodeIgniter->run()
+#9 {main}
+CRITICAL - 2024-05-15 10:40:05 --> FUNCTION being_new.STR_TO_TIME does not exist
+in SYSTEMPATH\Database\BaseConnection.php on line 645.
+ 1 SYSTEMPATH\Database\BaseBuilder.php(1616): CodeIgniter\Database\BaseConnection->query('SELECT `a`.`course_id`, `c`.`part` as `session_id`, LOWER(a.user_email) as email, `a`.`is_days`, `p`.`title`, DATE_FORMAT(STR_TO_DATE(c.end_date, "%d/%m/%Y"), "%d/%m/%Y") as end_date, STR_TO_TIME(c.end_date, "%d/%m/%Y") as is_date
+FROM `worksheet` as `w`
+LEFT JOIN `worksheet_assignation` as `a` ON `a`.`wsheet_id`=`w`.`wsheet_id`
+LEFT JOIN `course_allocation` as `c` ON `c`.`part`=`a`.`program_id`
+LEFT JOIN `posts` as `p` ON `p`.`post_id`=`a`.`course_id`
+WHERE DATE_FORMAT(STR_TO_DATE(c.end_date,\'%d/%m/%Y\'),\'%Y/%m/%d\') < :DATE_FORMAT(STR_TO_DATE(c.end_date,\'%d/%m/%Y\'),\'%Y/%m/%d\'):
+GROUP BY `a`.`course_id`, `a`.`user_email`
+ORDER BY `a`.`course_id` ASC', [...], false)
+ 2 APPPATH\Controllers\Home.php(9369): CodeIgniter\Database\BaseBuilder->get()
+ 3 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\Home->is_reminder_send()
+ 4 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+ 5 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 6 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+INFO - 2024-05-15 10:43:17 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+ERROR - 2024-05-15 10:43:17 --> mysqli_sql_exception: FUNCTION being_new.STR_TO_TIME does not exist in D:\wamp64\www\beingyou\system\Database\MySQLi\Connection.php:295
+Stack trace:
+#0 D:\wamp64\www\beingyou\system\Database\MySQLi\Connection.php(295): mysqli->query('SELECT `a`.`cou...', 0)
+#1 D:\wamp64\www\beingyou\system\Database\BaseConnection.php(691): CodeIgniter\Database\MySQLi\Connection->execute('SELECT `a`.`cou...')
+#2 D:\wamp64\www\beingyou\system\Database\BaseConnection.php(605): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT `a`.`cou...')
+#3 D:\wamp64\www\beingyou\system\Database\BaseBuilder.php(1616): CodeIgniter\Database\BaseConnection->query('SELECT `a`.`cou...', Array, false)
+#4 D:\wamp64\www\beingyou\app\Controllers\Home.php(9369): CodeIgniter\Database\BaseBuilder->get()
+#5 D:\wamp64\www\beingyou\system\CodeIgniter.php(934): App\Controllers\Home->is_reminder_send()
+#6 D:\wamp64\www\beingyou\system\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+#7 D:\wamp64\www\beingyou\system\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#8 D:\wamp64\www\beingyou\index.php(67): CodeIgniter\CodeIgniter->run()
+#9 {main}
+CRITICAL - 2024-05-15 10:43:17 --> FUNCTION being_new.STR_TO_TIME does not exist
+in SYSTEMPATH\Database\BaseConnection.php on line 645.
+ 1 SYSTEMPATH\Database\BaseBuilder.php(1616): CodeIgniter\Database\BaseConnection->query('SELECT `a`.`course_id`, `c`.`part` as `session_id`, LOWER(a.user_email) as email, `a`.`is_days`, `p`.`title`, DATE_FORMAT(STR_TO_DATE(c.end_date, "%d/%m/%Y"), "%d/%m/%Y") as end_date, STR_TO_TIME(c.end_date, "%d/%m/%Y") as is_date
+FROM `worksheet` as `w`
+LEFT JOIN `worksheet_assignation` as `a` ON `a`.`wsheet_id`=`w`.`wsheet_id`
+LEFT JOIN `course_allocation` as `c` ON `c`.`part`=`a`.`program_id`
+LEFT JOIN `posts` as `p` ON `p`.`post_id`=`a`.`course_id`
+WHERE DATE_FORMAT(STR_TO_DATE(c.end_date,\'%d/%m/%Y\'),\'%Y/%m/%d\') <= :DATE_FORMAT(STR_TO_DATE(c.end_date,\'%d/%m/%Y\'),\'%Y/%m/%d\'):
+GROUP BY `a`.`course_id`, `a`.`user_email`
+ORDER BY `a`.`course_id` ASC', [...], false)
+ 2 APPPATH\Controllers\Home.php(9369): CodeIgniter\Database\BaseBuilder->get()
+ 3 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\Home->is_reminder_send()
+ 4 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+ 5 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 6 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+INFO - 2024-05-15 10:43:26 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-05-15 10:43:58 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-05-15 10:44:09 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-05-15 10:44:25 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-05-15 10:45:00 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-05-15 10:45:20 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-05-15 10:45:50 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-05-15 10:49:47 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-05-15 10:49:59 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-05-15 10:50:10 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-05-15 10:51:24 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-05-15 10:52:24 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-05-15 10:53:04 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-05-15 10:53:21 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-05-15 10:53:31 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-05-15 10:54:44 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-05-15 10:55:34 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-05-15 10:55:51 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-05-15 10:56:15 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-05-15 10:56:42 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-05-15 10:57:16 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-05-15 10:57:29 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-05-15 11:03:29 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-05-15 11:04:28 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-05-15 11:06:23 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-05-15 11:06:40 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-05-15 11:08:29 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-05-15 11:10:26 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-05-15 11:10:58 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-05-15 11:13:57 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-05-15 05:44:10 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-05-15 05:44:11 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-05-15 05:44:17 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-05-15 05:44:18 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-05-15 05:44:20 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-05-15 05:44:22 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-05-15 05:44:40 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.

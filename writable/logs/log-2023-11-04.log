@@ -1,0 +1,142 @@
+ERROR - 2023-11-04 17:02:56 --> Email: Unable to send email using SMTP. Your server might not be configured to send mail using this method.
+ERROR - 2023-11-04 17:02:56 --> 220 PN0PR01CA0054.outlook.office365.com Microsoft ESMTP MAIL Service ready at Sat, 4 Nov 2023 11:32:47 +0000
+
+hello: 250-PN0PR01CA0054.outlook.office365.com Hello [103.50.163.30]
+250-SIZE 157286400
+250-PIPELINING
+250-DSN
+250-ENHANCEDSTATUSCODES
+250-STARTTLS
+250-8BITMIME
+250-BINARYMIME
+250-CHUNKING
+250 SMTPUTF8
+
+starttls: 220 2.0.0 SMTP server ready
+
+hello: 250-PN0PR01CA0054.outlook.office365.com Hello [103.50.163.30]
+250-SIZE 157286400
+250-PIPELINING
+250-DSN
+250-ENHANCEDSTATUSCODES
+250-AUTH LOGIN XOAUTH2
+250-8BITMIME
+250-BINARYMIME
+250-CHUNKING
+250 SMTPUTF8
+
+Failed to authenticate password. Error: 535 5.7.139 Authentication unsuccessful, the request did not meet the criteria to be authenticated successfully. Contact your administrator. [PN0PR01CA0054.INDPRD01.PROD.OUTLOOK.COM 2023-11-04T11:32:56.875Z 08DBDD27D99F67F2]
+
+ERROR - 2023-11-04 17:06:14 --> mysqli_sql_exception: Duplicate entry 'balamurugan.murugesan@mnw.co.in' for key 'email' in /home/mahentf8/public_html/mahendranextwealth/beingyou/system/Database/MySQLi/Connection.php:295
+Stack trace:
+#0 /home/mahentf8/public_html/mahendranextwealth/beingyou/system/Database/MySQLi/Connection.php(295): mysqli->query('INSERT INTO `st...', 0)
+#1 /home/mahentf8/public_html/mahendranextwealth/beingyou/system/Database/BaseConnection.php(691): CodeIgniter\Database\MySQLi\Connection->execute('INSERT INTO `st...')
+#2 /home/mahentf8/public_html/mahendranextwealth/beingyou/system/Database/BaseConnection.php(605): CodeIgniter\Database\BaseConnection->simpleQuery('INSERT INTO `st...')
+#3 /home/mahentf8/public_html/mahendranextwealth/beingyou/system/Database/BaseBuilder.php(2309): CodeIgniter\Database\BaseConnection->query('INSERT INTO `st...', Array, false)
+#4 /home/mahentf8/public_html/mahendranextwealth/beingyou/system/Model.php(330): CodeIgniter\Database\BaseBuilder->insert()
+#5 /home/mahentf8/public_html/mahendranextwealth/beingyou/system/BaseModel.php(782): CodeIgniter\Model->doInsert(Array)
+#6 /home/mahentf8/public_html/mahendranextwealth/beingyou/system/Model.php(730): CodeIgniter\BaseModel->insert(Array, false)
+#7 /home/mahentf8/public_html/mahendranextwealth/beingyou/system/BaseModel.php(692): CodeIgniter\Model->insert(Array, false)
+#8 /home/mahentf8/public_html/mahendranextwealth/beingyou/app/Controllers/Home.php(1406): CodeIgniter\BaseModel->save(Array)
+#9 /home/mahentf8/public_html/mahendranextwealth/beingyou/system/CodeIgniter.php(934): App\Controllers\Home->staff()
+#10 /home/mahentf8/public_html/mahendranextwealth/beingyou/system/CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+#11 /home/mahentf8/public_html/mahendranextwealth/beingyou/system/CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#12 /home/mahentf8/public_html/mahendranextwealth/beingyou/index.php(67): CodeIgniter\CodeIgniter->run()
+#13 {main}
+CRITICAL - 2023-11-04 17:06:14 --> Duplicate entry 'balamurugan.murugesan@mnw.co.in' for key 'email'
+in SYSTEMPATH/Database/BaseConnection.php on line 645.
+ 1 SYSTEMPATH/Database/BaseBuilder.php(2309): CodeIgniter\Database\BaseConnection->query('INSERT INTO `staff_details` (`full_name`, `company_id`, `mobile`, `email`, `rollno`, `rep_name`, `rep_mail`, `rep_mobile`) VALUES (:full_name:, :company_id:, :mobile:, :email:, :rollno:, :rep_name:, :rep_mail:, :rep_mobile:)', [...], false)
+ 2 SYSTEMPATH/Model.php(330): CodeIgniter\Database\BaseBuilder->insert()
+ 3 SYSTEMPATH/BaseModel.php(782): CodeIgniter\Model->doInsert([...])
+ 4 SYSTEMPATH/Model.php(730): CodeIgniter\BaseModel->insert([...], false)
+ 5 SYSTEMPATH/BaseModel.php(692): CodeIgniter\Model->insert([...], false)
+ 6 APPPATH/Controllers/Home.php(1406): CodeIgniter\BaseModel->save([...])
+ 7 SYSTEMPATH/CodeIgniter.php(934): App\Controllers\Home->staff()
+ 8 SYSTEMPATH/CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+ 9 SYSTEMPATH/CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+10 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()
+ERROR - 2023-11-04 17:09:40 --> mysqli_sql_exception: Duplicate entry 'balamurugan.murugesan@mnw.co.in' for key 'email' in /home/mahentf8/public_html/mahendranextwealth/beingyou/system/Database/MySQLi/Connection.php:295
+Stack trace:
+#0 /home/mahentf8/public_html/mahendranextwealth/beingyou/system/Database/MySQLi/Connection.php(295): mysqli->query('INSERT INTO `st...', 0)
+#1 /home/mahentf8/public_html/mahendranextwealth/beingyou/system/Database/BaseConnection.php(691): CodeIgniter\Database\MySQLi\Connection->execute('INSERT INTO `st...')
+#2 /home/mahentf8/public_html/mahendranextwealth/beingyou/system/Database/BaseConnection.php(605): CodeIgniter\Database\BaseConnection->simpleQuery('INSERT INTO `st...')
+#3 /home/mahentf8/public_html/mahendranextwealth/beingyou/system/Database/BaseBuilder.php(2309): CodeIgniter\Database\BaseConnection->query('INSERT INTO `st...', Array, false)
+#4 /home/mahentf8/public_html/mahendranextwealth/beingyou/system/Model.php(330): CodeIgniter\Database\BaseBuilder->insert()
+#5 /home/mahentf8/public_html/mahendranextwealth/beingyou/system/BaseModel.php(782): CodeIgniter\Model->doInsert(Array)
+#6 /home/mahentf8/public_html/mahendranextwealth/beingyou/system/Model.php(730): CodeIgniter\BaseModel->insert(Array, false)
+#7 /home/mahentf8/public_html/mahendranextwealth/beingyou/system/BaseModel.php(692): CodeIgniter\Model->insert(Array, false)
+#8 /home/mahentf8/public_html/mahendranextwealth/beingyou/app/Controllers/Home.php(1406): CodeIgniter\BaseModel->save(Array)
+#9 /home/mahentf8/public_html/mahendranextwealth/beingyou/system/CodeIgniter.php(934): App\Controllers\Home->staff()
+#10 /home/mahentf8/public_html/mahendranextwealth/beingyou/system/CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+#11 /home/mahentf8/public_html/mahendranextwealth/beingyou/system/CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#12 /home/mahentf8/public_html/mahendranextwealth/beingyou/index.php(67): CodeIgniter\CodeIgniter->run()
+#13 {main}
+CRITICAL - 2023-11-04 17:09:40 --> Duplicate entry 'balamurugan.murugesan@mnw.co.in' for key 'email'
+in SYSTEMPATH/Database/BaseConnection.php on line 645.
+ 1 SYSTEMPATH/Database/BaseBuilder.php(2309): CodeIgniter\Database\BaseConnection->query('INSERT INTO `staff_details` (`full_name`, `company_id`, `mobile`, `email`, `rollno`, `rep_name`, `rep_mail`, `rep_mobile`) VALUES (:full_name:, :company_id:, :mobile:, :email:, :rollno:, :rep_name:, :rep_mail:, :rep_mobile:)', [...], false)
+ 2 SYSTEMPATH/Model.php(330): CodeIgniter\Database\BaseBuilder->insert()
+ 3 SYSTEMPATH/BaseModel.php(782): CodeIgniter\Model->doInsert([...])
+ 4 SYSTEMPATH/Model.php(730): CodeIgniter\BaseModel->insert([...], false)
+ 5 SYSTEMPATH/BaseModel.php(692): CodeIgniter\Model->insert([...], false)
+ 6 APPPATH/Controllers/Home.php(1406): CodeIgniter\BaseModel->save([...])
+ 7 SYSTEMPATH/CodeIgniter.php(934): App\Controllers\Home->staff()
+ 8 SYSTEMPATH/CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+ 9 SYSTEMPATH/CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+10 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()
+ERROR - 2023-11-04 17:30:37 --> mysqli_sql_exception: Duplicate entry 'balamurugan.murugesan@mnw.co.in' for key 'email' in /home/mahentf8/public_html/mahendranextwealth/beingyou/system/Database/MySQLi/Connection.php:295
+Stack trace:
+#0 /home/mahentf8/public_html/mahendranextwealth/beingyou/system/Database/MySQLi/Connection.php(295): mysqli->query('INSERT INTO `st...', 0)
+#1 /home/mahentf8/public_html/mahendranextwealth/beingyou/system/Database/BaseConnection.php(691): CodeIgniter\Database\MySQLi\Connection->execute('INSERT INTO `st...')
+#2 /home/mahentf8/public_html/mahendranextwealth/beingyou/system/Database/BaseConnection.php(605): CodeIgniter\Database\BaseConnection->simpleQuery('INSERT INTO `st...')
+#3 /home/mahentf8/public_html/mahendranextwealth/beingyou/system/Database/BaseBuilder.php(2309): CodeIgniter\Database\BaseConnection->query('INSERT INTO `st...', Array, false)
+#4 /home/mahentf8/public_html/mahendranextwealth/beingyou/system/Model.php(330): CodeIgniter\Database\BaseBuilder->insert()
+#5 /home/mahentf8/public_html/mahendranextwealth/beingyou/system/BaseModel.php(782): CodeIgniter\Model->doInsert(Array)
+#6 /home/mahentf8/public_html/mahendranextwealth/beingyou/system/Model.php(730): CodeIgniter\BaseModel->insert(Array, false)
+#7 /home/mahentf8/public_html/mahendranextwealth/beingyou/system/BaseModel.php(692): CodeIgniter\Model->insert(Array, false)
+#8 /home/mahentf8/public_html/mahendranextwealth/beingyou/app/Controllers/Home.php(1406): CodeIgniter\BaseModel->save(Array)
+#9 /home/mahentf8/public_html/mahendranextwealth/beingyou/system/CodeIgniter.php(934): App\Controllers\Home->staff()
+#10 /home/mahentf8/public_html/mahendranextwealth/beingyou/system/CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+#11 /home/mahentf8/public_html/mahendranextwealth/beingyou/system/CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#12 /home/mahentf8/public_html/mahendranextwealth/beingyou/index.php(67): CodeIgniter\CodeIgniter->run()
+#13 {main}
+CRITICAL - 2023-11-04 17:30:37 --> Duplicate entry 'balamurugan.murugesan@mnw.co.in' for key 'email'
+in SYSTEMPATH/Database/BaseConnection.php on line 645.
+ 1 SYSTEMPATH/Database/BaseBuilder.php(2309): CodeIgniter\Database\BaseConnection->query('INSERT INTO `staff_details` (`full_name`, `company_id`, `mobile`, `email`, `rollno`, `rep_name`, `rep_mail`, `rep_mobile`) VALUES (:full_name:, :company_id:, :mobile:, :email:, :rollno:, :rep_name:, :rep_mail:, :rep_mobile:)', [...], false)
+ 2 SYSTEMPATH/Model.php(330): CodeIgniter\Database\BaseBuilder->insert()
+ 3 SYSTEMPATH/BaseModel.php(782): CodeIgniter\Model->doInsert([...])
+ 4 SYSTEMPATH/Model.php(730): CodeIgniter\BaseModel->insert([...], false)
+ 5 SYSTEMPATH/BaseModel.php(692): CodeIgniter\Model->insert([...], false)
+ 6 APPPATH/Controllers/Home.php(1406): CodeIgniter\BaseModel->save([...])
+ 7 SYSTEMPATH/CodeIgniter.php(934): App\Controllers\Home->staff()
+ 8 SYSTEMPATH/CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+ 9 SYSTEMPATH/CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+10 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()
+ERROR - 2023-11-04 17:59:35 --> Email: Unable to send email using SMTP. Your server might not be configured to send mail using this method.
+ERROR - 2023-11-04 17:59:35 --> 220 PN3PR01CA0171.outlook.office365.com Microsoft ESMTP MAIL Service ready at Sat, 4 Nov 2023 12:29:27 +0000
+
+hello: 250-PN3PR01CA0171.outlook.office365.com Hello [103.50.163.30]
+250-SIZE 157286400
+250-PIPELINING
+250-DSN
+250-ENHANCEDSTATUSCODES
+250-STARTTLS
+250-8BITMIME
+250-BINARYMIME
+250-CHUNKING
+250 SMTPUTF8
+
+starttls: 220 2.0.0 SMTP server ready
+
+hello: 250-PN3PR01CA0171.outlook.office365.com Hello [103.50.163.30]
+250-SIZE 157286400
+250-PIPELINING
+250-DSN
+250-ENHANCEDSTATUSCODES
+250-AUTH LOGIN XOAUTH2
+250-8BITMIME
+250-BINARYMIME
+250-CHUNKING
+250 SMTPUTF8
+
+Failed to authenticate password. Error: 535 5.7.139 Authentication unsuccessful, the request did not meet the criteria to be authenticated successfully. Contact your administrator. [PN3PR01CA0171.INDPRD01.PROD.OUTLOOK.COM 2023-11-04T12:29:35.297Z 08DBDC0395C1A4B6]
+
